@@ -1726,6 +1726,7 @@ const u16 gEasyChatWordsByLetter_T[] = {
     EC_WORD_TOWER,
     EC_MOVE2(TOXIC),
     EC_WORD_TOYS,
+    EC_POKEMON(TURTWIG),
     EC_WORD_TRACE,
     EC_WORD_TRADE,
     EC_WORD_TRAIN,
