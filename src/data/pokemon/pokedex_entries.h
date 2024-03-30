@@ -4667,4 +4667,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_TORTERRA] =
+    {
+        .categoryName = _("CONTINENT"),
+        .height = 22,
+        .weight = 3300,
+        .description = gTorterraPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

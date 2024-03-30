@@ -414,5 +414,6 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_CHIMECHO] = gMonFootprint_Chimecho,
     [SPECIES_TURTWIG] = gMonFootprint_Turtwig,
     [SPECIES_GROTLE] = gMonFootprint_Grotle,
+    [SPECIES_TORTERRA] = gMonFootprint_Torterra,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

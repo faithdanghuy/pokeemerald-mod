@@ -137,4 +137,5 @@ const u16 gSpeciesIdToCryId[] =
     [SPECIES_CHIMECHO - 277] = 387,
     [SPECIES_TURTWIG - 277] = 388,
     [SPECIES_GROTLE - 277] = 389,
+    [SPECIES_TORTERRA - 277] = 390,
 };

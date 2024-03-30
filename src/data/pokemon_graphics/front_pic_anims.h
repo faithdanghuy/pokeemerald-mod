@@ -4596,6 +4596,13 @@ static const union AnimCmd sAnim_Grotle_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Torterra_1[] =
+{
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5239,6 +5246,7 @@ DOUBLE_ANIMATION(Deoxys);
 SINGLE_ANIMATION(Chimecho);
 SINGLE_ANIMATION(Turtwig);
 SINGLE_ANIMATION(Grotle);
+SINGLE_ANIMATION(Torterra);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -5684,6 +5692,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_CHIMECHO]    = sAnims_Chimecho,
     [SPECIES_TURTWIG]     = sAnims_Turtwig,
     [SPECIES_GROTLE]      = sAnims_Grotle,
+    [SPECIES_TORTERRA]    = sAnims_Torterra,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

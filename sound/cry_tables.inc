@@ -390,6 +390,7 @@ gCryTable::
 	cry Cry_Chimecho
 	cry Cry_Turtwig
 	cry Cry_Grotle
+	cry Cry_Torterra
 
 	.align 2
 gCryTable_Reverse::
@@ -783,3 +784,4 @@ gCryTable_Reverse::
 	cry_reverse Cry_Chimecho
 	cry_reverse Cry_Turtwig
 	cry_reverse Cry_Grotle
+	cry_reverse Cry_Torterra

@@ -2329,3 +2329,7 @@ const u8 gGrotlePokedexText[] = _(
     "It knows where pure water wells up.\n"
     "It carries fellow Pokémon there\n"
     "on its back.");
+
+const u8 gTorterraPokedexText[] = _(
+    "Some Pokémon are born on a TORTERRA's back\n"
+    "and spend their entire life there.");
