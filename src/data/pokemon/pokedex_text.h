@@ -2324,3 +2324,8 @@ const u8 gTurtwigPokedexText[] = _(
     "The shell on its back is made of soil.\n"
     "On a very healthy Turtwig,\n"
     "the shell should feel moist.");
+
+const u8 gGrotlePokedexText[] = _(
+    "It knows where pure water wells up.\n"
+    "It carries fellow Pokémon there\n"
+    "on its back.");
