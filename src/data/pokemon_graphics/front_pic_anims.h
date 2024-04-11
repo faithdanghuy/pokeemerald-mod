@@ -4664,6 +4664,30 @@ static const union AnimCmd sAnim_Empoleon_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Starly_1[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Staravia_1[] =
+{
+    ANIMCMD_FRAME(1, 32),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Staraptor_1[] =
+{
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5314,6 +5338,9 @@ SINGLE_ANIMATION(Infernape);
 SINGLE_ANIMATION(Piplup);
 SINGLE_ANIMATION(Prinplup);
 SINGLE_ANIMATION(Empoleon);
+SINGLE_ANIMATION(Starly);
+SINGLE_ANIMATION(Staravia);
+SINGLE_ANIMATION(Staraptor);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -5766,6 +5793,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_PIPLUP]      = sAnims_Piplup,
     [SPECIES_PRINPLUP]    = sAnims_Prinplup,
     [SPECIES_EMPOLEON]    = sAnims_Empoleon,
+    [SPECIES_STARLY]      = sAnims_Piplup,
+    [SPECIES_STARAVIA]    = sAnims_Prinplup,
+    [SPECIES_STARAPTOR]   = sAnims_Empoleon,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

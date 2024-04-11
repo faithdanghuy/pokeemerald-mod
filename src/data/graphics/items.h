@@ -212,6 +212,18 @@ const u32 gItemIconPalette_DawnStone[] = INCBIN_U32("graphics/items/icon_palette
 const u32 gItemIcon_IceStone[] = INCBIN_U32("graphics/items/icons/ice_stone.4bpp.lz");
 const u32 gItemIconPalette_IceStone[] = INCBIN_U32("graphics/items/icon_palettes/ice_stone.gbapal.lz");
 
+const u32 gItemIcon_Electirizer[] = INCBIN_U32("graphics/items/icons/electirizer.4bpp.lz");
+const u32 gItemIconPalette_Electirizer[] = INCBIN_U32("graphics/items/icon_palettes/electirizer.gbapal.lz");
+
+const u32 gItemIcon_Magmarizer[] = INCBIN_U32("graphics/items/icons/magmarizer.4bpp.lz");
+const u32 gItemIconPalette_Magmarizer[] = INCBIN_U32("graphics/items/icon_palettes/magmarizer.gbapal.lz");
+
+const u32 gItemIcon_DubiousDisc[] = INCBIN_U32("graphics/items/icons/dubious_disc.4bpp.lz");
+const u32 gItemIconPalette_DubiousDisc[] = INCBIN_U32("graphics/items/icon_palettes/dubious_disc.gbapal.lz");
+
+const u32 gItemIcon_Protector[] = INCBIN_U32("graphics/items/icons/protector.4bpp.lz");
+const u32 gItemIconPalette_Protector[] = INCBIN_U32("graphics/items/icon_palettes/protector.gbapal.lz");
+
 // Valuables
 
 const u32 gItemIcon_TinyMushroom[] = INCBIN_U32("graphics/items/icons/tiny_mushroom.4bpp.lz");

@@ -932,6 +932,26 @@ static const u8 sUpGradeDesc[] = _(
     "A peculiar box made\n"
     "by SILPH CO.");
 
+static const u8 sElectirizerDesc[] = _(
+    "A box with electric\n"
+    "energy. It is loved\n"
+    "by a certain Pokémon.");
+
+static const u8 sMagmarizerDesc[] = _(
+    "A box with magma\n"
+    "energy. It is loved\n"
+    "by a certain Pokémon.");
+
+static const u8 sDubiousDiscDesc[] = _(
+    "A device with dubious\n"
+    "data. It is loved\n"
+    "by a certain Pokémon.");
+
+static const u8 sProtectorDesc[] = _(
+    "A stiff protective\n"
+    "item. It is loved\n"
+    "by a certain Pokémon.");
+
 static const u8 sShellBellDesc[] = _(
     "A hold item that\n"
     "restores HP upon\n"

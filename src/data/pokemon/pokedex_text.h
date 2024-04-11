@@ -2347,19 +2347,33 @@ const u8 gMonfernoPokedexText[] = _(
 const u8 gInfernapePokedexText[] = _(
     "It uses unique fighting moves with fire\n"
     "on its hands and feet. It will take on\n"
-    "any opponent.\n");
+    "any opponent.");
 
 const u8 gPiplupPokedexText[] = _(
     "A poor walker, it often falls down. However,\n"
     "its strong pride makes it puff up its chest\n"
-    "without a care.\n");
+    "without a care.");
 
 const u8 gPrinplupPokedexText[] = _(
     "Because every PRINPLUP considers itself\n"
     "to be the most important, they can never\n"
-    "form a group.\n");
+    "form a group.");
 
  const u8 gEmpoleonPokedexText[] = _(
     "If anyone were to hurt its pride, it would\n" 
     "slash them with wings that can cleave\n"
-    "through an ice floe.\n"); 
+    "through an ice floe."); 
+
+ const u8 gStarlyPokedexText[] = _(
+    "Because they are weak individually, they form\n"
+    "groups. However, they bicker if the group\n"
+    "grows too big.");
+
+ const u8 gStaraviaPokedexText[] = _(
+    "Recognizing their own weakness, they always\n"
+    "live in a group. When alone, a STARAVIA cries\n"
+    "noisily."); 
+
+ const u8 gStaraptorPokedexText[] = _(
+    "It never stops attacking even if it is injured.\n"
+    "It fusses over the shape of its comb.");  

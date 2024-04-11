@@ -96,11 +96,11 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_MAX_REPEL] = {gItemIcon_Repel, gItemIconPalette_MaxRepel},
     [ITEM_ESCAPE_ROPE] = {gItemIcon_EscapeRope, gItemIconPalette_EscapeRope},
     [ITEM_REPEL] = {gItemIcon_Repel, gItemIconPalette_Repel},
+    [ITEM_ELECTIRIZER] = {gItemIcon_Electirizer, gItemIconPalette_Electirizer},
+    [ITEM_MAGMARIZER] = {gItemIcon_Magmarizer, gItemIconPalette_Magmarizer},
+    [ITEM_DUBIOUS_DISC] = {gItemIcon_DubiousDisc, gItemIconPalette_DubiousDisc},
+    [ITEM_PROTECTOR] = {gItemIcon_Protector, gItemIconPalette_Protector},
     // ????????
-    [ITEM_057] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_058] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_059] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_05A] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_05B] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_05C] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     // Evolution stones

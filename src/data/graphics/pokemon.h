@@ -2775,6 +2775,27 @@ const u32 gMonShinyPalette_Empoleon[] = INCBIN_U32("graphics/pokemon/empoleon/sh
 const u8 gMonIcon_Empoleon[] = INCBIN_U8("graphics/pokemon/empoleon/icon.4bpp");
 const u8 gMonFootprint_Empoleon[] = INCBIN_U8("graphics/pokemon/empoleon/footprint.1bpp");
 
+const u32 gMonStillFrontPic_Starly[] = INCBIN_U32("graphics/pokemon/starly/front.4bpp.lz");
+const u32 gMonPalette_Starly[] = INCBIN_U32("graphics/pokemon/starly/normal.gbapal.lz");
+const u32 gMonBackPic_Starly[] = INCBIN_U32("graphics/pokemon/starly/back.4bpp.lz");
+const u32 gMonShinyPalette_Starly[] = INCBIN_U32("graphics/pokemon/starly/shiny.gbapal.lz");
+const u8 gMonIcon_Starly[] = INCBIN_U8("graphics/pokemon/starly/icon.4bpp");
+const u8 gMonFootprint_Starly[] = INCBIN_U8("graphics/pokemon/starly/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Staravia[] = INCBIN_U32("graphics/pokemon/staravia/front.4bpp.lz");
+const u32 gMonPalette_Staravia[] = INCBIN_U32("graphics/pokemon/staravia/normal.gbapal.lz");
+const u32 gMonBackPic_Staravia[] = INCBIN_U32("graphics/pokemon/staravia/back.4bpp.lz");
+const u32 gMonShinyPalette_Staravia[] = INCBIN_U32("graphics/pokemon/staravia/shiny.gbapal.lz");
+const u8 gMonIcon_Staravia[] = INCBIN_U8("graphics/pokemon/staravia/icon.4bpp");
+const u8 gMonFootprint_Staravia[] = INCBIN_U8("graphics/pokemon/staravia/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Staraptor[] = INCBIN_U32("graphics/pokemon/staraptor/front.4bpp.lz");
+const u32 gMonPalette_Staraptor[] = INCBIN_U32("graphics/pokemon/staraptor/normal.gbapal.lz");
+const u32 gMonBackPic_Staraptor[] = INCBIN_U32("graphics/pokemon/staraptor/back.4bpp.lz");
+const u32 gMonShinyPalette_Staraptor[] = INCBIN_U32("graphics/pokemon/staraptor/shiny.gbapal.lz");
+const u8 gMonIcon_Staraptor[] = INCBIN_U8("graphics/pokemon/staraptor/icon.4bpp");
+const u8 gMonFootprint_Staraptor[] = INCBIN_U8("graphics/pokemon/staraptor/footprint.1bpp");
+
 const u32 gMonStillFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
 

@@ -421,4 +421,7 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_PIPLUP] = sPiplupLevelUpLearnset,
     [SPECIES_PRINPLUP] = sPrinplupLevelUpLearnset,
     [SPECIES_EMPOLEON] = sEmpoleonLevelUpLearnset,
+    [SPECIES_STARLY] = sStarlyLevelUpLearnset,
+    [SPECIES_STARAVIA] = sStaraviaLevelUpLearnset,
+    [SPECIES_STARAPTOR] = sStaraptorLevelUpLearnset,
 };

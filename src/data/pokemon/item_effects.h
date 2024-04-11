@@ -312,6 +312,22 @@ const u8 gItemEffect_IceStone[6] = {
     [4] = ITEM4_EVO_STONE,
 };
 
+const u8 gItemEffect_Electirizer[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_Magmarizer[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_DubiousDisc[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_Protector[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
 const u8 gItemEffect_KingsRock[6] = {
     [4] = ITEM4_EVO_STONE,
 };
@@ -493,5 +509,9 @@ const u8 *const gItemEffectTable[] =
     [ITEM_DRAGON_SCALE - ITEM_POTION]  = gItemEffect_DragonScale,
     [ITEM_METAL_COAT - ITEM_POTION]    = gItemEffect_MetalCoat,
     [ITEM_UP_GRADE - ITEM_POTION]      = gItemEffect_UpGrade,
+    [ITEM_ELECTIRIZER - ITEM_POTION]   = gItemEffect_Electirizer,
+    [ITEM_MAGMARIZER - ITEM_POTION]    = gItemEffect_Magmarizer,
+    [ITEM_DUBIOUS_DISC - ITEM_POTION]  = gItemEffect_DubiousDisc,
+    [ITEM_PROTECTOR - ITEM_POTION]     = gItemEffect_Protector,
     [LAST_BERRY_INDEX - ITEM_POTION]   = NULL
 };

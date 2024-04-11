@@ -1091,48 +1091,48 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
     },
 
-    [ITEM_057] =
+    [ITEM_ELECTIRIZER] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
+        .name = _("ELECTIRIZER"),
+        .itemId = ITEM_ELECTIRIZER,
+        .price = 1000,
+        .description = sElectirizerDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
-    [ITEM_058] =
+    [ITEM_MAGMARIZER] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
+        .name = _("MAGMARIZER"),
+        .itemId = ITEM_MAGMARIZER,
+        .price = 1000,
+        .description = sMagmarizerDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
-    [ITEM_059] =
+    [ITEM_DUBIOUS_DISC] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
+        .name = _("DUBIOUS DISC"),
+        .itemId = ITEM_DUBIOUS_DISC,
+        .price = 1000,
+        .description = sDubiousDiscDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
-    [ITEM_05A] =
+    [ITEM_PROTECTOR] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
+        .name = _("PROTECTOR"),
+        .itemId = ITEM_PROTECTOR,
+        .price = 1000,
+        .description = sProtectorDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
     [ITEM_05B] =

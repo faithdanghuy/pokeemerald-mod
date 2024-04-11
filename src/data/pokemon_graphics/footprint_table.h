@@ -421,5 +421,8 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_PIPLUP] = gMonFootprint_Piplup,
     [SPECIES_PRINPLUP] = gMonFootprint_Prinplup,
     [SPECIES_EMPOLEON] = gMonFootprint_Empoleon,
+    [SPECIES_STARLY] = gMonFootprint_Starly,
+    [SPECIES_STARAVIA] = gMonFootprint_Staravia,
+    [SPECIES_STARAPTOR] = gMonFootprint_Staraptor,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

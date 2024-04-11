@@ -4751,4 +4751,40 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 290,
         .trainerOffset = 1,
     },
+
+    [NATIONAL_DEX_STARLY] =
+    {
+        .categoryName = _("STARLING"),
+        .height = 3,
+        .weight = 20,
+        .description = gStarlyPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_STARAVIA] =
+    {
+        .categoryName = _("STARLING"),
+        .height = 6,
+        .weight = 155,
+        .description = gStaraviaPokedexText,
+        .pokemonScale = 422,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_STARAPTOR] =
+    {
+        .categoryName = _("PREDATOR"),
+        .height = 12,
+        .weight = 249,
+        .description = gStaraptorPokedexText,
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

@@ -1975,6 +1975,18 @@ Cry_Empoleon::
 	.incbin "sound/direct_sound_samples/cries/empoleon.bin"
 
 	.align 2
+Cry_Starly::
+	.incbin "sound/direct_sound_samples/cries/starly.bin"
+
+	.align 2
+Cry_Staravia::
+	.incbin "sound/direct_sound_samples/cries/staravia.bin"
+
+	.align 2
+Cry_Staraptor::
+	.incbin "sound/direct_sound_samples/cries/staraptor.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 
