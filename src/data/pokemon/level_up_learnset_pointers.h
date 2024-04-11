@@ -415,4 +415,10 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_TURTWIG] = sTurtwigLevelUpLearnset,
     [SPECIES_GROTLE] = sGrotleLevelUpLearnset,
     [SPECIES_TORTERRA] = sTorterraLevelUpLearnset,
+    [SPECIES_CHIMCHAR] = sChimcharLevelUpLearnset,
+    [SPECIES_MONFERNO] = sMonfernoLevelUpLearnset,
+    [SPECIES_INFERNAPE] = sInfernapeLevelUpLearnset,
+    [SPECIES_PIPLUP] = sPiplupLevelUpLearnset,
+    [SPECIES_PRINPLUP] = sPrinplupLevelUpLearnset,
+    [SPECIES_EMPOLEON] = sEmpoleonLevelUpLearnset,
 };

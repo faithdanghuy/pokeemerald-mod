@@ -1951,6 +1951,30 @@ Cry_Torterra::
 	.incbin "sound/direct_sound_samples/cries/torterra.bin"
 
 	.align 2
+Cry_Chimchar::
+	.incbin "sound/direct_sound_samples/cries/chimchar.bin"
+
+	.align 2
+Cry_Monferno::
+	.incbin "sound/direct_sound_samples/cries/monferno.bin"
+
+	.align 2
+Cry_Infernape::
+	.incbin "sound/direct_sound_samples/cries/infernape.bin"
+
+	.align 2
+Cry_Piplup::
+	.incbin "sound/direct_sound_samples/cries/piplup.bin"
+
+	.align 2
+Cry_Prinplup::
+	.incbin "sound/direct_sound_samples/cries/prinplup.bin"
+
+	.align 2
+Cry_Empoleon::
+	.incbin "sound/direct_sound_samples/cries/empoleon.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

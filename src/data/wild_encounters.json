@@ -44,17 +44,17 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_GROTLE"
+                "species": "SPECIES_TURTWIG"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_TORTERRA"
+                "species": "SPECIES_CHIMCHAR"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_WURMPLE"
+                "species": "SPECIES_PIPLUP"
               },
               {
                 "min_level": 3,
