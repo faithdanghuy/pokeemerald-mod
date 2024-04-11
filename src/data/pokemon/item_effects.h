@@ -36,7 +36,7 @@ const u8 gItemEffect_MaxPotion[7] = {
 
 const u8 gItemEffect_HyperPotion[7] = {
     [4] = ITEM4_HEAL_HP,
-    [6] = 200, // Amount of HP to recover
+    [6] = 120, // Amount of HP to recover
 };
 
 const u8 gItemEffect_SuperPotion[7] = {
@@ -296,6 +296,22 @@ const u8 gItemEffect_LeafStone[6] = {
     [4] = ITEM4_EVO_STONE,
 };
 
+const u8 gItemEffect_ShinyStone[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_DuskStone[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_DawnStone[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_IceStone[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
 const u8 gItemEffect_KingsRock[6] = {
     [4] = ITEM4_EVO_STONE,
 };
@@ -309,14 +325,6 @@ const u8 gItemEffect_MetalCoat[6] = {
 };
 
 const u8 gItemEffect_UpGrade[6] = {
-    [4] = ITEM4_EVO_STONE,
-};
-
-const u8 gItemEffect_DeepSeaScale[6] = {
-    [4] = ITEM4_EVO_STONE,
-};
-
-const u8 gItemEffect_DeepSeaTooth[6] = {
     [4] = ITEM4_EVO_STONE,
 };
 
@@ -461,6 +469,10 @@ const u8 *const gItemEffectTable[] =
     [ITEM_THUNDER_STONE - ITEM_POTION] = gItemEffect_ThunderStone,
     [ITEM_WATER_STONE - ITEM_POTION]   = gItemEffect_WaterStone,
     [ITEM_LEAF_STONE - ITEM_POTION]    = gItemEffect_LeafStone,
+    [ITEM_SHINY_STONE - ITEM_POTION]   = gItemEffect_ShinyStone,
+    [ITEM_DUSK_STONE - ITEM_POTION]    = gItemEffect_DuskStone,
+    [ITEM_DAWN_STONE - ITEM_POTION]    = gItemEffect_DawnStone,
+    [ITEM_ICE_STONE - ITEM_POTION]     = gItemEffect_IceStone,
     [ITEM_CHERI_BERRY - ITEM_POTION]   = gItemEffect_CheriBerry,
     [ITEM_CHESTO_BERRY - ITEM_POTION]  = gItemEffect_ChestoBerry,
     [ITEM_PECHA_BERRY - ITEM_POTION]   = gItemEffect_PechaBerry,
@@ -481,7 +493,5 @@ const u8 *const gItemEffectTable[] =
     [ITEM_DRAGON_SCALE - ITEM_POTION]  = gItemEffect_DragonScale,
     [ITEM_METAL_COAT - ITEM_POTION]    = gItemEffect_MetalCoat,
     [ITEM_UP_GRADE - ITEM_POTION]      = gItemEffect_UpGrade,
-    [ITEM_DEEP_SEA_SCALE - ITEM_POTION]= gItemEffect_DeepSeaScale,
-    [ITEM_DEEP_SEA_TOOTH - ITEM_POTION]= gItemEffect_DeepSeaTooth,
     [LAST_BERRY_INDEX - ITEM_POTION]   = NULL
 };

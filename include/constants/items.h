@@ -110,10 +110,10 @@
 #define ITEM_THUNDER_STONE 96
 #define ITEM_WATER_STONE 97
 #define ITEM_LEAF_STONE 98
-#define ITEM_063 99
-#define ITEM_064 100
-#define ITEM_065 101
-#define ITEM_066 102
+#define ITEM_SHINY_STONE 99
+#define ITEM_DUSK_STONE 100
+#define ITEM_DAWN_STONE 101
+#define ITEM_ICE_STONE 102
 
 // Unusable
 #define ITEM_TINY_MUSHROOM 103
@@ -479,6 +479,6 @@
 // Check if the item is one that can be used on a Pokémon.
 #define ITEM_HAS_EFFECT(item) (((item) >= ITEM_POTION && (item) <= MAX_BERRY_INDEX) \
 || (item) == ITEM_KINGS_ROCK || (item) == ITEM_DRAGON_SCALE || (item) == ITEM_METAL_COAT \
-|| (item) == ITEM_UP_GRADE || (item) == ITEM_DEEP_SEA_TOOTH || (item) == ITEM_DEEP_SEA_SCALE)
+|| (item) == ITEM_UP_GRADE)
 
 #endif  // GUARD_CONSTANTS_ITEMS_H

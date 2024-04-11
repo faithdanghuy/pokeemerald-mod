@@ -44,22 +44,22 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_TURTWIG"
+                "species": "SPECIES_CLAMPERL"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CHIMCHAR"
+                "species": "SPECIES_CLAMPERL"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_PIPLUP"
+                "species": "SPECIES_CLAMPERL"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_WURMPLE"
+                "species": "SPECIES_MONFERNO"
               },
               {
                 "min_level": 3,

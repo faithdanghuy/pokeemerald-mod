@@ -2331,8 +2331,8 @@ const u8 gGrotlePokedexText[] = _(
     "on its back.");
 
 const u8 gTorterraPokedexText[] = _(
-    "Some Pokémon are born on a TORTERRA's back\n"
-    "and spend their entire life there.");
+    "Some Pokémon are born on a TORTERRA's\n"
+    "back and spend their entire life there.");
 
 const u8 gChimcharPokedexText[] = _(
     "It is very agile. Before going to sleep,\n"
@@ -2340,13 +2340,14 @@ const u8 gChimcharPokedexText[] = _(
     "prevent fires.");
 
 const u8 gMonfernoPokedexText[] = _(
-    "It skillfully controls the intensity of the\n"
-    "fire on its tail to keep its foes at an ideal\n"
-    "distance.");
+    "It skillfully controls the intensity of\n"
+    "the fire on its tail to keep its foes at\n"
+    "an ideal distance.");
 
 const u8 gInfernapePokedexText[] = _(
-    "It uses unique fighting moves with fire on its\n"
-    "hands and feet. It will take on any opponent.\n");
+    "It uses unique fighting moves with fire\n"
+    "on its hands and feet. It will take on\n"
+    "any opponent.\n");
 
 const u8 gPiplupPokedexText[] = _(
     "A poor walker, it often falls down. However,\n"
@@ -2354,10 +2355,11 @@ const u8 gPiplupPokedexText[] = _(
     "without a care.\n");
 
 const u8 gPrinplupPokedexText[] = _(
-    "Because every PRINPLUP considers itself to be\n"
-    "the most important, they can never form a group.\n");
+    "Because every PRINPLUP considers itself\n"
+    "to be the most important, they can never\n"
+    "form a group.\n");
 
  const u8 gEmpoleonPokedexText[] = _(
-    "If anyone were to hurt its pride, it would\n"
-    "slash them with wings that can cleave through\n" 
-    "an ice floe.\n");
+    "If anyone were to hurt its pride, it would\n" 
+    "slash them with wings that can cleave\n"
+    "through an ice floe.\n"); 
