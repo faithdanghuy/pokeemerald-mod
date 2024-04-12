@@ -428,5 +428,10 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_BIBAREL] = gMonFootprint_Bibarel,
     [SPECIES_KRICKETOT] = gMonFootprint_Kricketot,
     [SPECIES_KRICKETUNE] = gMonFootprint_Kricketune,
+    [SPECIES_SHINX] = gMonFootprint_Shinx,
+    [SPECIES_LUXIO] = gMonFootprint_Luxio,
+    [SPECIES_LUXRAY] = gMonFootprint_Luxray,
+    [SPECIES_BUDEW] = gMonFootprint_Budew,
+    [SPECIES_ROSERADE] = gMonFootprint_Roserade,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

@@ -428,4 +428,9 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_BIBAREL] = sBibarelLevelUpLearnset,
     [SPECIES_KRICKETOT] = sKricketotLevelUpLearnset,
     [SPECIES_KRICKETUNE] = sKricketuneLevelUpLearnset,
+    [SPECIES_SHINX] = sShinxLevelUpLearnset,
+    [SPECIES_LUXIO] = sLuxioLevelUpLearnset,
+    [SPECIES_LUXRAY] = sLuxrayLevelUpLearnset,
+    [SPECIES_BUDEW] = sBudewLevelUpLearnset,
+    [SPECIES_ROSERADE] = sRoseradeLevelUpLearnset,
 };

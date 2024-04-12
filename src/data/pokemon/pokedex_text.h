@@ -2399,3 +2399,28 @@ const u8 gKricketunePokedexText[] = _(
     "There is a village that hosts a contest\n"
     "based on the amazingly variable cries\n"
     "of this Pokémon.");
+
+const u8 gShinxPokedexText[] = _(
+    "The extension and contraction of its\n"
+    "muscles generates electricity. It glows\n"
+    "when in trouble.");
+
+const u8 gLuxioPokedexText[] = _(
+    "Strong electricity courses through the\n"
+    "tips of its sharp claws. A light scratch\n"
+    "causes fainting in foes.");
+
+const u8 gLuxrayPokedexText[] = _(
+    "It can see clearly through walls to\n"
+    "track down its prey and seek its lost\n"
+    "young.");
+
+const u8 gBudewPokedexText[] = _(
+    "Sensitive to changing temperature, the\n"
+    "bud is said to bloom when it feels the\n"
+    "sun's warm touch.");
+
+const u8 gRoseradePokedexText[] = _(
+    "Each of its hands contains different\n"
+    "toxins, but both hands can jab with\n"
+    "near-fatal power.");

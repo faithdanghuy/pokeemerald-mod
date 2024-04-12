@@ -4743,6 +4743,46 @@ static const union AnimCmd sAnim_Kricketune_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Shinx_1[] =
+{
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Luxio_1[] =
+{
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Luxray_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Budew_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Roserade_1[] =
+{
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5400,6 +5440,11 @@ SINGLE_ANIMATION(Bidoof);
 SINGLE_ANIMATION(Bibarel);
 SINGLE_ANIMATION(Kricketot);
 SINGLE_ANIMATION(Kricketune);
+SINGLE_ANIMATION(Shinx);
+SINGLE_ANIMATION(Luxio);
+SINGLE_ANIMATION(Luxray);
+SINGLE_ANIMATION(Budew);
+SINGLE_ANIMATION(Roserade);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -5859,6 +5904,11 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_BIBAREL]     = sAnims_Bibarel,
     [SPECIES_KRICKETOT]   = sAnims_Kricketot,
     [SPECIES_KRICKETUNE]  = sAnims_Kricketune,
+    [SPECIES_SHINX]       = sAnims_Shinx,
+    [SPECIES_LUXIO]       = sAnims_Luxio,
+    [SPECIES_LUXRAY]      = sAnims_Luxray,
+    [SPECIES_BUDEW]       = sAnims_Budew,
+    [SPECIES_ROSERADE]    = sAnims_Roserade,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

@@ -2003,6 +2003,26 @@ Cry_Kricketune::
 	.incbin "sound/direct_sound_samples/cries/kricketune.bin"
 
 	.align 2
+Cry_Shinx::
+	.incbin "sound/direct_sound_samples/cries/shinx.bin"
+
+	.align 2
+Cry_Luxio::
+	.incbin "sound/direct_sound_samples/cries/luxio.bin"
+
+	.align 2
+Cry_Luxray::
+	.incbin "sound/direct_sound_samples/cries/luxray.bin"
+
+	.align 2
+Cry_Budew::
+	.incbin "sound/direct_sound_samples/cries/budew.bin"
+
+	.align 2
+Cry_Roserade::
+	.incbin "sound/direct_sound_samples/cries/roserade.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

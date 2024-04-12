@@ -404,6 +404,11 @@ gCryTable::
 	cry Cry_Bibarel
 	cry Cry_Kricketot
 	cry Cry_Kricketune
+	cry Cry_Shinx
+	cry Cry_Luxio
+	cry Cry_Luxray
+	cry Cry_Budew
+	cry Cry_Roserade
 
 	.align 2
 gCryTable_Reverse::
@@ -811,3 +816,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Bibarel
 	cry_reverse Cry_Kricketot
 	cry_reverse Cry_Kricketune
+	cry_reverse Cry_Shinx
+	cry_reverse Cry_Luxio
+	cry_reverse Cry_Luxray
+	cry_reverse Cry_Budew
+	cry_reverse Cry_Roserade
