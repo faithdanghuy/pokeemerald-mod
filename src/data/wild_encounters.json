@@ -44,22 +44,22 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CLAMPERL"
+                "species": "SPECIES_STARLY"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CLAMPERL"
+                "species": "SPECIES_STARAVIA"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CLAMPERL"
+                "species": "SPECIES_STARAPTOR"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_MONFERNO"
+                "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 3,
