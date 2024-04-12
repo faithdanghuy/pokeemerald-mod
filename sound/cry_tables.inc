@@ -400,6 +400,10 @@ gCryTable::
 	cry Cry_Starly
 	cry Cry_Staravia
 	cry Cry_Staraptor
+	cry Cry_Bidoof
+	cry Cry_Bibarel
+	cry Cry_Kricketot
+	cry Cry_Kricketune
 
 	.align 2
 gCryTable_Reverse::
@@ -803,3 +807,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Starly
 	cry_reverse Cry_Staravia
 	cry_reverse Cry_Staraptor
+	cry_reverse Cry_Bidoof
+	cry_reverse Cry_Bibarel
+	cry_reverse Cry_Kricketot
+	cry_reverse Cry_Kricketune

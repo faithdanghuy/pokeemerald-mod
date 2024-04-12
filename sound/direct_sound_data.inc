@@ -1987,6 +1987,22 @@ Cry_Staraptor::
 	.incbin "sound/direct_sound_samples/cries/staraptor.bin"
 
 	.align 2
+Cry_Bidoof::
+	.incbin "sound/direct_sound_samples/cries/bidoof.bin"
+
+	.align 2
+Cry_Bibarel::
+	.incbin "sound/direct_sound_samples/cries/bibarel.bin"
+
+	.align 2
+Cry_Kricketot::
+	.incbin "sound/direct_sound_samples/cries/kricketot.bin"
+
+	.align 2
+Cry_Kricketune::
+	.incbin "sound/direct_sound_samples/cries/kricketune.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

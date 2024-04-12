@@ -2360,22 +2360,42 @@ const u8 gPrinplupPokedexText[] = _(
     "itself to be the most important, they\n"
     "can never form a group.");
 
- const u8 gEmpoleonPokedexText[] = _(
+const u8 gEmpoleonPokedexText[] = _(
     "If anyone were to hurt its pride, it\n" 
     "would slash them with wings that can\n"
     "cleave through an ice floe."); 
 
- const u8 gStarlyPokedexText[] = _(
+const u8 gStarlyPokedexText[] = _(
     "Because they are weak individually,\n"
     "they form groups. However, they bicker\n"
     "if the group grows too big.");
 
- const u8 gStaraviaPokedexText[] = _(
+const u8 gStaraviaPokedexText[] = _(
     "Recognizing their own weakness, they\n"
     "always live in a group. When alone, a\n"
     "STARAVIA cries noisily."); 
 
- const u8 gStaraptorPokedexText[] = _(
+const u8 gStaraptorPokedexText[] = _(
     "It never stops attacking even if\n"
     "it is injured. It fusses over the\n"
     "shape of its comb.");  
+
+const u8 gBidoofPokedexText[] = _(
+    "A comparison revealed that BIDOOF's\n"
+    "front teeth grow at the same rate as\n"
+    "RATTATA's.");
+
+const u8 gBibarelPokedexText[] = _(
+    "A river dammed by BIBAREL will never\n"
+    "overflow its banks, which is appreciated\n"
+    "by people nearby.");
+
+const u8 gKricketotPokedexText[] = _(
+    "Its legs are short. Whenever it stumbles,\n"
+    "its stiff antennae clack with a\n"
+    "xylophone-like sound.");
+
+const u8 gKricketunePokedexText[] = _(
+    "There is a village that hosts a contest\n"
+    "based on the amazingly variable cries\n"
+    "of this Pokémon.");

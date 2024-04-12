@@ -4787,4 +4787,52 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_BIDOOF] =
+    {
+        .categoryName = _("PLUMP MOUSE"),
+        .height = 5,
+        .weight = 200,
+        .description = gBidoofPokedexText,
+        .pokemonScale = 432,
+        .pokemonOffset = 16,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_BIBAREL] =
+    {
+        .categoryName = _("BEAVER"),
+        .height = 10,
+        .weight = 315,
+        .description = gBibarelPokedexText,
+        .pokemonScale = 305,
+        .pokemonOffset = 8,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_KRICKETOT] =
+    {
+        .categoryName = _("CRICKET"),
+        .height = 3,
+        .weight = 22,
+        .description = gKricketotPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_KRICKETUNE] =
+    {
+        .categoryName = _("CRICKET"),
+        .height = 10,
+        .weight = 255,
+        .description = gKricketunePokedexText,
+        .pokemonScale = 305,
+        .pokemonOffset = 8,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+    },
 };
