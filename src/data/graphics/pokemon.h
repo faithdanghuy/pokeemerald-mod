@@ -2859,6 +2859,34 @@ const u32 gMonShinyPalette_Roserade[] = INCBIN_U32("graphics/pokemon/roserade/sh
 const u8 gMonIcon_Roserade[] = INCBIN_U8("graphics/pokemon/roserade/icon.4bpp");
 const u8 gMonFootprint_Roserade[] = INCBIN_U8("graphics/pokemon/roserade/footprint.1bpp");
 
+const u32 gMonStillFrontPic_Cranidos[] = INCBIN_U32("graphics/pokemon/cranidos/front.4bpp.lz");
+const u32 gMonPalette_Cranidos[] = INCBIN_U32("graphics/pokemon/cranidos/normal.gbapal.lz");
+const u32 gMonBackPic_Cranidos[] = INCBIN_U32("graphics/pokemon/cranidos/back.4bpp.lz");
+const u32 gMonShinyPalette_Cranidos[] = INCBIN_U32("graphics/pokemon/cranidos/shiny.gbapal.lz");
+const u8 gMonIcon_Cranidos[] = INCBIN_U8("graphics/pokemon/cranidos/icon.4bpp");
+const u8 gMonFootprint_Cranidos[] = INCBIN_U8("graphics/pokemon/cranidos/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Rampardos[] = INCBIN_U32("graphics/pokemon/rampardos/front.4bpp.lz");
+const u32 gMonPalette_Rampardos[] = INCBIN_U32("graphics/pokemon/rampardos/normal.gbapal.lz");
+const u32 gMonBackPic_Rampardos[] = INCBIN_U32("graphics/pokemon/rampardos/back.4bpp.lz");
+const u32 gMonShinyPalette_Rampardos[] = INCBIN_U32("graphics/pokemon/rampardos/shiny.gbapal.lz");
+const u8 gMonIcon_Rampardos[] = INCBIN_U8("graphics/pokemon/rampardos/icon.4bpp");
+const u8 gMonFootprint_Rampardos[] = INCBIN_U8("graphics/pokemon/rampardos/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Shieldon[] = INCBIN_U32("graphics/pokemon/shieldon/front.4bpp.lz");
+const u32 gMonPalette_Shieldon[] = INCBIN_U32("graphics/pokemon/shieldon/normal.gbapal.lz");
+const u32 gMonBackPic_Shieldon[] = INCBIN_U32("graphics/pokemon/shieldon/back.4bpp.lz");
+const u32 gMonShinyPalette_Shieldon[] = INCBIN_U32("graphics/pokemon/shieldon/shiny.gbapal.lz");
+const u8 gMonIcon_Shieldon[] = INCBIN_U8("graphics/pokemon/shieldon/icon.4bpp");
+const u8 gMonFootprint_Shieldon[] = INCBIN_U8("graphics/pokemon/shieldon/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bastiodon[] = INCBIN_U32("graphics/pokemon/bastiodon/front.4bpp.lz");
+const u32 gMonPalette_Bastiodon[] = INCBIN_U32("graphics/pokemon/bastiodon/normal.gbapal.lz");
+const u32 gMonBackPic_Bastiodon[] = INCBIN_U32("graphics/pokemon/bastiodon/back.4bpp.lz");
+const u32 gMonShinyPalette_Bastiodon[] = INCBIN_U32("graphics/pokemon/bastiodon/shiny.gbapal.lz");
+const u8 gMonIcon_Bastiodon[] = INCBIN_U8("graphics/pokemon/bastiodon/icon.4bpp");
+const u8 gMonFootprint_Bastiodon[] = INCBIN_U8("graphics/pokemon/bastiodon/footprint.1bpp");
+
 const u32 gMonStillFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
 

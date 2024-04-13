@@ -409,6 +409,10 @@ gCryTable::
 	cry Cry_Luxray
 	cry Cry_Budew
 	cry Cry_Roserade
+	cry Cry_Cranidos
+	cry Cry_Rampardos
+	cry Cry_Shieldon
+	cry Cry_Bastiodon
 
 	.align 2
 gCryTable_Reverse::
@@ -821,3 +825,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Luxray
 	cry_reverse Cry_Budew
 	cry_reverse Cry_Roserade
+	cry_reverse Cry_Cranidos
+	cry_reverse Cry_Rampardos
+	cry_reverse Cry_Shieldon
+	cry_reverse Cry_Bastiodon

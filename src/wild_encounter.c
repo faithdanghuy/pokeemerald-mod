@@ -366,8 +366,7 @@ static u8 PickWildMonNature(void)
     }
     // check synchronize for a Pokémon with the same ability
     if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG)
-        && GetMonAbility(&gPlayerParty[0]) == ABILITY_SYNCHRONIZE
-        && Random() % 2 == 0)
+        && GetMonAbility(&gPlayerParty[0]) == ABILITY_SYNCHRONIZE)
     {
         return GetMonData(&gPlayerParty[0], MON_DATA_PERSONALITY) % NUM_NATURES;
     }
@@ -962,6 +961,11 @@ static void ApplyFluteEncounterRateMod(u32 *encRate)
 
 static void ApplyCleanseTagEncounterRateMod(u32 *encRate)
 {
-    if (GetMonData(&gPlayerParty[0], MON_DATA_HELD_ITEM) == ITEM_CLEANSE_TAG)
-        *encRate = *encRate * 2 / 3;
+    int i;
+    for (i = 0; i < PARTY_SIZE; i++){
+        if (GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM) == ITEM_CLEANSE_TAG){
+            *encRate = 0;
+            break;
+        }
+    }
 }

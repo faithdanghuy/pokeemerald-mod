@@ -4783,6 +4783,39 @@ static const union AnimCmd sAnim_Roserade_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Cranidos_1[] =
+{
+    ANIMCMD_FRAME(1, 32),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Rampardos_1[] =
+{
+    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Shieldon_1[] =
+{
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Bastiodon_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5445,6 +5478,10 @@ SINGLE_ANIMATION(Luxio);
 SINGLE_ANIMATION(Luxray);
 SINGLE_ANIMATION(Budew);
 SINGLE_ANIMATION(Roserade);
+SINGLE_ANIMATION(Cranidos);
+SINGLE_ANIMATION(Rampardos);
+SINGLE_ANIMATION(Shieldon);
+SINGLE_ANIMATION(Bastiodon);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -5909,6 +5946,10 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_LUXRAY]      = sAnims_Luxray,
     [SPECIES_BUDEW]       = sAnims_Budew,
     [SPECIES_ROSERADE]    = sAnims_Roserade,
+    [SPECIES_CRANIDOS]    = sAnims_Cranidos,
+    [SPECIES_RAMPARDOS]   = sAnims_Rampardos,
+    [SPECIES_SHIELDON]    = sAnims_Shieldon,
+    [SPECIES_BASTIODON]   = sAnims_Bastiodon,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

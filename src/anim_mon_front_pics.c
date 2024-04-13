@@ -414,6 +414,10 @@ const u32 gMonFrontPic_Luxio[] = INCBIN_U32("graphics/pokemon/luxio/anim_front.4
 const u32 gMonFrontPic_Luxray[] = INCBIN_U32("graphics/pokemon/luxray/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Budew[] = INCBIN_U32("graphics/pokemon/budew/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Roserade[] = INCBIN_U32("graphics/pokemon/roserade/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Cranidos[] = INCBIN_U32("graphics/pokemon/cranidos/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Rampardos[] = INCBIN_U32("graphics/pokemon/rampardos/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Shieldon[] = INCBIN_U32("graphics/pokemon/shieldon/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Bastiodon[] = INCBIN_U32("graphics/pokemon/bastiodon/anim_front.4bpp.lz");
 
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
 

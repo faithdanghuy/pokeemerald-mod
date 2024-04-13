@@ -433,4 +433,8 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_LUXRAY] = sLuxrayLevelUpLearnset,
     [SPECIES_BUDEW] = sBudewLevelUpLearnset,
     [SPECIES_ROSERADE] = sRoseradeLevelUpLearnset,
+    [SPECIES_CRANIDOS] = sCranidosLevelUpLearnset,
+    [SPECIES_RAMPARDOS] = sRampardosLevelUpLearnset,
+    [SPECIES_SHIELDON] = sShieldonLevelUpLearnset,
+    [SPECIES_BASTIODON] = sBastiodonLevelUpLearnset,
 };

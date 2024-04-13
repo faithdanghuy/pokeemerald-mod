@@ -433,5 +433,9 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_LUXRAY] = gMonFootprint_Luxray,
     [SPECIES_BUDEW] = gMonFootprint_Budew,
     [SPECIES_ROSERADE] = gMonFootprint_Roserade,
+    [SPECIES_CRANIDOS] = gMonFootprint_Cranidos,
+    [SPECIES_RAMPARDOS] = gMonFootprint_Rampardos,
+    [SPECIES_SHIELDON] = gMonFootprint_Shieldon,
+    [SPECIES_BASTIODON] = gMonFootprint_Bastiodon,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

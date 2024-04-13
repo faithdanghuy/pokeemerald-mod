@@ -2424,3 +2424,23 @@ const u8 gRoseradePokedexText[] = _(
     "Each of its hands contains different\n"
     "toxins, but both hands can jab with\n"
     "near-fatal power.");
+
+const u8 gCranidosPokedexText[] = _(
+    "A lifelong jungle dweller from 100\n"
+    "million years ago, it would snap\n"
+    "obstructing trees with head butts.");
+
+const u8 gRampardosPokedexText[] = _(
+    "If two were to smash their heads together,\n"
+    "their foot-thick skulls would keep them\n"
+    "from fainting.");
+
+const u8 gShieldonPokedexText[] = _(
+    "It is outstandingly armored. As a result,\n"
+    "it can eat grass and berries without having\n"
+    "to fight.");
+
+const u8 gBastiodonPokedexText[] = _(
+    "When they lined up side by side, no foe\n"
+    "could break through. They shielded their\n"
+    "young in that way.");

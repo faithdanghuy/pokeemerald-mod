@@ -4895,4 +4895,52 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_CRANIDOS] =
+    {
+        .categoryName = _("HEAD BUTT"),
+        .height = 9,
+        .weight = 315,
+        .description = gCranidosPokedexText,
+        .pokemonScale = 338,
+        .pokemonOffset = 10,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_RAMPARDOS] =
+    {
+        .categoryName = _("HEAD BUTT"),
+        .height = 16,
+        .weight = 1025,
+        .description = gRampardosPokedexText,
+        .pokemonScale = 259,
+        .pokemonOffset = 1,
+        .trainerScale = 296,
+        .trainerOffset = 1,
+    },
+
+    [NATIONAL_DEX_SHIELDON] =
+    {
+        .categoryName = _("SHIELD"),
+        .height = 5,
+        .weight = 570,
+        .description = gShieldonPokedexText,
+        .pokemonScale = 432,
+        .pokemonOffset = 16,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_BASTIODON] =
+    {
+        .categoryName = _("SHIELD"),
+        .height = 13,
+        .weight = 1495,
+        .description = gBastiodonPokedexText,
+        .pokemonScale = 272,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };
