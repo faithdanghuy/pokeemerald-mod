@@ -4816,6 +4816,75 @@ static const union AnimCmd sAnim_Bastiodon_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_BurmyPlant_1[] =
+{
+    ANIMCMD_FRAME(1, 32),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_BurmySandy_1[] =
+{
+    ANIMCMD_FRAME(1, 32),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_BurmyTrash_1[] =
+{
+    ANIMCMD_FRAME(1, 32),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_WormadamPlant_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_WormadamSandy_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_WormadamTrash_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Mothim_1[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(1, 4),
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(1, 6),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 25),
+    ANIMCMD_FRAME(1, 6),
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(1, 4),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5482,6 +5551,13 @@ SINGLE_ANIMATION(Cranidos);
 SINGLE_ANIMATION(Rampardos);
 SINGLE_ANIMATION(Shieldon);
 SINGLE_ANIMATION(Bastiodon);
+SINGLE_ANIMATION(BurmyPlant);
+SINGLE_ANIMATION(BurmySandy);
+SINGLE_ANIMATION(BurmyTrash);
+SINGLE_ANIMATION(WormadamPlant);
+SINGLE_ANIMATION(WormadamSandy);
+SINGLE_ANIMATION(WormadamTrash);
+SINGLE_ANIMATION(Mothim);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -5950,6 +6026,13 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_RAMPARDOS]   = sAnims_Rampardos,
     [SPECIES_SHIELDON]    = sAnims_Shieldon,
     [SPECIES_BASTIODON]   = sAnims_Bastiodon,
+    [SPECIES_BURMY_P]     = sAnims_BurmyPlant,
+    [SPECIES_BURMY_S]     = sAnims_BurmySandy,
+    [SPECIES_BURMY_T]     = sAnims_BurmyTrash,
+    [SPECIES_WORMADAM_P]  = sAnims_WormadamPlant,
+    [SPECIES_WORMADAM_S]  = sAnims_WormadamSandy,
+    [SPECIES_WORMADAM_T]  = sAnims_WormadamTrash,
+    [SPECIES_MOTHIM]      = sAnims_Mothim,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

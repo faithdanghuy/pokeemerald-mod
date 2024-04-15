@@ -106,6 +106,7 @@ static const struct CombinedMove sCombinedMoves[2] =
 // Assigns all species to the Hoenn Dex Index (Summary No. for Hoenn Dex)
 static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
 {
+    //Kanto
     SPECIES_TO_HOENN(BULBASAUR),
     SPECIES_TO_HOENN(IVYSAUR),
     SPECIES_TO_HOENN(VENUSAUR),
@@ -257,6 +258,7 @@ static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_HOENN(DRAGONITE),
     SPECIES_TO_HOENN(MEWTWO),
     SPECIES_TO_HOENN(MEW),
+    //Johto
     SPECIES_TO_HOENN(CHIKORITA),
     SPECIES_TO_HOENN(BAYLEEF),
     SPECIES_TO_HOENN(MEGANIUM),
@@ -382,6 +384,7 @@ static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_HOENN(OLD_UNOWN_X),
     SPECIES_TO_HOENN(OLD_UNOWN_Y),
     SPECIES_TO_HOENN(OLD_UNOWN_Z),
+    //Hoenn
     SPECIES_TO_HOENN(TREECKO),
     SPECIES_TO_HOENN(GROVYLE),
     SPECIES_TO_HOENN(SCEPTILE),
@@ -517,6 +520,7 @@ static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_HOENN(JIRACHI),
     SPECIES_TO_HOENN(DEOXYS),
     SPECIES_TO_HOENN(CHIMECHO),
+    // Sinnoh
     SPECIES_TO_HOENN(TURTWIG),
     SPECIES_TO_HOENN(GROTLE),
     SPECIES_TO_HOENN(TORTERRA),
@@ -542,11 +546,19 @@ static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_HOENN(RAMPARDOS),
     SPECIES_TO_HOENN(SHIELDON),
     SPECIES_TO_HOENN(BASTIODON),
+    SPECIES_TO_HOENN(BURMY_P),
+    SPECIES_TO_HOENN(BURMY_S),
+    SPECIES_TO_HOENN(BURMY_T),
+    SPECIES_TO_HOENN(WORMADAM_P),
+    SPECIES_TO_HOENN(WORMADAM_S),
+    SPECIES_TO_HOENN(WORMADAM_T),
+    SPECIES_TO_HOENN(MOTHIM),
 };
 
 // Assigns all species to the National Dex Index (Summary No. for National Dex)
 static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
 {
+    // Kanto
     SPECIES_TO_NATIONAL(BULBASAUR),
     SPECIES_TO_NATIONAL(IVYSAUR),
     SPECIES_TO_NATIONAL(VENUSAUR),
@@ -698,6 +710,7 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(DRAGONITE),
     SPECIES_TO_NATIONAL(MEWTWO),
     SPECIES_TO_NATIONAL(MEW),
+    // Johto
     SPECIES_TO_NATIONAL(CHIKORITA),
     SPECIES_TO_NATIONAL(BAYLEEF),
     SPECIES_TO_NATIONAL(MEGANIUM),
@@ -823,6 +836,7 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(OLD_UNOWN_X),
     SPECIES_TO_NATIONAL(OLD_UNOWN_Y),
     SPECIES_TO_NATIONAL(OLD_UNOWN_Z),
+    // Hoenn
     SPECIES_TO_NATIONAL(TREECKO),
     SPECIES_TO_NATIONAL(GROVYLE),
     SPECIES_TO_NATIONAL(SCEPTILE),
@@ -958,6 +972,7 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(JIRACHI),
     SPECIES_TO_NATIONAL(DEOXYS),
     SPECIES_TO_NATIONAL(CHIMECHO),
+    //Sinnoh
     SPECIES_TO_NATIONAL(TURTWIG),
     SPECIES_TO_NATIONAL(GROTLE),
     SPECIES_TO_NATIONAL(TORTERRA),
@@ -983,6 +998,13 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(RAMPARDOS),
     SPECIES_TO_NATIONAL(SHIELDON),
     SPECIES_TO_NATIONAL(BASTIODON),
+    SPECIES_TO_NATIONAL(BURMY_P),
+    SPECIES_TO_NATIONAL(BURMY_S),
+    SPECIES_TO_NATIONAL(BURMY_T),
+    SPECIES_TO_NATIONAL(WORMADAM_P),
+    SPECIES_TO_NATIONAL(WORMADAM_S),
+    SPECIES_TO_NATIONAL(WORMADAM_T),
+    SPECIES_TO_NATIONAL(MOTHIM),
 };
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
@@ -1399,6 +1421,13 @@ static const u16 sHoennToNationalOrder[NUM_SPECIES - 1] =
     HOENN_TO_NATIONAL(RAMPARDOS),
     HOENN_TO_NATIONAL(SHIELDON),
     HOENN_TO_NATIONAL(BASTIODON),
+    HOENN_TO_NATIONAL(BURMY_P),
+    HOENN_TO_NATIONAL(BURMY_S),
+    HOENN_TO_NATIONAL(BURMY_T),
+    HOENN_TO_NATIONAL(WORMADAM_P),
+    HOENN_TO_NATIONAL(WORMADAM_S),
+    HOENN_TO_NATIONAL(WORMADAM_T),
+    HOENN_TO_NATIONAL(MOTHIM),
     HOENN_TO_NATIONAL(OLD_UNOWN_B),
     HOENN_TO_NATIONAL(OLD_UNOWN_C),
     HOENN_TO_NATIONAL(OLD_UNOWN_D),
@@ -1889,6 +1918,13 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_RAMPARDOS - 1]   = ANIM_V_SHAKE_TWICE,
     [SPECIES_SHIELDON - 1]    = ANIM_V_SHAKE,
     [SPECIES_BASTIODON - 1]   = ANIM_BACK_AND_LUNGE,
+    [SPECIES_BURMY_P - 1]     = ANIM_V_STRETCH,
+    [SPECIES_BURMY_S - 1]     = ANIM_V_STRETCH,
+    [SPECIES_BURMY_T - 1]     = ANIM_V_STRETCH,
+    [SPECIES_WORMADAM_P - 1]  = ANIM_SWING_CONVEX_FAST_SHORT,
+    [SPECIES_WORMADAM_S - 1]  = ANIM_SWING_CONVEX_FAST_SHORT,
+    [SPECIES_WORMADAM_T - 1]  = ANIM_SWING_CONVEX_FAST_SHORT,
+    [SPECIES_MOTHIM - 1]      = ANIM_H_SLIDE_WOBBLE,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -5624,6 +5660,18 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem)
                 if (gEvolutionTable[species][i].param <= beauty)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
+            case EVO_LEVEL_MALE:
+                if (gEvolutionTable[species][i].param <= level && GetMonGender(mon) == 0)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_LEVEL_FEMALE:
+                if (gEvolutionTable[species][i].param <= level && GetMonGender(mon) == 254)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_MOVE:
+                if (MonKnowsMove(mon, gEvolutionTable[species][i].param) == TRUE)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
             }
         }
         break;
@@ -5650,10 +5698,19 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem)
     case EVO_MODE_ITEM_CHECK:
         for (i = 0; i < EVOS_PER_MON; i++)
         {
-            if (gEvolutionTable[species][i].method == EVO_ITEM
-             && gEvolutionTable[species][i].param == evolutionItem)
+            switch (gEvolutionTable[species][i].method)
             {
-                targetSpecies = gEvolutionTable[species][i].targetSpecies;
+            case EVO_ITEM:
+                if (gEvolutionTable[species][i].param == evolutionItem)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_ITEM_MALE:
+                if (gEvolutionTable[species][i].param == evolutionItem && GetMonGender(mon) == 0)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_ITEM_FEMALE:
+                if (gEvolutionTable[species][i].param == evolutionItem && GetMonGender(mon) == 254)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             }
         }

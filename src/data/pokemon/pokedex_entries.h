@@ -4943,4 +4943,88 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_BURMY_P] =
+    {
+        .categoryName = _("BAGWORM"),
+        .height = 2,
+        .weight = 34,
+        .description = gBurmyPokedexText,
+        .pokemonScale = 682,
+        .pokemonOffset = 24,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_BURMY_S] =
+    {
+        .categoryName = _("BAGWORM"),
+        .height = 2,
+        .weight = 34,
+        .description = gBurmyPokedexText,
+        .pokemonScale = 682,
+        .pokemonOffset = 24,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_BURMY_T] =
+    {
+        .categoryName = _("BAGWORM"),
+        .height = 2,
+        .weight = 34,
+        .description = gBurmyPokedexText,
+        .pokemonScale = 682,
+        .pokemonOffset = 24,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_WORMADAM_P] =
+    {
+        .categoryName = _("BAGWORM"),
+        .height = 5,
+        .weight = 65,
+        .description = gWormadamPokedexText,
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_WORMADAM_S] =
+    {
+        .categoryName = _("BAGWORM"),
+        .height = 5,
+        .weight = 65,
+        .description = gWormadamPokedexText,
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_WORMADAM_T] =
+    {
+        .categoryName = _("BAGWORM"),
+        .height = 5,
+        .weight = 65,
+        .description = gWormadamPokedexText,
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_MOTHIM] =
+    {
+        .categoryName = _("MOTH"),
+        .height = 9,
+        .weight = 233,
+        .description = gMothimPokedexText,
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

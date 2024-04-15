@@ -437,4 +437,11 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_RAMPARDOS] = sRampardosLevelUpLearnset,
     [SPECIES_SHIELDON] = sShieldonLevelUpLearnset,
     [SPECIES_BASTIODON] = sBastiodonLevelUpLearnset,
+    [SPECIES_BURMY_P] = sBurmyPlantLevelUpLearnset,
+    [SPECIES_BURMY_S] = sBurmySandyLevelUpLearnset,
+    [SPECIES_BURMY_T] = sBurmyTrashLevelUpLearnset,
+    [SPECIES_WORMADAM_P] = sWormadamPlantLevelUpLearnset,
+    [SPECIES_WORMADAM_S] = sWormadamSandyLevelUpLearnset,
+    [SPECIES_WORMADAM_T] = sWormadamTrashLevelUpLearnset,
+    [SPECIES_MOTHIM] = sMothimLevelUpLearnset,
 };

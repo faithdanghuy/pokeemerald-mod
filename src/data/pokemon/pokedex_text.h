@@ -2444,3 +2444,18 @@ const u8 gBastiodonPokedexText[] = _(
     "When they lined up side by side, no foe\n"
     "could break through. They shielded their\n"
     "young in that way.");
+
+const u8 gBurmyPokedexText[] = _(
+    "Even if it is born where there are no\n"
+    "cocooning materials, it somehow always\n"
+    "ends up with a cloak.");
+
+const u8 gWormadamPokedexText[] = _(
+    "When evolving, its body takes in surrounding\n"
+    "materials. As a result, there are many\n"
+    "body variations.");
+
+const u8 gMothimPokedexText[] = _(
+    "While it loves floral honey, it won't gather\n"
+    "any itself. Instead, it plots to steal\n"
+    "some from COMBEE.");

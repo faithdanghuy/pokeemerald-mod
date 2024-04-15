@@ -413,6 +413,13 @@ gCryTable::
 	cry Cry_Rampardos
 	cry Cry_Shieldon
 	cry Cry_Bastiodon
+	cry Cry_BurmyPlant
+	cry Cry_BurmySandy
+	cry Cry_BurmyTrash
+	cry Cry_WormadamPlant
+	cry Cry_WormadamSandy
+	cry Cry_WormadamTrash
+	cry Cry_Mothim
 
 	.align 2
 gCryTable_Reverse::
@@ -829,3 +836,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Rampardos
 	cry_reverse Cry_Shieldon
 	cry_reverse Cry_Bastiodon
+	cry_reverse Cry_BurmyPlant
+	cry_reverse Cry_BurmySandy
+	cry_reverse Cry_BurmyTrash
+	cry_reverse Cry_WormadamPlant
+	cry_reverse Cry_WormadamSandy
+	cry_reverse Cry_WormadamTrash
+	cry_reverse Cry_Mothim

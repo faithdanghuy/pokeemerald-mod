@@ -63,4 +63,11 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_JIRACHI] = 12,
     [SPECIES_DEOXYS] = 8,
     [SPECIES_CHIMECHO] = 12,
+    [SPECIES_BURMY_P] = 12,
+    [SPECIES_BURMY_S] = 12,
+    [SPECIES_BURMY_T] = 12,
+    [SPECIES_WORMADAM_P] = 10,
+    [SPECIES_WORMADAM_S] = 10,
+    [SPECIES_WORMADAM_T] = 10,
+    [SPECIES_MOTHIM] = 8,
 };

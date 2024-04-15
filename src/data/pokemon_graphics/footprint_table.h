@@ -437,5 +437,12 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_RAMPARDOS] = gMonFootprint_Rampardos,
     [SPECIES_SHIELDON] = gMonFootprint_Shieldon,
     [SPECIES_BASTIODON] = gMonFootprint_Bastiodon,
+    [SPECIES_BURMY_P] = gMonFootprint_Burmy,
+    [SPECIES_BURMY_S] = gMonFootprint_Burmy,
+    [SPECIES_BURMY_T] = gMonFootprint_Burmy,
+    [SPECIES_WORMADAM_P] = gMonFootprint_Wormadam,
+    [SPECIES_WORMADAM_S] = gMonFootprint_Wormadam,
+    [SPECIES_WORMADAM_T] = gMonFootprint_Wormadam,
+    [SPECIES_MOTHIM] = gMonFootprint_Mothim,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

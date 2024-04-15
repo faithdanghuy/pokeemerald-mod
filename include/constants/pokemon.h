@@ -252,8 +252,13 @@
 #define EVO_LEVEL_NINJASK    13 // Pokémon reaches the specified level (special value for Ninjask)
 #define EVO_LEVEL_SHEDINJA   14 // Pokémon reaches the specified level (special value for Shedinja)
 #define EVO_BEAUTY           15 // Pokémon levels up with beauty ≥ specified value
+#define EVO_LEVEL_MALE       16 // Pokémon reaches the specified level and must be male
+#define EVO_LEVEL_FEMALE     17 // Pokémon reaches the specified level and must be female
+#define EVO_ITEM_MALE        18 // Pokémon must be male and use a specific item
+#define EVO_ITEM_FEMALE      19 // Pokémon must be female and use a specific item
+#define EVO_MOVE             20 // Pokémon must learn a specific move and level up once
 
-#define EVOS_PER_MON 5
+#define EVOS_PER_MON 7
 
 // Evolution 'modes,' for GetEvolutionTargetSpecies
 #define EVO_MODE_NORMAL     0

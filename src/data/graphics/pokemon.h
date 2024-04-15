@@ -2887,6 +2887,51 @@ const u32 gMonShinyPalette_Bastiodon[] = INCBIN_U32("graphics/pokemon/bastiodon/
 const u8 gMonIcon_Bastiodon[] = INCBIN_U8("graphics/pokemon/bastiodon/icon.4bpp");
 const u8 gMonFootprint_Bastiodon[] = INCBIN_U8("graphics/pokemon/bastiodon/footprint.1bpp");
 
+const u32 gMonStillFrontPic_BurmyPlant[] = INCBIN_U32("graphics/pokemon/burmy/plant/front.4bpp.lz");
+const u32 gMonPalette_BurmyPlant[] = INCBIN_U32("graphics/pokemon/burmy/plant/normal.gbapal.lz");
+const u32 gMonBackPic_BurmyPlant[] = INCBIN_U32("graphics/pokemon/burmy/plant/back.4bpp.lz");
+const u32 gMonShinyPalette_BurmyPlant[] = INCBIN_U32("graphics/pokemon/burmy/plant/shiny.gbapal.lz");
+const u8 gMonIcon_BurmyPlant[] = INCBIN_U8("graphics/pokemon/burmy/plant/icon.4bpp");
+const u8 gMonFootprint_Burmy[] = INCBIN_U8("graphics/pokemon/burmy/footprint.1bpp");
+
+const u32 gMonStillFrontPic_BurmySandy[] = INCBIN_U32("graphics/pokemon/burmy/sandy/front.4bpp.lz");
+const u32 gMonPalette_BurmySandy[] = INCBIN_U32("graphics/pokemon/burmy/sandy/normal.gbapal.lz");
+const u32 gMonBackPic_BurmySandy[] = INCBIN_U32("graphics/pokemon/burmy/sandy/back.4bpp.lz");
+const u32 gMonShinyPalette_BurmySandy[] = INCBIN_U32("graphics/pokemon/burmy/sandy/shiny.gbapal.lz");
+const u8 gMonIcon_BurmySandy[] = INCBIN_U8("graphics/pokemon/burmy/sandy/icon.4bpp");
+
+const u32 gMonStillFrontPic_BurmyTrash[] = INCBIN_U32("graphics/pokemon/burmy/trash/front.4bpp.lz");
+const u32 gMonPalette_BurmyTrash[] = INCBIN_U32("graphics/pokemon/burmy/trash/normal.gbapal.lz");
+const u32 gMonBackPic_BurmyTrash[] = INCBIN_U32("graphics/pokemon/burmy/trash/back.4bpp.lz");
+const u32 gMonShinyPalette_BurmyTrash[] = INCBIN_U32("graphics/pokemon/burmy/trash/shiny.gbapal.lz");
+const u8 gMonIcon_BurmyTrash[] = INCBIN_U8("graphics/pokemon/burmy/trash/icon.4bpp");
+
+const u32 gMonStillFrontPic_WormadamPlant[] = INCBIN_U32("graphics/pokemon/wormadam/plant/front.4bpp.lz");
+const u32 gMonPalette_WormadamPlant[] = INCBIN_U32("graphics/pokemon/wormadam/plant/normal.gbapal.lz");
+const u32 gMonBackPic_WormadamPlant[] = INCBIN_U32("graphics/pokemon/wormadam/plant/back.4bpp.lz");
+const u32 gMonShinyPalette_WormadamPlant[] = INCBIN_U32("graphics/pokemon/wormadam/plant/shiny.gbapal.lz");
+const u8 gMonIcon_WormadamPlant[] = INCBIN_U8("graphics/pokemon/wormadam/plant/icon.4bpp");
+const u8 gMonFootprint_Wormadam[] = INCBIN_U8("graphics/pokemon/wormadam/footprint.1bpp");
+
+const u32 gMonStillFrontPic_WormadamSandy[] = INCBIN_U32("graphics/pokemon/wormadam/sandy/front.4bpp.lz");
+const u32 gMonPalette_WormadamSandy[] = INCBIN_U32("graphics/pokemon/wormadam/sandy/normal.gbapal.lz");
+const u32 gMonBackPic_WormadamSandy[] = INCBIN_U32("graphics/pokemon/wormadam/sandy/back.4bpp.lz");
+const u32 gMonShinyPalette_WormadamSandy[] = INCBIN_U32("graphics/pokemon/wormadam/sandy/shiny.gbapal.lz");
+const u8 gMonIcon_WormadamSandy[] = INCBIN_U8("graphics/pokemon/wormadam/sandy/icon.4bpp");
+
+const u32 gMonStillFrontPic_WormadamTrash[] = INCBIN_U32("graphics/pokemon/wormadam/trash/front.4bpp.lz");
+const u32 gMonPalette_WormadamTrash[] = INCBIN_U32("graphics/pokemon/wormadam/trash/normal.gbapal.lz");
+const u32 gMonBackPic_WormadamTrash[] = INCBIN_U32("graphics/pokemon/wormadam/trash/back.4bpp.lz");
+const u32 gMonShinyPalette_WormadamTrash[] = INCBIN_U32("graphics/pokemon/wormadam/trash/shiny.gbapal.lz");
+const u8 gMonIcon_WormadamTrash[] = INCBIN_U8("graphics/pokemon/wormadam/trash/icon.4bpp");
+
+const u32 gMonStillFrontPic_Mothim[] = INCBIN_U32("graphics/pokemon/mothim/front.4bpp.lz");
+const u32 gMonPalette_Mothim[] = INCBIN_U32("graphics/pokemon/mothim/normal.gbapal.lz");
+const u32 gMonBackPic_Mothim[] = INCBIN_U32("graphics/pokemon/mothim/back.4bpp.lz");
+const u32 gMonShinyPalette_Mothim[] = INCBIN_U32("graphics/pokemon/mothim/shiny.gbapal.lz");
+const u8 gMonIcon_Mothim[] = INCBIN_U8("graphics/pokemon/mothim/icon.4bpp");
+const u8 gMonFootprint_Mothim[] = INCBIN_U8("graphics/pokemon/mothim/footprint.1bpp");
+
 const u32 gMonStillFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
 

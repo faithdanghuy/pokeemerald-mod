@@ -10779,4 +10779,32 @@ const union {
         .STRENGTH = TRUE,
         .ROCK_SMASH = TRUE,
     } },
+
+    [SPECIES_BURMY_P] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_BURMY_S] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_BURMY_T] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_WORMADAM_P] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_WORMADAM_S] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_WORMADAM_T] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_MOTHIM] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

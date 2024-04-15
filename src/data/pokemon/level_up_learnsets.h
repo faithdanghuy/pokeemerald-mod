@@ -6038,3 +6038,62 @@ static const u16 sBastiodonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_FLAMETHROWER),
     LEVEL_UP_END
 };
+
+static const u16 sBurmyPlantLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE(10, MOVE_STRING_SHOT),
+    LEVEL_UP_END
+};
+
+static const u16 sBurmySandyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE(10, MOVE_STRING_SHOT),
+    LEVEL_UP_END
+};
+
+static const u16 sBurmyTrashLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE(10, MOVE_STRING_SHOT),
+    LEVEL_UP_END
+};
+
+static const u16 sWormadamPlantLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
+    LEVEL_UP_END
+};
+
+static const u16 sWormadamSandyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
+    LEVEL_UP_END
+};
+
+static const u16 sWormadamTrashLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_METAL_CLAW),
+    LEVEL_UP_END
+};
+
+static const u16 sMothimLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_LEER),
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 9, MOVE_TAUNT),
+    LEVEL_UP_MOVE(16, MOVE_FURY_SWIPES),
+    LEVEL_UP_MOVE(19, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(26, MOVE_BULK_UP),
+    LEVEL_UP_MOVE(29, MOVE_TORMENT),
+    LEVEL_UP_MOVE(36, MOVE_BRICK_BREAK),
+    LEVEL_UP_MOVE(39, MOVE_FIRE_SPIN),
+    LEVEL_UP_MOVE(46, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(49, MOVE_SLACK_OFF),
+    LEVEL_UP_MOVE(56, MOVE_FLAMETHROWER),
+    LEVEL_UP_END
+};

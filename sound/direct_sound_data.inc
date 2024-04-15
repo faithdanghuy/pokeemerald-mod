@@ -2039,6 +2039,34 @@ Cry_Bastiodon::
 	.incbin "sound/direct_sound_samples/cries/bastiodon.bin"
 
 	.align 2
+Cry_BurmyPlant::
+	.incbin "sound/direct_sound_samples/cries/burmy_p.bin"
+
+	.align 2
+Cry_BurmySandy::
+	.incbin "sound/direct_sound_samples/cries/burmy_s.bin"
+
+	.align 2
+Cry_BurmyTrash::
+	.incbin "sound/direct_sound_samples/cries/burmy_t.bin"
+
+	.align 2
+Cry_WormadamPlant::
+	.incbin "sound/direct_sound_samples/cries/wormadam_p.bin"
+
+	.align 2
+Cry_WormadamSandy::
+	.incbin "sound/direct_sound_samples/cries/wormadam_s.bin"
+
+	.align 2
+Cry_WormadamTrash::
+	.incbin "sound/direct_sound_samples/cries/wormadam_t.bin"
+
+	.align 2
+Cry_Mothim::
+	.incbin "sound/direct_sound_samples/cries/mothim.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 
