@@ -4295,9 +4295,9 @@ static void Cmd_moveend(void)
                 effect = TRUE;
             gBattleScripting.moveendState++;
             break;
-        case MOVEEND_CHOICE_MOVE: // update choice band move
+        case MOVEEND_CHOICE_MOVE: // update choice band/spec move
             if (gHitMarker & HITMARKER_OBEYS
-             && holdEffectAtk == HOLD_EFFECT_CHOICE_BAND
+             && (holdEffectAtk == HOLD_EFFECT_CHOICE_BAND || holdEffectAtk == HOLD_EFFECT_CHOICE_SPECS) 
              && gChosenMove != MOVE_STRUGGLE
              && (*choicedMoveAtk == MOVE_NONE || *choicedMoveAtk == MOVE_UNAVAILABLE))
             {

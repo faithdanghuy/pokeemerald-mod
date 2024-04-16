@@ -3973,6 +3973,12 @@ extern const u32 gItemIcon_ThickClub[];
 extern const u32 gItemIconPalette_ThickClub[];
 extern const u32 gItemIcon_Stick[];
 extern const u32 gItemIconPalette_Stick[];
+extern const u32 gItemIcon_ChoiceSpecs[];
+extern const u32 gItemIconPalette_ChoiceSpecs[];
+extern const u32 gItemIcon_ChoiceScarf[];
+extern const u32 gItemIconPalette_ChoiceScarf[];
+extern const u32 gItemIcon_FairyFeather[];
+extern const u32 gItemIconPalette_FairyFeather[];
 // Contest hold items
 extern const u32 gItemIcon_Scarf[];
 extern const u32 gItemIconPalette_RedScarf[];

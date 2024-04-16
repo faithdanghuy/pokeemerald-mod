@@ -770,7 +770,7 @@ static const u8 sMentalHerbDesc[] = _(
 
 static const u8 sChoiceBandDesc[] = _(
     "Raises a move's\n"
-    "power, but permits\n"
+    "ATK power, but permits\n"
     "only that move.");
 
 static const u8 sKingsRockDesc[] = _(
@@ -986,6 +986,21 @@ static const u8 sStickDesc[] = _(
     "A hold item that\n"
     "raises FARFETCH'D's\n"
     "critical-hit ratio.");
+
+static const u8 sChoiceSpecsDesc[] = _(
+    "Raises a move's\n"
+    "SP.ATK power, but permits\n"
+    "only that move.");
+
+static const u8 sChoiceScarfDesc[] = _(
+    "Raises the user's\n"
+    "SPEED, but permits\n"
+    "only the first move.");
+
+static const u8 sFairyFeatherDesc[] = _(
+    "A hold item that\n"
+    "raises the power of\n"
+    "FAIRY-type moves.");
 
 static const u8 sRedScarfDesc[] = _(
     "A hold item that\n"
