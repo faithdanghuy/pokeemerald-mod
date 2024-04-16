@@ -10807,4 +10807,16 @@ const union {
     [SPECIES_MOTHIM] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_COMBEE] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_VESPIQUEN] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_PACHIRISU] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

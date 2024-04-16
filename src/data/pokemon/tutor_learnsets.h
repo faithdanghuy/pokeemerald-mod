@@ -6131,4 +6131,10 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SLEEP_TALK)
                                 | TUTOR(MOVE_SWIFT)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
+
+    [SPECIES_COMBEE]           = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_VESPIQUEN]        = (TUTOR(MOVE_BODY_SLAM)),
+                        
+    [SPECIES_PACHIRISU]        = (TUTOR(MOVE_BODY_SLAM)),
 };

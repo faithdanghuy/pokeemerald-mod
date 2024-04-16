@@ -70,4 +70,6 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_WORMADAM_S] = 10,
     [SPECIES_WORMADAM_T] = 10,
     [SPECIES_MOTHIM] = 8,
+    [SPECIES_COMBEE] = 12,
+    [SPECIES_VESPIQUEN] = 8,
 };

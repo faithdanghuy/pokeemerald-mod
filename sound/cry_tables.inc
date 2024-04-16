@@ -420,6 +420,9 @@ gCryTable::
 	cry Cry_WormadamSandy
 	cry Cry_WormadamTrash
 	cry Cry_Mothim
+	cry Cry_Combee
+	cry Cry_Vespiquen
+	cry Cry_Pachirisu
 
 	.align 2
 gCryTable_Reverse::
@@ -843,3 +846,6 @@ gCryTable_Reverse::
 	cry_reverse Cry_WormadamSandy
 	cry_reverse Cry_WormadamTrash
 	cry_reverse Cry_Mothim
+	cry_reverse Cry_Combee
+	cry_reverse Cry_Vespiquen
+	cry_reverse Cry_Pachirisu

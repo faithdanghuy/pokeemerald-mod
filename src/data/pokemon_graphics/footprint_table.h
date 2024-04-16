@@ -444,5 +444,8 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_WORMADAM_S] = gMonFootprint_Wormadam,
     [SPECIES_WORMADAM_T] = gMonFootprint_Wormadam,
     [SPECIES_MOTHIM] = gMonFootprint_Mothim,
+    [SPECIES_COMBEE] = gMonFootprint_Combee,
+    [SPECIES_VESPIQUEN] = gMonFootprint_Vespiquen,
+    [SPECIES_PACHIRISU] = gMonFootprint_Pachirisu,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

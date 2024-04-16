@@ -444,4 +444,7 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_WORMADAM_S] = sWormadamSandyLevelUpLearnset,
     [SPECIES_WORMADAM_T] = sWormadamTrashLevelUpLearnset,
     [SPECIES_MOTHIM] = sMothimLevelUpLearnset,
+    [SPECIES_COMBEE] = sCombeeLevelUpLearnset,
+    [SPECIES_VESPIQUEN] = sVespiquenLevelUpLearnset,
+    [SPECIES_PACHIRISU] = sPachirisuLevelUpLearnset,
 };

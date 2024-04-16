@@ -2459,3 +2459,18 @@ const u8 gMothimPokedexText[] = _(
     "While it loves floral honey, it won't gather\n"
     "any itself. Instead, it plots to steal\n"
     "some from COMBEE.");
+
+const u8 gCombeePokedexText[] = _(
+    "The trio is together from birth. It\n"
+    "constantly gathers honey from flowers to\n"
+    "please VESPIQUEN.");
+
+const u8 gVespiquenPokedexText[] = _(
+    "It releases various pheromones to make\n"
+    "the grubs in its body do its bidding while\n"
+    "fighting foes.");
+
+const u8 gPachirisuPokedexText[] = _(
+    "A pair may be seen rubbing their cheek\n"
+    "pouches together in an effort to share\n"
+    "stored electricity.");

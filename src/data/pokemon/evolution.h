@@ -206,4 +206,5 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                             {EVO_LEVEL_FEMALE, 20, SPECIES_WORMADAM_S}},
     [SPECIES_BURMY_T]    = {{EVO_LEVEL_MALE, 20, SPECIES_MOTHIM},
                             {EVO_LEVEL_FEMALE, 20, SPECIES_WORMADAM_T}},
+    [SPECIES_COMBEE]     = {{EVO_LEVEL_FEMALE, 21, SPECIES_VESPIQUEN}},
 };

@@ -4885,6 +4885,46 @@ static const union AnimCmd sAnim_Mothim_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Combee_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Vespiquen_1[] =
+{
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Pachirisu_1[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5558,6 +5598,9 @@ SINGLE_ANIMATION(WormadamPlant);
 SINGLE_ANIMATION(WormadamSandy);
 SINGLE_ANIMATION(WormadamTrash);
 SINGLE_ANIMATION(Mothim);
+SINGLE_ANIMATION(Combee);
+SINGLE_ANIMATION(Vespiquen);
+SINGLE_ANIMATION(Pachirisu);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6033,6 +6076,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_WORMADAM_S]  = sAnims_WormadamSandy,
     [SPECIES_WORMADAM_T]  = sAnims_WormadamTrash,
     [SPECIES_MOTHIM]      = sAnims_Mothim,
+    [SPECIES_COMBEE]      = sAnims_Combee,
+    [SPECIES_VESPIQUEN]   = sAnims_Vespiquen,
+    [SPECIES_PACHIRISU]   = sAnims_Pachirisu,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

@@ -2067,6 +2067,18 @@ Cry_Mothim::
 	.incbin "sound/direct_sound_samples/cries/mothim.bin"
 
 	.align 2
+Cry_Combee::
+	.incbin "sound/direct_sound_samples/cries/combee.bin"
+
+	.align 2
+Cry_Vespiquen:
+	.incbin "sound/direct_sound_samples/cries/vespiquen.bin"
+
+	.align 2
+Cry_Pachirisu::
+	.incbin "sound/direct_sound_samples/cries/pachirisu.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 
