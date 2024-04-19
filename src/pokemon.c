@@ -555,6 +555,10 @@ static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_HOENN(COMBEE),
     SPECIES_TO_HOENN(VESPIQUEN),
     SPECIES_TO_HOENN(PACHIRISU),
+    SPECIES_TO_HOENN(BUIZEL),
+    SPECIES_TO_HOENN(FLOATZEL),
+    SPECIES_TO_HOENN(CHERUBI),
+    SPECIES_TO_HOENN(CHERRIM),
 };
 
 // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -1010,6 +1014,10 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(COMBEE),
     SPECIES_TO_NATIONAL(VESPIQUEN),
     SPECIES_TO_NATIONAL(PACHIRISU),
+    SPECIES_TO_NATIONAL(BUIZEL),
+    SPECIES_TO_NATIONAL(FLOATZEL),
+    SPECIES_TO_NATIONAL(CHERUBI),
+    SPECIES_TO_NATIONAL(CHERRIM),
 };
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
@@ -1217,7 +1225,7 @@ static const u16 sHoennToNationalOrder[NUM_SPECIES - 1] =
     HOENN_TO_NATIONAL(RAYQUAZA),
     HOENN_TO_NATIONAL(JIRACHI),
     HOENN_TO_NATIONAL(DEOXYS),
-    HOENN_TO_NATIONAL(BULBASAUR), // Pokémon from here onwards are UNSEEN in the HoennDex.
+    HOENN_TO_NATIONAL(BULBASAUR),
     HOENN_TO_NATIONAL(IVYSAUR),
     HOENN_TO_NATIONAL(VENUSAUR),
     HOENN_TO_NATIONAL(CHARMANDER),
@@ -1436,6 +1444,10 @@ static const u16 sHoennToNationalOrder[NUM_SPECIES - 1] =
     HOENN_TO_NATIONAL(COMBEE),
     HOENN_TO_NATIONAL(VESPIQUEN),
     HOENN_TO_NATIONAL(PACHIRISU),
+    HOENN_TO_NATIONAL(BUIZEL),
+    HOENN_TO_NATIONAL(FLOATZEL),
+    HOENN_TO_NATIONAL(CHERUBI),
+    HOENN_TO_NATIONAL(CHERRIM),
     HOENN_TO_NATIONAL(OLD_UNOWN_B),
     HOENN_TO_NATIONAL(OLD_UNOWN_C),
     HOENN_TO_NATIONAL(OLD_UNOWN_D),
@@ -1936,6 +1948,10 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_COMBEE - 1]      = ANIM_V_SLIDE_WOBBLE,
     [SPECIES_VESPIQUEN - 1]   = ANIM_LUNGE_GROW,
     [SPECIES_PACHIRISU - 1]   = ANIM_V_SQUISH_AND_BOUNCE,
+    [SPECIES_BUIZEL - 1]      = ANIM_GROW_VIBRATE,
+    [SPECIES_FLOATZEL - 1]    = ANIM_H_JUMPS_V_STRETCH,
+    [SPECIES_CHERUBI - 1]     = BACK_ANIM_CONCAVE_ARC_SMALL,
+    [SPECIES_CHERRIM - 1]     = ANIM_H_JUMPS_V_STRETCH,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -3316,10 +3332,12 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         attack = (150 * attack) / 100;
     if (attackerHoldEffect == HOLD_EFFECT_CHOICE_SPECS)
         spAttack = (150 * spAttack) / 100;
-    if (attackerHoldEffect == HOLD_EFFECT_SOUL_DEW && !(gBattleTypeFlags & (BATTLE_TYPE_FRONTIER)) && (attacker->species == SPECIES_LATIAS || attacker->species == SPECIES_LATIOS))
-        spAttack = (150 * spAttack) / 100;
-    if (defenderHoldEffect == HOLD_EFFECT_SOUL_DEW && !(gBattleTypeFlags & (BATTLE_TYPE_FRONTIER)) && (defender->species == SPECIES_LATIAS || defender->species == SPECIES_LATIOS))
-        spDefense = (150 * spDefense) / 100;
+    if (attackerHoldEffect == HOLD_EFFECT_MUSCLE_BAND)
+        attack = (110 * attack) / 100;
+    if (attackerHoldEffect == HOLD_EFFECT_WISE_GLASSES)
+        spAttack = (110 * spAttack) / 100;
+    if (attackerHoldEffect == HOLD_EFFECT_SOUL_DEW && (attacker->species == SPECIES_LATIAS || attacker->species == SPECIES_LATIOS) && (type == TYPE_DRAGON || type == TYPE_PSYCHIC))
+        gBattleMovePower = (120 * gBattleMovePower) / 100;
     if (attackerHoldEffect == HOLD_EFFECT_DEEP_SEA_TOOTH && attacker->species == SPECIES_CLAMPERL)
         spAttack *= 2;
     if (defenderHoldEffect == HOLD_EFFECT_DEEP_SEA_SCALE && defender->species == SPECIES_CLAMPERL)
@@ -3342,6 +3360,11 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         attack = (150 * attack) / 100;
     if (defender->ability == ABILITY_MARVEL_SCALE && defender->status1)
         defense = (150 * defense) / 100;
+    if (defender->ability == ABILITY_FORTIFY && defender->hp <= (defender->maxHP / 2))
+    {
+        defense = (130 * defense) / 100;
+        spDefense = (130 * spDefense) / 100;
+    }
     if (type == TYPE_ELECTRIC && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
         gBattleMovePower /= 2;
     if (type == TYPE_FIRE && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0))
@@ -3352,14 +3375,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower /= 2;
     if (attacker->ability == ABILITY_RECKLESS && gBattleMoves[move].effect == EFFECT_RECOIL)
         gBattleMovePower = (120 * gBattleMovePower) / 100;
-    if (attacker->ability == ABILITY_BRUTALIZE && gBattleMoves[move].category == MOVE_CATEGORY_PHYSICAL)
-        gBattleMovePower = (150 * gBattleMovePower) / 100;
-    if (attacker->ability == ABILITY_BRUTALIZE && gBattleMoves[move].category == MOVE_CATEGORY_SPECIAL)
-        gBattleMovePower /= 2;
-    if (attacker->ability == ABILITY_CLARITY && gBattleMoves[move].category == MOVE_CATEGORY_PHYSICAL)
-        gBattleMovePower /= 2;
+    if (attacker->ability == ABILITY_BRUTALIZE && defender->hp <= (defender->maxHP / 2))
+        gBattleMovePower = (130 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_CLARITY && gBattleMoves[move].category == MOVE_CATEGORY_SPECIAL)
-        gBattleMovePower = (150 * gBattleMovePower) / 100;
+        gBattleMovePower = (130 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_TECHNICIAN && gBattleMovePower <= 60)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (type == TYPE_GRASS && attacker->ability == ABILITY_OVERGROW && attacker->hp <= (attacker->maxHP / 3))
@@ -3380,6 +3399,12 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             ||(defender->type1 == TYPE_ROCK || defender->type2 == TYPE_ROCK) 
             ||(defender->type1 == TYPE_STEEL || defender->type2 == TYPE_STEEL)) 
             && gBattleWeather & B_WEATHER_SANDSTORM)
+            spDefense = (150 * spDefense) / 100;
+
+        // Flower gift on self
+        if (attacker->ability == ABILITY_FLOWER_GIFT && gBattleWeather & B_WEATHER_SUN)
+            spAttack = (150 * spAttack) / 100;
+        if (defender->ability == ABILITY_FLOWER_GIFT && gBattleWeather & B_WEATHER_SUN)
             spDefense = (150 * spDefense) / 100;
     }
 

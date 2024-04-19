@@ -5063,4 +5063,52 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_BUIZEL] =
+    {
+        .categoryName = _("SEA WEASEL"),
+        .height = 7,
+        .weight = 295,
+        .description = gBuizelPokedexText,
+        .pokemonScale = 365,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_FLOATZEL] =
+    {
+        .categoryName = _("SEA WEASEL"),
+        .height = 11,
+        .weight = 335,
+        .description = gFloatzelPokedexText,
+        .pokemonScale = 320,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_CHERUBI] =
+    {
+        .categoryName = _("CHERRY"),
+        .height = 4,
+        .weight = 33,
+        .description = gCherubiPokedexText,
+        .pokemonScale = 491,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_CHERRIM] =
+    {
+        .categoryName = _("BLOSSOM"),
+        .height = 5,
+        .weight = 93,
+        .description = gCherrimPokedexText,
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

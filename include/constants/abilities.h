@@ -105,9 +105,9 @@
 #define ABILITY_NO_GUARD 99
 #define ABILITY_BRUTALIZE 100       // Done
 #define ABILITY_TECHNICIAN 101      // Done
-#define ABILITY_LEAF_GUARD 102
+#define ABILITY_FORTIFY 102         // Done
 #define ABILITY_CLARITY 103         // Done
-#define ABILITY_MOLD_BREAKER 104
+#define ABILITY_MOLD_BREAKER 104    // Done?
 #define ABILITY_SUPER_LUCK 105      // Done
 #define ABILITY_AFTERMATH 106
 #define ABILITY_ANTICIPATION 107

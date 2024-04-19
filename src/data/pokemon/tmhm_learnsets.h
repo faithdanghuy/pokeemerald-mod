@@ -10819,4 +10819,20 @@ const union {
     [SPECIES_PACHIRISU] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_BUIZEL] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_FLOATZEL] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_CHERUBI] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_CHERRIM] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

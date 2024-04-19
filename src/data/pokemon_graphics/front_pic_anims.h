@@ -4925,6 +4925,50 @@ static const union AnimCmd sAnim_Pachirisu_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Buizel_1[] =
+{
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 45),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Floatzel_1[] =
+{
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 28),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Cherubi_1[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Cherrim_1[] =
+{
+    ANIMCMD_FRAME(1, 6),
+    ANIMCMD_FRAME(0, 28),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 28),
+    ANIMCMD_FRAME(1, 7),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5601,6 +5645,10 @@ SINGLE_ANIMATION(Mothim);
 SINGLE_ANIMATION(Combee);
 SINGLE_ANIMATION(Vespiquen);
 SINGLE_ANIMATION(Pachirisu);
+SINGLE_ANIMATION(Buizel);
+SINGLE_ANIMATION(Floatzel);
+SINGLE_ANIMATION(Cherubi);
+SINGLE_ANIMATION(Cherrim);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6079,6 +6127,10 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_COMBEE]      = sAnims_Combee,
     [SPECIES_VESPIQUEN]   = sAnims_Vespiquen,
     [SPECIES_PACHIRISU]   = sAnims_Pachirisu,
+    [SPECIES_BUIZEL]      = sAnims_Buizel,
+    [SPECIES_FLOATZEL]    = sAnims_Floatzel,
+    [SPECIES_CHERUBI]     = sAnims_Cherubi,
+    [SPECIES_CHERRIM]     = sAnims_Cherrim,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

@@ -423,6 +423,10 @@ gCryTable::
 	cry Cry_Combee
 	cry Cry_Vespiquen
 	cry Cry_Pachirisu
+	cry Cry_Buizel
+	cry Cry_Floatzel
+	cry Cry_Cherubi
+	cry Cry_Cherrim
 
 	.align 2
 gCryTable_Reverse::
@@ -849,3 +853,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Combee
 	cry_reverse Cry_Vespiquen
 	cry_reverse Cry_Pachirisu
+	cry_reverse Cry_Buizel
+	cry_reverse Cry_Floatzel
+	cry_reverse Cry_Cherubi
+	cry_reverse Cry_Cherrim

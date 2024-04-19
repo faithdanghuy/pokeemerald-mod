@@ -1377,12 +1377,13 @@ static void Cmd_typecalc(void)
     // check stab
     if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) && gBattleMons[gBattlerAttacker].ability == ABILITY_ADAPTABILITY)
         gBattleMoveDamage *= 2;
-    else
-        gBattleMoveDamage = 15 * (gBattleMoveDamage / 10);
+    else if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType))
+    {
+        gBattleMoveDamage = gBattleMoveDamage * 15;
+        gBattleMoveDamage = gBattleMoveDamage / 10;
+    }
 
-    if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE 
-     && gBattleMons[gBattlerAttacker].ability != ABILITY_MOLD_BREAKER
-     && moveType == TYPE_GROUND)
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE && moveType == TYPE_GROUND)
     {
         gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
         gMoveResultFlags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
@@ -1444,9 +1445,7 @@ static void CheckWonderGuardAndLevitate(void)
 
     GET_MOVE_TYPE(gCurrentMove, moveType);
 
-    if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE 
-     && gBattleMons[gBattlerAttacker].ability != ABILITY_MOLD_BREAKER 
-     && moveType == TYPE_GROUND)
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE && moveType == TYPE_GROUND)
     {
         gLastUsedAbility = ABILITY_LEVITATE;
         gBattleCommunication[MISS_TYPE] = B_MSG_GROUND_MISS;
@@ -1557,14 +1556,15 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
     moveType = gBattleMoves[move].type;
 
     // check stab
-    if (IS_BATTLER_OF_TYPE(attacker, moveType) && gBattleMons[attacker].ability == ABILITY_ADAPTABILITY)
+    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) && gBattleMons[attacker].ability == ABILITY_ADAPTABILITY)
         gBattleMoveDamage *= 2;
-    else
-        gBattleMoveDamage = 15 * (gBattleMoveDamage / 10);
+    else if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType))
+    {
+        gBattleMoveDamage = gBattleMoveDamage * 15;
+        gBattleMoveDamage = gBattleMoveDamage / 10;
+    }
 
-    if (gBattleMons[defender].ability == ABILITY_LEVITATE 
-     && gBattleMons[attacker].ability != ABILITY_MOLD_BREAKER 
-     && moveType == TYPE_GROUND)
+    if (gBattleMons[defender].ability == ABILITY_LEVITATE && moveType == TYPE_GROUND)
     {
         flags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
     }
@@ -4516,9 +4516,7 @@ static void Cmd_typecalc2(void)
     s32 i = 0;
     u8 moveType = gBattleMoves[gCurrentMove].type;
 
-    if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE 
-     && gBattleMons[gBattlerAttacker].ability != ABILITY_MOLD_BREAKER 
-     && moveType == TYPE_GROUND)
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE && moveType == TYPE_GROUND)
     {
         gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
         gMoveResultFlags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);

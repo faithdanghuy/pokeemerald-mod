@@ -952,6 +952,16 @@ static const u8 sProtectorDesc[] = _(
     "item. It is loved\n"
     "by a certain Pokémon.");
 
+static const u8 sMuscleBandDesc[] = _(
+    "It is a headband that\n"
+    "slightly boosts the\n"
+    "power of physical moves.");
+
+static const u8 sWiseGlassesDesc[] = _(
+    "It is a thick pair of\n"
+    "glasses that slightly boosts\n"
+    "the power of special moves.");
+
 static const u8 sShellBellDesc[] = _(
     "A hold item that\n"
     "restores HP upon\n"

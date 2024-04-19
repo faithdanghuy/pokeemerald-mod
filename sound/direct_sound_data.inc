@@ -2079,6 +2079,22 @@ Cry_Pachirisu::
 	.incbin "sound/direct_sound_samples/cries/pachirisu.bin"
 
 	.align 2
+Cry_Buizel::
+	.incbin "sound/direct_sound_samples/cries/buizel.bin"
+
+	.align 2
+Cry_Floatzel::
+	.incbin "sound/direct_sound_samples/cries/floatzel.bin"
+
+	.align 2
+Cry_Cherubi::
+	.incbin "sound/direct_sound_samples/cries/cherubi.bin"
+
+	.align 2
+Cry_Cherrim::
+	.incbin "sound/direct_sound_samples/cries/cherrim.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

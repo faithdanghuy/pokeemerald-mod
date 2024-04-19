@@ -2474,3 +2474,23 @@ const u8 gPachirisuPokedexText[] = _(
     "A pair may be seen rubbing their cheek\n"
     "pouches together in an effort to share\n"
     "stored electricity.");
+
+const u8 gBuizelPokedexText[] = _(
+    "It spins its two tails like a screw to\n"
+    "propel itself through water. The tails\n"
+    "also slice clinging seaweed.");
+
+const u8 gFloatzelPokedexText[] = _(
+    "It is a common sight around fishing ports.\n"
+    "It is known to rescue people and carry off\n"
+    "prey.");
+
+const u8 gCherubiPokedexText[] = _(
+    "The small ball is not only filled with\n"
+    "nutrients, it is also tasty. STARLY\n"
+    "try to peck it off.");
+
+const u8 gCherrimPokedexText[] = _(
+    "If it senses strong sunlight, it opens\n"
+    "its folded petals to absorb the sun's\n"
+    "rays with its whole body.");

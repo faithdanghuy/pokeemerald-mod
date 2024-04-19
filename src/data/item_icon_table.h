@@ -100,9 +100,8 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_MAGMARIZER] = {gItemIcon_Magmarizer, gItemIconPalette_Magmarizer},
     [ITEM_DUBIOUS_DISC] = {gItemIcon_DubiousDisc, gItemIconPalette_DubiousDisc},
     [ITEM_PROTECTOR] = {gItemIcon_Protector, gItemIconPalette_Protector},
-    // ????????
-    [ITEM_05B] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    [ITEM_05C] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
+    [ITEM_MUSCLE_BAND] = {gItemIcon_MuscleBand, gItemIconPalette_MuscleBand},
+    [ITEM_WISE_GLASSES] = {gItemIcon_WiseGlasses, gItemIconPalette_WiseGlasses},
     // Evolution stones
     [ITEM_SUN_STONE] = {gItemIcon_SunStone, gItemIconPalette_SunStone},
     [ITEM_MOON_STONE] = {gItemIcon_MoonStone, gItemIconPalette_MoonStone},

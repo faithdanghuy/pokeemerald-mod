@@ -1135,23 +1135,25 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
-    [ITEM_05B] =
+    [ITEM_MUSCLE_BAND] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
+        .name = _("MUSCLE BAND"),
+        .itemId = ITEM_MUSCLE_BAND,
+        .price = 1500,
+        .holdEffect = HOLD_EFFECT_MUSCLE_BAND,
+        .description = sMuscleBandDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_05C] =
+    [ITEM_WISE_GLASSES] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
+        .name = _("WISE GLASSES"),
+        .itemId = ITEM_WISE_GLASSES,
+        .price = 1500,
+        .holdEffect = HOLD_EFFECT_WISE_GLASSES,
+        .description = sWiseGlassesDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
