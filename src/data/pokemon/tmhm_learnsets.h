@@ -10835,4 +10835,24 @@ const union {
     [SPECIES_CHERRIM] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_SHELLOS_E] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_GASTRODON_E] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_SHELLOS_W] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_GASTRODON_W] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_AMBIPOM] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

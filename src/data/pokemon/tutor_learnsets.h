@@ -6145,4 +6145,14 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_CHERUBI]          = (TUTOR(MOVE_BODY_SLAM)),
 
     [SPECIES_CHERRIM]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_SHELLOS_E]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_GASTRODON_E]      = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_SHELLOS_W]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_GASTRODON_W]      = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_AMBIPOM]          = (TUTOR(MOVE_BODY_SLAM)),
 };

@@ -427,6 +427,11 @@ gCryTable::
 	cry Cry_Floatzel
 	cry Cry_Cherubi
 	cry Cry_Cherrim
+	cry Cry_ShellosEast
+	cry Cry_GastrodonEast
+	cry Cry_ShellosWest
+	cry Cry_GastrodonWest
+	cry Cry_Ambipom
 
 	.align 2
 gCryTable_Reverse::
@@ -857,3 +862,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Floatzel
 	cry_reverse Cry_Cherubi
 	cry_reverse Cry_Cherrim
+	cry_reverse Cry_ShellosEast
+	cry_reverse Cry_GastrodonEast
+	cry_reverse Cry_ShellosWest
+	cry_reverse Cry_GastrodonEast
+	cry_reverse Cry_Ambipom

@@ -5111,4 +5111,64 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_SHELLOS_E] =
+    {
+        .categoryName = _("SEA SLUG"),
+        .height = 3,
+        .weight = 63,
+        .description = gShellosEastPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_GASTRODON_E] =
+    {
+        .categoryName = _("SEA SLUG"),
+        .height = 9,
+        .weight = 299,
+        .description = gGastrodonEastPokedexText,
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_SHELLOS_W] =
+    {
+        .categoryName = _("SEA SLUG"),
+        .height = 3,
+        .weight = 63,
+        .description = gShellosWestPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_GASTRODON_W] =
+    {
+        .categoryName = _("SEA SLUG"),
+        .height = 9,
+        .weight = 299,
+        .description = gGastrodonWestPokedexText,
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_AMBIPOM] =
+    {
+        .categoryName = _("LONG TAIL"),
+        .height = 12,
+        .weight = 203,
+        .description = gAmbipomPokedexText,
+        .pokemonScale = 282,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

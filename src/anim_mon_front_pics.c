@@ -432,6 +432,11 @@ const u32 gMonFrontPic_Buizel[] = INCBIN_U32("graphics/pokemon/buizel/anim_front
 const u32 gMonFrontPic_Floatzel[] = INCBIN_U32("graphics/pokemon/floatzel/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Cherubi[] = INCBIN_U32("graphics/pokemon/cherubi/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Cherrim[] = INCBIN_U32("graphics/pokemon/cherrim/anim_front.4bpp.lz");
+const u32 gMonFrontPic_ShellosEast[] = INCBIN_U32("graphics/pokemon/shellos/east/anim_front.4bpp.lz");
+const u32 gMonFrontPic_GastrodonEast[] = INCBIN_U32("graphics/pokemon/gastrodon/east/anim_front.4bpp.lz");
+const u32 gMonFrontPic_ShellosWest[] = INCBIN_U32("graphics/pokemon/shellos/west/anim_front.4bpp.lz");
+const u32 gMonFrontPic_GastrodonWest[] = INCBIN_U32("graphics/pokemon/gastrodon/west/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/anim_front.4bpp.lz");
 
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
 

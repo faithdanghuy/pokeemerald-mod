@@ -2494,3 +2494,31 @@ const u8 gCherrimPokedexText[] = _(
     "If it senses strong sunlight, it opens\n"
     "its folded petals to absorb the sun's\n"
     "rays with its whole body.");
+
+const u8 gShellosEastPokedexText[] = _(
+    "Its appearance changes depending on the\n"
+    "environment. One theory suggests that\n"
+    "living in cold seas causes Shellos to\n"
+    "take on this form.");
+
+const u8 gGastrodonEastPokedexText[] = _(
+    "Its body is covered in a sticky slime.\n"
+    "It's very susceptible to dehydration,\n"
+    "so it can't spend too much time on land.");
+
+const u8 gShellosWestPokedexText[] = _(
+    "Subjecting this Pokémon to a strong force\n"
+    "causes it to secrete a strange purple\n"
+    "fluid. Though harmless, the fluid is\n"
+    "awfully sticky.");
+
+const u8 gGastrodonWestPokedexText[] = _(
+    "The softness of its body helps disperse\n"
+    "the force of impacts, so although its\n"
+    "body is uncommonly squishy, it's\n"
+    "also surprisingly resilient.");
+
+const u8 gAmbipomPokedexText[] = _(
+    "Split into two, the tails are so\n"
+    "adept at handling and doing things,\n"
+    "AMBIPOM rarely uses its hands.");

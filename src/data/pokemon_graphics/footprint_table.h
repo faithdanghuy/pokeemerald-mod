@@ -451,5 +451,10 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_FLOATZEL] = gMonFootprint_Floatzel,
     [SPECIES_CHERUBI] = gMonFootprint_Cherubi,
     [SPECIES_CHERRIM] = gMonFootprint_Cherrim,
+    [SPECIES_SHELLOS_E] = gMonFootprint_Shellos,
+    [SPECIES_GASTRODON_E] = gMonFootprint_Gastrodon,
+    [SPECIES_SHELLOS_W] = gMonFootprint_Shellos,
+    [SPECIES_GASTRODON_W] = gMonFootprint_Gastrodon,
+    [SPECIES_AMBIPOM] = gMonFootprint_Ambipom,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

@@ -4969,6 +4969,33 @@ static const union AnimCmd sAnim_Cherrim_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Shellos_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 36),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Gastrodon_1[] =
+{
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Ambipom_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5649,6 +5676,9 @@ SINGLE_ANIMATION(Buizel);
 SINGLE_ANIMATION(Floatzel);
 SINGLE_ANIMATION(Cherubi);
 SINGLE_ANIMATION(Cherrim);
+SINGLE_ANIMATION(Shellos);
+SINGLE_ANIMATION(Gastrodon);
+SINGLE_ANIMATION(Ambipom);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6131,6 +6161,11 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_FLOATZEL]    = sAnims_Floatzel,
     [SPECIES_CHERUBI]     = sAnims_Cherubi,
     [SPECIES_CHERRIM]     = sAnims_Cherrim,
+    [SPECIES_SHELLOS_E]   = sAnims_Shellos,
+    [SPECIES_SHELLOS_W]   = sAnims_Shellos,
+    [SPECIES_GASTRODON_E] = sAnims_Gastrodon,
+    [SPECIES_GASTRODON_W] = sAnims_Gastrodon,
+    [SPECIES_AMBIPOM]     = sAnims_Ambipom,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

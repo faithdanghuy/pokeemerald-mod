@@ -2981,6 +2981,39 @@ const u32 gMonShinyPalette_Cherrim[] = INCBIN_U32("graphics/pokemon/cherrim/shin
 const u8 gMonIcon_Cherrim[] = INCBIN_U8("graphics/pokemon/cherrim/icon.4bpp");
 const u8 gMonFootprint_Cherrim[] = INCBIN_U8("graphics/pokemon/cherrim/footprint.1bpp");
 
+const u32 gMonStillFrontPic_ShellosEast[] = INCBIN_U32("graphics/pokemon/shellos/east/front.4bpp.lz");
+const u32 gMonPalette_ShellosEast[] = INCBIN_U32("graphics/pokemon/shellos/east/normal.gbapal.lz");
+const u32 gMonBackPic_ShellosEast[] = INCBIN_U32("graphics/pokemon/shellos/east/back.4bpp.lz");
+const u32 gMonShinyPalette_ShellosEast[] = INCBIN_U32("graphics/pokemon/shellos/east/shiny.gbapal.lz");
+const u8 gMonIcon_ShellosEast[] = INCBIN_U8("graphics/pokemon/shellos/east/icon.4bpp");
+const u8 gMonFootprint_Shellos[] = INCBIN_U8("graphics/pokemon/shellos/footprint.1bpp");
+
+const u32 gMonStillFrontPic_GastrodonEast[] = INCBIN_U32("graphics/pokemon/gastrodon/east/front.4bpp.lz");
+const u32 gMonPalette_GastrodonEast[] = INCBIN_U32("graphics/pokemon/gastrodon/east/normal.gbapal.lz");
+const u32 gMonBackPic_GastrodonEast[] = INCBIN_U32("graphics/pokemon/gastrodon/east/back.4bpp.lz");
+const u32 gMonShinyPalette_GastrodonEast[] = INCBIN_U32("graphics/pokemon/gastrodon/east/shiny.gbapal.lz");
+const u8 gMonIcon_GastrodonEast[] = INCBIN_U8("graphics/pokemon/gastrodon/east/icon.4bpp");
+const u8 gMonFootprint_Gastrodon[] = INCBIN_U8("graphics/pokemon/gastrodon/footprint.1bpp");
+
+const u32 gMonStillFrontPic_ShellosWest[] = INCBIN_U32("graphics/pokemon/shellos/west/front.4bpp.lz");
+const u32 gMonPalette_ShellosWest[] = INCBIN_U32("graphics/pokemon/shellos/west/normal.gbapal.lz");
+const u32 gMonBackPic_ShellosWest[] = INCBIN_U32("graphics/pokemon/shellos/west/back.4bpp.lz");
+const u32 gMonShinyPalette_ShellosWest[] = INCBIN_U32("graphics/pokemon/shellos/west/shiny.gbapal.lz");
+const u8 gMonIcon_ShellosWest[] = INCBIN_U8("graphics/pokemon/shellos/west/icon.4bpp");
+
+const u32 gMonStillFrontPic_GastrodonWest[] = INCBIN_U32("graphics/pokemon/gastrodon/west/front.4bpp.lz");
+const u32 gMonPalette_GastrodonWest[] = INCBIN_U32("graphics/pokemon/gastrodon/west/normal.gbapal.lz");
+const u32 gMonBackPic_GastrodonWest[] = INCBIN_U32("graphics/pokemon/gastrodon/west/back.4bpp.lz");
+const u32 gMonShinyPalette_GastrodonWest[] = INCBIN_U32("graphics/pokemon/gastrodon/west/shiny.gbapal.lz");
+const u8 gMonIcon_GastrodonWest[] = INCBIN_U8("graphics/pokemon/gastrodon/west/icon.4bpp");
+
+const u32 gMonStillFrontPic_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/front.4bpp.lz");
+const u32 gMonPalette_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/normal.gbapal.lz");
+const u32 gMonBackPic_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/back.4bpp.lz");
+const u32 gMonShinyPalette_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/shiny.gbapal.lz");
+const u8 gMonIcon_Ambipom[] = INCBIN_U8("graphics/pokemon/ambipom/icon.4bpp");
+const u8 gMonFootprint_Ambipom[] = INCBIN_U8("graphics/pokemon/ambipom/footprint.1bpp");
+
 const u32 gMonStillFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
 

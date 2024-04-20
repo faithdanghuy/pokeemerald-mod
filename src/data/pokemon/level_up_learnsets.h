@@ -6139,3 +6139,21 @@ static const u16 sCherrimLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_END
 };
+
+static const u16 sShellosLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_END
+};
+
+static const u16 sGastrodonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_END
+};
+
+static const u16 sAmbipomLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_END
+};

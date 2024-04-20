@@ -2095,6 +2095,26 @@ Cry_Cherrim::
 	.incbin "sound/direct_sound_samples/cries/cherrim.bin"
 
 	.align 2
+Cry_ShellosEast::
+	.incbin "sound/direct_sound_samples/cries/shellos.bin"
+
+	.align 2
+Cry_GastrodonEast::
+	.incbin "sound/direct_sound_samples/cries/gastrodon.bin"
+
+	.align 2
+Cry_ShellosWest::
+	.incbin "sound/direct_sound_samples/cries/shellos.bin"
+
+	.align 2
+Cry_GastrodonWest::
+	.incbin "sound/direct_sound_samples/cries/gastrodon.bin"
+
+	.align 2
+Cry_Ambipom::
+	.incbin "sound/direct_sound_samples/cries/ambipom.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 
