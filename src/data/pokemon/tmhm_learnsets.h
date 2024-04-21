@@ -10855,4 +10855,20 @@ const union {
     [SPECIES_AMBIPOM] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_DRIFLOON] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_DRIFBLIM] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_BUNEARY] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_LOPUNNY] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

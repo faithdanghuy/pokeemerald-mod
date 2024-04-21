@@ -437,6 +437,10 @@ const u32 gMonFrontPic_GastrodonEast[] = INCBIN_U32("graphics/pokemon/gastrodon/
 const u32 gMonFrontPic_ShellosWest[] = INCBIN_U32("graphics/pokemon/shellos/west/anim_front.4bpp.lz");
 const u32 gMonFrontPic_GastrodonWest[] = INCBIN_U32("graphics/pokemon/gastrodon/west/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Drifloon[] = INCBIN_U32("graphics/pokemon/drifloon/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Drifblim[] = INCBIN_U32("graphics/pokemon/drifblim/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Buneary[] = INCBIN_U32("graphics/pokemon/buneary/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Lopunny[] = INCBIN_U32("graphics/pokemon/lopunny/anim_front.4bpp.lz");
 
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
 

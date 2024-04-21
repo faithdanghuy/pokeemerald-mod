@@ -4996,6 +4996,41 @@ static const union AnimCmd sAnim_Ambipom_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Drifloon_1[] =
+{
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 25),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 25),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Drifblim_1[] =
+{
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 25),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 25),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Buneary_1[] =
+{
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Lopunny_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5679,6 +5714,10 @@ SINGLE_ANIMATION(Cherrim);
 SINGLE_ANIMATION(Shellos);
 SINGLE_ANIMATION(Gastrodon);
 SINGLE_ANIMATION(Ambipom);
+SINGLE_ANIMATION(Drifloon);
+SINGLE_ANIMATION(Drifblim);
+SINGLE_ANIMATION(Buneary);
+SINGLE_ANIMATION(Lopunny);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6166,6 +6205,10 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_GASTRODON_E] = sAnims_Gastrodon,
     [SPECIES_GASTRODON_W] = sAnims_Gastrodon,
     [SPECIES_AMBIPOM]     = sAnims_Ambipom,
+    [SPECIES_DRIFLOON]    = sAnims_Drifloon,
+    [SPECIES_DRIFBLIM]    = sAnims_Drifblim,
+    [SPECIES_BUNEARY]     = sAnims_Buneary,
+    [SPECIES_LOPUNNY]     = sAnims_Lopunny,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

@@ -456,4 +456,8 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_SHELLOS_W] = sShellosLevelUpLearnset,
     [SPECIES_GASTRODON_W] = sGastrodonLevelUpLearnset,
     [SPECIES_AMBIPOM] = sAmbipomLevelUpLearnset,
+    [SPECIES_DRIFLOON] = sDrifloonLevelUpLearnset,
+    [SPECIES_DRIFBLIM] = sDrifblimLevelUpLearnset,
+    [SPECIES_BUNEARY] = sBunearyLevelUpLearnset,
+    [SPECIES_LOPUNNY] = sLopunnyLevelUpLearnset,
 };

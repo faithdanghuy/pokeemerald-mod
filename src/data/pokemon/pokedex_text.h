@@ -2522,3 +2522,23 @@ const u8 gAmbipomPokedexText[] = _(
     "Split into two, the tails are so\n"
     "adept at handling and doing things,\n"
     "AMBIPOM rarely uses its hands.");
+
+const u8 gDrifloonPokedexText[] = _(
+    "Because of the way it floats aimlessly,\n"
+    "an old folktale calls it a Signpost\n"
+    "for Wandering Spirits.");
+
+const u8 gDrifblimPokedexText[] = _(
+    "At dusk, swarms of them are carried\n"
+    "aloft on winds. When noticed, they\n"
+    "suddenly vanish.");
+
+const u8 gBunearyPokedexText[] = _(
+    "Its ears are always rolled up. They\n"
+    "can be forcefully extended to shatter\n"
+    "even a large boulder.");
+
+const u8 gLopunnyPokedexText[] = _(
+    "The ears appear to be delicate. If they\n"
+    "are touched roughly, it kicks with its\n"
+    "graceful legs.");

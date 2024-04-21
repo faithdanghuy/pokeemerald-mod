@@ -5171,4 +5171,52 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_DRIFLOON] =
+    {
+        .categoryName = _("BALLOON"),
+        .height = 4,
+        .weight = 12,
+        .description = gDrifloonPokedexText,
+        .pokemonScale = 491,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_DRIFBLIM] =
+    {
+        .categoryName = _("BLIMP"),
+        .height = 12,
+        .weight = 150,
+        .description = gDrifblimPokedexText,
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_BUNEARY] =
+    {
+        .categoryName = _("RABBIT"),
+        .height = 4,
+        .weight = 55,
+        .description = gBunearyPokedexText,
+        .pokemonScale = 491,
+        .pokemonOffset = 16,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_LOPUNNY] =
+    {
+        .categoryName = _("RABBIT"),
+        .height = 12,
+        .weight = 333,
+        .description = gLopunnyPokedexText,
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

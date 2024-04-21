@@ -432,6 +432,10 @@ gCryTable::
 	cry Cry_ShellosWest
 	cry Cry_GastrodonWest
 	cry Cry_Ambipom
+	cry Cry_Drifloon
+	cry Cry_Drifblim
+	cry Cry_Buneary
+	cry Cry_Lopunny
 
 	.align 2
 gCryTable_Reverse::
@@ -867,3 +871,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_ShellosWest
 	cry_reverse Cry_GastrodonEast
 	cry_reverse Cry_Ambipom
+	cry_reverse Cry_Drifloon
+	cry_reverse Cry_Drifblim
+	cry_reverse Cry_Buneary
+	cry_reverse Cry_Lopunny

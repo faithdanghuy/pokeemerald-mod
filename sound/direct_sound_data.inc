@@ -2115,6 +2115,22 @@ Cry_Ambipom::
 	.incbin "sound/direct_sound_samples/cries/ambipom.bin"
 
 	.align 2
+Cry_Drifloon::
+	.incbin "sound/direct_sound_samples/cries/drifloon.bin"
+
+	.align 2
+Cry_Drifblim::
+	.incbin "sound/direct_sound_samples/cries/drifblim.bin"
+
+	.align 2
+Cry_Buneary::
+	.incbin "sound/direct_sound_samples/cries/buneary.bin"
+
+	.align 2
+Cry_Lopunny::
+	.incbin "sound/direct_sound_samples/cries/lopunny.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 
