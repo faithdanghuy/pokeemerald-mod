@@ -10871,4 +10871,20 @@ const union {
     [SPECIES_LOPUNNY] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_MISMAGIUS] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_HONCHKROW] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_GLAMEOW] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_PURUGLY] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

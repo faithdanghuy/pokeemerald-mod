@@ -3042,6 +3042,34 @@ const u32 gMonShinyPalette_Lopunny[] = INCBIN_U32("graphics/pokemon/lopunny/shin
 const u8 gMonIcon_Lopunny[] = INCBIN_U8("graphics/pokemon/lopunny/icon.4bpp");
 const u8 gMonFootprint_Lopunny[] = INCBIN_U8("graphics/pokemon/lopunny/footprint.1bpp");
 
+const u32 gMonStillFrontPic_Mismagius[] = INCBIN_U32("graphics/pokemon/mismagius/front.4bpp.lz");
+const u32 gMonPalette_Mismagius[] = INCBIN_U32("graphics/pokemon/mismagius/normal.gbapal.lz");
+const u32 gMonBackPic_Mismagius[] = INCBIN_U32("graphics/pokemon/mismagius/back.4bpp.lz");
+const u32 gMonShinyPalette_Mismagius[] = INCBIN_U32("graphics/pokemon/mismagius/shiny.gbapal.lz");
+const u8 gMonIcon_Mismagius[] = INCBIN_U8("graphics/pokemon/mismagius/icon.4bpp");
+const u8 gMonFootprint_Mismagius[] = INCBIN_U8("graphics/pokemon/mismagius/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Honchkrow[] = INCBIN_U32("graphics/pokemon/honchkrow/front.4bpp.lz");
+const u32 gMonPalette_Honchkrow[] = INCBIN_U32("graphics/pokemon/honchkrow/normal.gbapal.lz");
+const u32 gMonBackPic_Honchkrow[] = INCBIN_U32("graphics/pokemon/honchkrow/back.4bpp.lz");
+const u32 gMonShinyPalette_Honchkrow[] = INCBIN_U32("graphics/pokemon/honchkrow/shiny.gbapal.lz");
+const u8 gMonIcon_Honchkrow[] = INCBIN_U8("graphics/pokemon/honchkrow/icon.4bpp");
+const u8 gMonFootprint_Honchkrow[] = INCBIN_U8("graphics/pokemon/honchkrow/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Glameow[] = INCBIN_U32("graphics/pokemon/glameow/front.4bpp.lz");
+const u32 gMonPalette_Glameow[] = INCBIN_U32("graphics/pokemon/glameow/normal.gbapal.lz");
+const u32 gMonBackPic_Glameow[] = INCBIN_U32("graphics/pokemon/glameow/back.4bpp.lz");
+const u32 gMonShinyPalette_Glameow[] = INCBIN_U32("graphics/pokemon/glameow/shiny.gbapal.lz");
+const u8 gMonIcon_Glameow[] = INCBIN_U8("graphics/pokemon/glameow/icon.4bpp");
+const u8 gMonFootprint_Glameow[] = INCBIN_U8("graphics/pokemon/glameow/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Purugly[] = INCBIN_U32("graphics/pokemon/purugly/front.4bpp.lz");
+const u32 gMonPalette_Purugly[] = INCBIN_U32("graphics/pokemon/purugly/normal.gbapal.lz");
+const u32 gMonBackPic_Purugly[] = INCBIN_U32("graphics/pokemon/purugly/back.4bpp.lz");
+const u32 gMonShinyPalette_Purugly[] = INCBIN_U32("graphics/pokemon/purugly/shiny.gbapal.lz");
+const u8 gMonIcon_Purugly[] = INCBIN_U8("graphics/pokemon/purugly/icon.4bpp");
+const u8 gMonFootprint_Purugly[] = INCBIN_U8("graphics/pokemon/purugly/footprint.1bpp");
+
 const u32 gMonStillFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
 

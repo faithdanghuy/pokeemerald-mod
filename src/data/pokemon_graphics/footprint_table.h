@@ -460,5 +460,9 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_DRIFBLIM] = gMonFootprint_Drifblim,
     [SPECIES_BUNEARY] = gMonFootprint_Buneary,
     [SPECIES_LOPUNNY] = gMonFootprint_Lopunny,
+    [SPECIES_MISMAGIUS] = gMonFootprint_Mismagius,
+    [SPECIES_HONCHKROW] = gMonFootprint_Honchkrow,
+    [SPECIES_GLAMEOW] = gMonFootprint_Glameow,
+    [SPECIES_PURUGLY] = gMonFootprint_Purugly,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

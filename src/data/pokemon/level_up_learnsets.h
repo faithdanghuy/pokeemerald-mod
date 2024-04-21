@@ -6181,3 +6181,27 @@ static const u16 sLopunnyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_END
 };
+
+static const u16 sMismagiusLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_END
+};
+
+static const u16 sHonchkrowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_END
+};
+
+static const u16 sGlameowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_END
+};
+
+static const u16 sPuruglyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_END
+};

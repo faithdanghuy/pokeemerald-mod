@@ -6163,4 +6163,12 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_BUNEARY]          = (TUTOR(MOVE_BODY_SLAM)),
 
     [SPECIES_LOPUNNY]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_MISMAGIUS]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_HONCHKROW]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_GLAMEOW]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_PURUGLY]          = (TUTOR(MOVE_BODY_SLAM)),
 };

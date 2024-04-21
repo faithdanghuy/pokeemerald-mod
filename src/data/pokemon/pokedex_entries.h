@@ -5219,4 +5219,52 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_MISMAGIUS] =
+    {
+        .categoryName = _("MAGICAL"),
+        .height = 9,
+        .weight = 44,
+        .description = gMismagiusPokedexText,
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_HONCHKROW] =
+    {
+        .categoryName = _("BIG BOSS"),
+        .height = 9,
+        .weight = 273,
+        .description = gHonchkrowPokedexText,
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_GLAMEOW] =
+    {
+        .categoryName = _("CATTY"),
+        .height = 5,
+        .weight = 39,
+        .description = gGlameowPokedexText,
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_PURUGLY] =
+    {
+        .categoryName = _("TIGER CAT"),
+        .height = 10,
+        .weight = 438,
+        .description = gPuruglyPokedexText,
+        .pokemonScale = 305,
+        .pokemonOffset = 7,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+    },
 };

@@ -1447,20 +1447,12 @@ Cry_Altaria::
 	.incbin "sound/direct_sound_samples/cries/altaria.bin"
 
 	.align 2
-Cry_Unused265::
-	.incbin "sound/direct_sound_samples/cries/unused_265.bin"
-
-	.align 2
 Cry_Taillow::
 	.incbin "sound/direct_sound_samples/cries/taillow.bin"
 
 	.align 2
 Cry_Swellow::
 	.incbin "sound/direct_sound_samples/cries/swellow.bin"
-
-	.align 2
-Cry_Unused268::
-	.incbin "sound/direct_sound_samples/cries/unused_268.bin"
 
 	.align 2
 Cry_Spinda::
@@ -2129,6 +2121,22 @@ Cry_Buneary::
 	.align 2
 Cry_Lopunny::
 	.incbin "sound/direct_sound_samples/cries/lopunny.bin"
+
+	.align 2
+Cry_Mismagius::
+	.incbin "sound/direct_sound_samples/cries/mismagius.bin"
+
+	.align 2
+Cry_Honchkrow::
+	.incbin "sound/direct_sound_samples/cries/honchkrow.bin"
+
+	.align 2
+Cry_Glameow::
+	.incbin "sound/direct_sound_samples/cries/glameow.bin"
+
+	.align 2
+Cry_Purugly::
+	.incbin "sound/direct_sound_samples/cries/purugly.bin"
 
 	.align 2
 DirectSoundWaveData_register_noise::

@@ -5031,6 +5031,50 @@ static const union AnimCmd sAnim_Lopunny_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Mismagius_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Honchkrow_1[] =
+{
+    ANIMCMD_FRAME(0, 21),
+    ANIMCMD_FRAME(1, 45),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Glameow_1[] =
+{
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 45),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Purugly_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5718,6 +5762,10 @@ SINGLE_ANIMATION(Drifloon);
 SINGLE_ANIMATION(Drifblim);
 SINGLE_ANIMATION(Buneary);
 SINGLE_ANIMATION(Lopunny);
+SINGLE_ANIMATION(Mismagius);
+SINGLE_ANIMATION(Honchkrow);
+SINGLE_ANIMATION(Glameow);
+SINGLE_ANIMATION(Purugly);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6209,6 +6257,10 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_DRIFBLIM]    = sAnims_Drifblim,
     [SPECIES_BUNEARY]     = sAnims_Buneary,
     [SPECIES_LOPUNNY]     = sAnims_Lopunny,
+    [SPECIES_MISMAGIUS]   = sAnims_Mismagius,
+    [SPECIES_HONCHKROW]   = sAnims_Honchkrow,
+    [SPECIES_GLAMEOW]     = sAnims_Glameow,
+    [SPECIES_PURUGLY]     = sAnims_Purugly,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

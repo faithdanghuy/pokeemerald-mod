@@ -2525,8 +2525,8 @@ const u8 gAmbipomPokedexText[] = _(
 
 const u8 gDrifloonPokedexText[] = _(
     "Because of the way it floats aimlessly,\n"
-    "an old folktale calls it a Signpost\n"
-    "for Wandering Spirits.");
+    "an old folktale calls it a “Signpost\n"
+    "for Wandering Spirits.”");
 
 const u8 gDrifblimPokedexText[] = _(
     "At dusk, swarms of them are carried\n"
@@ -2542,3 +2542,23 @@ const u8 gLopunnyPokedexText[] = _(
     "The ears appear to be delicate. If they\n"
     "are touched roughly, it kicks with its\n"
     "graceful legs.");
+
+const u8 gMismagiusPokedexText[] = _(
+    "Its cry sounds like an incantation. It is\n"
+    "said the cry may rarely be imbued with\n"
+    "happiness-giving power.");
+
+const u8 gHonchkrowPokedexText[] = _(
+    "If one utters a deep cry, many MURKROW\n"
+    "gather quickly. For this, it is called\n"
+    "“Summoner of Night.”");
+
+const u8 gGlameowPokedexText[] = _(
+    "It hides its spiteful tendency of hooking\n"
+    "its claws into the nose of its Trainer\n"
+    "if it isn't fed.");
+
+const u8 gPuruglyPokedexText[] = _(
+    "It binds its body with its tails to make\n"
+    "itself look bigger. If it locks eyes, it\n"
+    "will glare ceaselessly.");

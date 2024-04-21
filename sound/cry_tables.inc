@@ -265,10 +265,8 @@ gCryTable::
 	cry Cry_Azurill
 	cry Cry_Swablu
 	cry Cry_Altaria
-	cry Cry_Unused265
 	cry Cry_Taillow
 	cry Cry_Swellow
-	cry Cry_Unused268
 	cry Cry_Spinda
 	cry Cry_Torchic
 	cry Cry_Combusken
@@ -436,6 +434,10 @@ gCryTable::
 	cry Cry_Drifblim
 	cry Cry_Buneary
 	cry Cry_Lopunny
+	cry Cry_Mismagius
+	cry Cry_Honchkrow
+	cry Cry_Glameow
+	cry Cry_Purugly
 
 	.align 2
 gCryTable_Reverse::
@@ -704,10 +706,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Azurill
 	cry_reverse Cry_Swablu
 	cry_reverse Cry_Altaria
-	cry_reverse Cry_Unused265
 	cry_reverse Cry_Taillow
 	cry_reverse Cry_Swellow
-	cry_reverse Cry_Unused268
 	cry_reverse Cry_Spinda
 	cry_reverse Cry_Torchic
 	cry_reverse Cry_Combusken
@@ -875,3 +875,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Drifblim
 	cry_reverse Cry_Buneary
 	cry_reverse Cry_Lopunny
+	cry_reverse Cry_Mismagius
+	cry_reverse Cry_Honchkrow
+	cry_reverse Cry_Glameow
+	cry_reverse Cry_Purugly
