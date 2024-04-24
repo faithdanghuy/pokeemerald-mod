@@ -2562,3 +2562,38 @@ const u8 gPuruglyPokedexText[] = _(
     "It binds its body with its tails to make\n"
     "itself look bigger. If it locks eyes, it\n"
     "will glare ceaselessly.");
+
+const u8 gChinglingPokedexText[] = _(
+    "There is an orb inside its mouth. When it\n"
+    "hops, the orb bounces all over and makes\n"
+    "a ringing sound.");
+
+const u8 gStunkyPokedexText[] = _(
+    "It sprays a foul fluid from its rear. Its\n"
+    "stench spreads over a mile radius,\n"
+    "driving Pokémon away.");
+
+const u8 gSkuntankPokedexText[] = _(
+    "It attacks by spraying a horribly smelly\n"
+    "fluid from the tip of its tail. Attacks\n"
+    "from above confound it.");
+
+const u8 gBronzorPokedexText[] = _(
+    "There are researchers who believe this\n"
+    "Pokémon reflected like a mirror in the\n"
+    "distant past.");
+
+const u8 gBronzongPokedexText[] = _(
+    "It brought rains by opening portals to\n"
+    "another world. It was revered as a bringer\n"
+    "of plentiful harvests.");
+
+const u8 gBonslyPokedexText[] = _(
+    "It prefers an arid atmosphere. It leaks\n"
+    "water that looks like tears when adjusting\n"
+    "its moisture level.");
+
+const u8 gMimeJrPokedexText[] = _(
+    "It mimics the expressions and motions of\n"
+    "those it sees to understand the feelings\n"
+    "of others.");

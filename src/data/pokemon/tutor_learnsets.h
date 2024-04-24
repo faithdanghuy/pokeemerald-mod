@@ -6171,4 +6171,18 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_GLAMEOW]          = (TUTOR(MOVE_BODY_SLAM)),
 
     [SPECIES_PURUGLY]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_CHINGLING]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_STUNKY]           = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_SKUNTANK]         = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_BRONZOR]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_BRONZONG]         = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_BONSLY]           = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_MIME_JR]          = (TUTOR(MOVE_BODY_SLAM)),
 };

@@ -2139,6 +2139,34 @@ Cry_Purugly::
 	.incbin "sound/direct_sound_samples/cries/purugly.bin"
 
 	.align 2
+Cry_Chingling::
+	.incbin "sound/direct_sound_samples/cries/chingling.bin"
+
+	.align 2
+Cry_Stunky::
+	.incbin "sound/direct_sound_samples/cries/stunky.bin"
+
+	.align 2
+Cry_Skuntank::
+	.incbin "sound/direct_sound_samples/cries/skuntank.bin"
+
+	.align 2
+Cry_Bronzor::
+	.incbin "sound/direct_sound_samples/cries/bronzor.bin"
+
+	.align 2
+Cry_Bronzong::
+	.incbin "sound/direct_sound_samples/cries/bronzong.bin"
+
+	.align 2
+Cry_Bonsly::
+	.incbin "sound/direct_sound_samples/cries/bonsly.bin"
+
+	.align 2
+Cry_MimeJr::
+	.incbin "sound/direct_sound_samples/cries/mime_jr.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

@@ -5075,6 +5075,83 @@ static const union AnimCmd sAnim_Purugly_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Chingling_1[] =
+{
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Stunky_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Skuntank_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Bronzor_1[] =
+{
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Bronzong_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Bonsly_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_MimeJr_1[] =
+{
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5766,6 +5843,13 @@ SINGLE_ANIMATION(Mismagius);
 SINGLE_ANIMATION(Honchkrow);
 SINGLE_ANIMATION(Glameow);
 SINGLE_ANIMATION(Purugly);
+SINGLE_ANIMATION(Chingling);
+SINGLE_ANIMATION(Stunky);
+SINGLE_ANIMATION(Skuntank);
+SINGLE_ANIMATION(Bronzor);
+SINGLE_ANIMATION(Bronzong);
+SINGLE_ANIMATION(Bonsly);
+SINGLE_ANIMATION(MimeJr);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6261,6 +6345,13 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_HONCHKROW]   = sAnims_Honchkrow,
     [SPECIES_GLAMEOW]     = sAnims_Glameow,
     [SPECIES_PURUGLY]     = sAnims_Purugly,
+    [SPECIES_CHINGLING]   = sAnims_Chingling,
+    [SPECIES_STUNKY]      = sAnims_Stunky,
+    [SPECIES_SKUNTANK]    = sAnims_Skuntank,
+    [SPECIES_BRONZOR]     = sAnims_Bronzor,
+    [SPECIES_BRONZONG]    = sAnims_Bronzong,
+    [SPECIES_BONSLY]      = sAnims_Bonsly,
+    [SPECIES_MIME_JR]     = sAnims_MimeJr,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

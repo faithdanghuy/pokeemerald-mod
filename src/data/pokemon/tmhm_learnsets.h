@@ -10887,4 +10887,32 @@ const union {
     [SPECIES_PURUGLY] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_CHINGLING] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_STUNKY] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_SKUNTANK] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_BRONZOR] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_BRONZONG] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_BONSLY] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_MIME_JR] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };
