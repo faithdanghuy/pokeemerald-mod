@@ -190,4 +190,7 @@ const u16 gSpeciesIdToCryId[] =
     [SPECIES_BRONZONG - 277] = 440,
     [SPECIES_BONSLY - 277] = 441,
     [SPECIES_MIME_JR - 277] = 442,
+    [SPECIES_HAPPINY - 277] = 443,
+    [SPECIES_CHATOT - 277] = 444,
+    [SPECIES_SPIRITOMB - 277] = 445,
 };

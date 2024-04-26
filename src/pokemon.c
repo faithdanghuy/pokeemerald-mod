@@ -579,6 +579,9 @@ static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_HOENN(BRONZONG),
     SPECIES_TO_HOENN(BONSLY),
     SPECIES_TO_HOENN(MIME_JR),
+    SPECIES_TO_HOENN(HAPPINY),
+    SPECIES_TO_HOENN(CHATOT),
+    SPECIES_TO_HOENN(SPIRITOMB),
 };
 
 // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -1058,6 +1061,9 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(BRONZONG),
     SPECIES_TO_NATIONAL(BONSLY),
     SPECIES_TO_NATIONAL(MIME_JR),
+    SPECIES_TO_NATIONAL(HAPPINY),
+    SPECIES_TO_NATIONAL(CHATOT),
+    SPECIES_TO_NATIONAL(SPIRITOMB),
 };
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
@@ -1508,6 +1514,9 @@ static const u16 sHoennToNationalOrder[NUM_SPECIES - 1] =
     HOENN_TO_NATIONAL(BRONZONG),
     HOENN_TO_NATIONAL(BONSLY),
     HOENN_TO_NATIONAL(MIME_JR),
+    HOENN_TO_NATIONAL(HAPPINY),
+    HOENN_TO_NATIONAL(CHATOT),
+    HOENN_TO_NATIONAL(SPIRITOMB),
     HOENN_TO_NATIONAL(OLD_UNOWN_B),
     HOENN_TO_NATIONAL(OLD_UNOWN_C),
     HOENN_TO_NATIONAL(OLD_UNOWN_D),
@@ -2032,6 +2041,9 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_BRONZONG - 1]    = ANIM_V_SLIDE_WOBBLE_SMALL,
     [SPECIES_BONSLY - 1]      = ANIM_BOUNCE_ROTATE_TO_SIDES,
     [SPECIES_MIME_JR - 1]     = ANIM_H_SLIDE_SLOW,
+    [SPECIES_HAPPINY - 1]     = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+    [SPECIES_CHATOT - 1]      = ANIM_V_SHAKE_TWICE,
+    [SPECIES_SPIRITOMB - 1]   = ANIM_GROW_IN_STAGES,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -3450,13 +3462,16 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (type == TYPE_FIRE && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0))
         gBattleMovePower /= 2;
     if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_FIRE || type == TYPE_ICE))
-        gBattleMovePower /= 2;
-    if (defender->ability == ABILITY_HEATPROOF && type == TYPE_FIRE)
-        gBattleMovePower /= 2;
+    {
+        if (gBattleMoves[move].category == MOVE_CATEGORY_SPECIAL)
+            spAttack /= 2;
+        else
+            attack /= 2;
+    }
     if (attacker->ability == ABILITY_RECKLESS && gBattleMoves[move].effect == EFFECT_RECOIL)
         gBattleMovePower = (120 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_BRUTALIZE && defender->hp <= (defender->maxHP / 2))
-        gBattleMovePower = (130 * gBattleMovePower) / 100;
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_CLARITY && gBattleMoves[move].category == MOVE_CATEGORY_SPECIAL)
         gBattleMovePower = (130 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_TECHNICIAN && gBattleMovePower <= 60)
@@ -3481,7 +3496,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             && gBattleWeather & B_WEATHER_SANDSTORM)
             spDefense = (150 * spDefense) / 100;
 
-        // Flower gift on self
+        // Flower gift
         if (attacker->ability == ABILITY_FLOWER_GIFT && gBattleWeather & B_WEATHER_SUN)
             spAttack = (150 * spAttack) / 100;
         if (defender->ability == ABILITY_FLOWER_GIFT && gBattleWeather & B_WEATHER_SUN)

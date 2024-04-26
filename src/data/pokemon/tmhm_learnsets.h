@@ -10915,4 +10915,16 @@ const union {
     [SPECIES_MIME_JR] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_HAPPINY] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_CHATOT] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_SPIRITOMB] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

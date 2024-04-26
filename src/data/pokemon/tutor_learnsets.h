@@ -6185,4 +6185,10 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_BONSLY]           = (TUTOR(MOVE_BODY_SLAM)),
 
     [SPECIES_MIME_JR]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_HAPPINY]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_CHATOT]           = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_SPIRITOMB]        = (TUTOR(MOVE_BODY_SLAM)),
 };

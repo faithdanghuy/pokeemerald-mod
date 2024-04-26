@@ -445,6 +445,9 @@ gCryTable::
 	cry Cry_Bronzong
 	cry Cry_Bonsly
 	cry Cry_MimeJr
+	cry Cry_Happiny
+	cry Cry_Chatot
+	cry Cry_Spiritomb
 
 	.align 2
 gCryTable_Reverse::
@@ -893,3 +896,6 @@ gCryTable_Reverse::
 	cry_reverse Cry_Bronzong
 	cry_reverse Cry_Bonsly
 	cry_reverse Cry_MimeJr
+	cry_reverse Cry_Happiny
+	cry_reverse Cry_Chatot
+	cry_reverse Cry_Spiritomb

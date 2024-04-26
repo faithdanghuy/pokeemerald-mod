@@ -470,4 +470,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_BRONZONG] = _("Bronzong"),
     [SPECIES_BONSLY] = _("Bonsly"),
     [SPECIES_MIME_JR] = _("Mime Jr."),
+    [SPECIES_HAPPINY] = _("Happiny"),
+    [SPECIES_CHATOT] = _("Chatot"),
+    [SPECIES_SPIRITOMB] = _("Spiritomb"),
 };

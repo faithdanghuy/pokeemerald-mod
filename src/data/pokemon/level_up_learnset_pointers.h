@@ -471,4 +471,7 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_BRONZONG] = sBronzongLevelUpLearnset,
     [SPECIES_BONSLY] = sBonslyLevelUpLearnset,
     [SPECIES_MIME_JR] = sMimeJrLevelUpLearnset,
+    [SPECIES_HAPPINY] = sHappinyLevelUpLearnset,
+    [SPECIES_CHATOT] = sChatotLevelUpLearnset,
+    [SPECIES_SPIRITOMB] = sSpiritombLevelUpLearnset,
 };

@@ -471,5 +471,8 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_BRONZONG] = gMonFootprint_Bronzong,
     [SPECIES_BONSLY] = gMonFootprint_Bonsly,
     [SPECIES_MIME_JR] = gMonFootprint_Mime_Jr,
+    [SPECIES_HAPPINY] = gMonFootprint_Happiny,
+    [SPECIES_CHATOT] = gMonFootprint_Chatot,
+    [SPECIES_SPIRITOMB] = gMonFootprint_Spiritomb,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

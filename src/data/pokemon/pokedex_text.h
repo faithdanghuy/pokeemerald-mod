@@ -2597,3 +2597,17 @@ const u8 gMimeJrPokedexText[] = _(
     "It mimics the expressions and motions of\n"
     "those it sees to understand the feelings\n"
     "of others.");
+
+const u8 gHappinyPokedexText[] = _(
+    "It likes to carry around a small rock. It\n"
+    "may wander around others' feet and cause\n"
+    "them to stumble.");
+
+const u8 gChatotPokedexText[] = _(
+    "Its tongue is just like a human's. As a\n"
+    "result, it can cleverly mimic human speech.");
+
+const u8 gSpiritombPokedexText[] = _(
+    "Its constant mischief and misdeeds resulted\n"
+    "in it being bound to an Odd Keystone by a\n"
+    "mysterious spell.");

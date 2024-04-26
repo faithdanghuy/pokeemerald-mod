@@ -5152,6 +5152,42 @@ static const union AnimCmd sAnim_MimeJr_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Happiny_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Chatot_1[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Spiritomb_1[] =
+{
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5850,6 +5886,9 @@ SINGLE_ANIMATION(Bronzor);
 SINGLE_ANIMATION(Bronzong);
 SINGLE_ANIMATION(Bonsly);
 SINGLE_ANIMATION(MimeJr);
+SINGLE_ANIMATION(Happiny);
+SINGLE_ANIMATION(Chatot);
+SINGLE_ANIMATION(Spiritomb);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6352,6 +6391,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_BRONZONG]    = sAnims_Bronzong,
     [SPECIES_BONSLY]      = sAnims_Bonsly,
     [SPECIES_MIME_JR]     = sAnims_MimeJr,
+    [SPECIES_HAPPINY]     = sAnims_Happiny,
+    [SPECIES_CHATOT]      = sAnims_Chatot,
+    [SPECIES_SPIRITOMB]   = sAnims_Spiritomb,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,
