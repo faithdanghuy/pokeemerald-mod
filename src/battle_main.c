@@ -488,17 +488,17 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 // This is a factor in how much money you get for beating a trainer.
 const struct TrainerMoney gTrainerMoneyTable[] =
 {
-    {TRAINER_CLASS_TEAM_AQUA, 5},
-    {TRAINER_CLASS_AQUA_ADMIN, 10},
-    {TRAINER_CLASS_AQUA_LEADER, 20},
-    {TRAINER_CLASS_AROMA_LADY, 10},
-    {TRAINER_CLASS_RUIN_MANIAC, 15},
-    {TRAINER_CLASS_INTERVIEWER, 12},
-    {TRAINER_CLASS_TUBER_F, 1},
-    {TRAINER_CLASS_TUBER_M, 1},
-    {TRAINER_CLASS_SIS_AND_BRO, 3},
-    {TRAINER_CLASS_COOLTRAINER, 12},
-    {TRAINER_CLASS_HEX_MANIAC, 6},
+    {TRAINER_CLASS_TEAM_AQUA, 8},
+    {TRAINER_CLASS_AQUA_ADMIN, 15},
+    {TRAINER_CLASS_AQUA_LEADER, 30},
+    {TRAINER_CLASS_AROMA_LADY, 12},
+    {TRAINER_CLASS_RUIN_MANIAC, 20},
+    {TRAINER_CLASS_INTERVIEWER, 18},
+    {TRAINER_CLASS_TUBER_F, 3},
+    {TRAINER_CLASS_TUBER_M, 3},
+    {TRAINER_CLASS_SIS_AND_BRO, 5},
+    {TRAINER_CLASS_COOLTRAINER, 20},
+    {TRAINER_CLASS_HEX_MANIAC, 10},
     {TRAINER_CLASS_LADY, 50},
     {TRAINER_CLASS_BEAUTY, 20},
     {TRAINER_CLASS_RICH_BOY, 50},
@@ -512,14 +512,14 @@ const struct TrainerMoney gTrainerMoneyTable[] =
     {TRAINER_CLASS_BUG_MANIAC, 15},
     {TRAINER_CLASS_PSYCHIC, 6},
     {TRAINER_CLASS_GENTLEMAN, 20},
-    {TRAINER_CLASS_ELITE_FOUR, 25},
-    {TRAINER_CLASS_LEADER, 25},
+    {TRAINER_CLASS_ELITE_FOUR, 40},
+    {TRAINER_CLASS_LEADER, 30},
     {TRAINER_CLASS_SCHOOL_KID, 5},
     {TRAINER_CLASS_SR_AND_JR, 4},
     {TRAINER_CLASS_POKEFAN, 20},
     {TRAINER_CLASS_EXPERT, 10},
     {TRAINER_CLASS_YOUNGSTER, 4},
-    {TRAINER_CLASS_CHAMPION, 50},
+    {TRAINER_CLASS_CHAMPION, 70},
     {TRAINER_CLASS_FISHERMAN, 10},
     {TRAINER_CLASS_TRIATHLETE, 10},
     {TRAINER_CLASS_DRAGON_TAMER, 12},
@@ -535,14 +535,14 @@ const struct TrainerMoney gTrainerMoneyTable[] =
     {TRAINER_CLASS_RIVAL, 15},
     {TRAINER_CLASS_PKMN_BREEDER, 10},
     {TRAINER_CLASS_PKMN_RANGER, 12},
-    {TRAINER_CLASS_TEAM_MAGMA, 5},
-    {TRAINER_CLASS_MAGMA_ADMIN, 10},
-    {TRAINER_CLASS_MAGMA_LEADER, 20},
-    {TRAINER_CLASS_LASS, 4},
-    {TRAINER_CLASS_BUG_CATCHER, 4},
-    {TRAINER_CLASS_HIKER, 10},
-    {TRAINER_CLASS_YOUNG_COUPLE, 8},
-    {TRAINER_CLASS_WINSTRATE, 10},
+    {TRAINER_CLASS_TEAM_MAGMA, 8},
+    {TRAINER_CLASS_MAGMA_ADMIN, 15},
+    {TRAINER_CLASS_MAGMA_LEADER, 30},
+    {TRAINER_CLASS_LASS, 5},
+    {TRAINER_CLASS_BUG_CATCHER, 5},
+    {TRAINER_CLASS_HIKER, 15},
+    {TRAINER_CLASS_YOUNG_COUPLE, 12},
+    {TRAINER_CLASS_WINSTRATE, 15},
     {0xFF, 5}, // Any trainer class not listed above uses this
 };
 
@@ -4595,13 +4595,15 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
     if (WEATHER_HAS_EFFECT)
     {
         if ((gBattleMons[battler1].ability == ABILITY_SWIFT_SWIM && gBattleWeather & B_WEATHER_RAIN)
-            || (gBattleMons[battler1].ability == ABILITY_CHLOROPHYLL && gBattleWeather & B_WEATHER_SUN))
+            || (gBattleMons[battler1].ability == ABILITY_CHLOROPHYLL && gBattleWeather & B_WEATHER_SUN)
+            || (gBattleMons[battler1].ability == ABILITY_SAND_RUSH && gBattleWeather & B_WEATHER_SANDSTORM))
             speedMultiplierBattler1 = 2;
         else
             speedMultiplierBattler1 = 1;
 
         if ((gBattleMons[battler2].ability == ABILITY_SWIFT_SWIM && gBattleWeather & B_WEATHER_RAIN)
-            || (gBattleMons[battler2].ability == ABILITY_CHLOROPHYLL && gBattleWeather & B_WEATHER_SUN))
+            || (gBattleMons[battler2].ability == ABILITY_CHLOROPHYLL && gBattleWeather & B_WEATHER_SUN)
+            || (gBattleMons[battler2].ability == ABILITY_SAND_RUSH && gBattleWeather & B_WEATHER_SANDSTORM))
             speedMultiplierBattler2 = 2;
         else
             speedMultiplierBattler2 = 1;
@@ -4611,6 +4613,16 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
         speedMultiplierBattler1 = 1;
         speedMultiplierBattler2 = 1;
     }
+
+    if (gBattleMons[battler1].ability == ABILITY_QUICK_FEET && gBattleMons[battler1].status2 & STATUS2_CONFUSION)
+        speedMultiplierBattler1 = 2;
+    else
+        speedMultiplierBattler1 = 1;
+
+    if (gBattleMons[battler2].ability == ABILITY_QUICK_FEET && gBattleMons[battler2].status2 & STATUS2_CONFUSION)
+        speedMultiplierBattler2 = 2;
+    else
+        speedMultiplierBattler2 = 1;
 
     speedBattler1 = (gBattleMons[battler1].speed * speedMultiplierBattler1)
                 * (gStatStageRatios[gBattleMons[battler1].statStages[STAT_SPEED]][0])
@@ -4631,7 +4643,7 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
         speedBattler1 /= 2;
 
     if (gBattleMons[battler1].status1 & STATUS1_PARALYSIS)
-        speedBattler1 /= 4;
+        speedBattler1 /= 2;
 
     if (holdEffect == HOLD_EFFECT_QUICK_CLAW && gRandomTurnNumber < (0xFFFF * holdEffectParam) / 100)
         speedBattler1 = UINT_MAX;
@@ -4657,7 +4669,7 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
         speedBattler2 /= 2;
 
     if (gBattleMons[battler2].status1 & STATUS1_PARALYSIS)
-        speedBattler2 /= 4;
+        speedBattler2 /= 2;
 
     if (holdEffect == HOLD_EFFECT_QUICK_CLAW && gRandomTurnNumber < (0xFFFF * holdEffectParam) / 100)
         speedBattler2 = UINT_MAX;

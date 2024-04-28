@@ -3131,12 +3131,9 @@ void CalculateMonStats(struct Pokemon *mon)
         if (currentHP == 0 && oldMaxHP == 0)
             currentHP = newMaxHP;
         else if (currentHP != 0) {
-            // BUG: currentHP is unintentionally able to become <= 0 after the instruction below. This causes the pomeg berry glitch.
             currentHP += newMaxHP - oldMaxHP;
-            #ifdef BUGFIX
             if (currentHP <= 0)
                 currentHP = 1;
-            #endif
         }
         else
             return;
@@ -3353,6 +3350,16 @@ void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
     (var) /= (gStatStageRatios)[(mon)->statStages[(statIndex)]][1];                 \
 }
 
+#define PUNCHING_MOVES_END 0xFFFF
+
+static const u16 sPunchingMovesTable[] =
+{
+    MOVE_COMET_PUNCH, MOVE_DIZZY_PUNCH, MOVE_DYNAMIC_PUNCH, MOVE_FIRE_PUNCH, 
+    MOVE_FOCUS_PUNCH, MOVE_ICE_PUNCH, MOVE_MACH_PUNCH, MOVE_MEGA_PUNCH,
+    MOVE_METEOR_MASH, MOVE_SHADOW_PUNCH, MOVE_SKY_UPPERCUT, MOVE_THUNDER_PUNCH,
+    PUNCHING_MOVES_END
+};
+
 s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *defender, u32 move, u16 sideStatus, u16 powerOverride, u8 typeOverride, u8 battlerIdAtk, u8 battlerIdDef)
 {
     u32 i;
@@ -3424,10 +3431,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         attack = (150 * attack) / 100;
     if (attackerHoldEffect == HOLD_EFFECT_CHOICE_SPECS)
         spAttack = (150 * spAttack) / 100;
-    if (attackerHoldEffect == HOLD_EFFECT_MUSCLE_BAND)
-        attack = (110 * attack) / 100;
-    if (attackerHoldEffect == HOLD_EFFECT_WISE_GLASSES)
-        spAttack = (110 * spAttack) / 100;
+    if (attackerHoldEffect == HOLD_EFFECT_MUSCLE_BAND && IS_MOVE_PHYSICAL(gCurrentMove))
+        gBattleMovePower = (110 * gBattleMovePower) / 100;
+    if (attackerHoldEffect == HOLD_EFFECT_WISE_GLASSES && IS_MOVE_SPECIAL(gCurrentMove))
+        gBattleMovePower = (110 * gBattleMovePower) / 100;
     if (attackerHoldEffect == HOLD_EFFECT_SOUL_DEW && (attacker->species == SPECIES_LATIAS || attacker->species == SPECIES_LATIOS) && (type == TYPE_DRAGON || type == TYPE_PSYCHIC))
         gBattleMovePower = (120 * gBattleMovePower) / 100;
     if (attackerHoldEffect == HOLD_EFFECT_DEEP_SEA_TOOTH && attacker->species == SPECIES_CLAMPERL)
@@ -3454,8 +3461,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         defense = (150 * defense) / 100;
     if (defender->ability == ABILITY_FORTIFY && defender->hp <= (defender->maxHP / 2))
     {
-        defense = (130 * defense) / 100;
-        spDefense = (130 * spDefense) / 100;
+        if (IS_MOVE_PHYSICAL(gCurrentMove))
+            defense = (130 * defense) / 100;
+        else
+            spDefense = (130 * spDefense) / 100;
     }
     if (type == TYPE_ELECTRIC && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
         gBattleMovePower /= 2;
@@ -3463,16 +3472,16 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower /= 2;
     if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_FIRE || type == TYPE_ICE))
     {
-        if (gBattleMoves[move].category == MOVE_CATEGORY_SPECIAL)
+        if (IS_MOVE_SPECIAL(gCurrentMove))
             spAttack /= 2;
         else
             attack /= 2;
     }
-    if (attacker->ability == ABILITY_RECKLESS && gBattleMoves[move].effect == EFFECT_RECOIL)
+    if (attacker->ability == ABILITY_RECKLESS && gBattleMoves[gCurrentMove].effect == EFFECT_RECOIL)
         gBattleMovePower = (120 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_BRUTALIZE && defender->hp <= (defender->maxHP / 2))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
-    if (attacker->ability == ABILITY_CLARITY && gBattleMoves[move].category == MOVE_CATEGORY_SPECIAL)
+    if (attacker->ability == ABILITY_CLARITY && IS_MOVE_SPECIAL(gCurrentMove))
         gBattleMovePower = (130 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_TECHNICIAN && gBattleMovePower <= 60)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
@@ -3484,23 +3493,51 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (type == TYPE_BUG && attacker->ability == ABILITY_SWARM && attacker->hp <= (attacker->maxHP / 3))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_IRON_FIST)
+    {
+        for (i = 0; sPunchingMovesTable[i] != PUNCHING_MOVES_END; i++)
+        {
+            if (sPunchingMovesTable[i] == gCurrentMove)
+            {
+                gBattleMovePower = (120 * gBattleMovePower) / 100;
+                break;
+            }
+        }
+    }
 
     // Apply weather bonus
     if (WEATHER_HAS_EFFECT2) 
     {
-        if ((defender->type1 == TYPE_ICE || defender->type2 == TYPE_ICE) && gBattleWeather & B_WEATHER_HAIL)
-            defense = (150 * defense) / 100;
-        if (((defender->type1 == TYPE_GROUND || defender->type2 == TYPE_GROUND) 
-            ||(defender->type1 == TYPE_ROCK || defender->type2 == TYPE_ROCK) 
-            ||(defender->type1 == TYPE_STEEL || defender->type2 == TYPE_STEEL)) 
-            && gBattleWeather & B_WEATHER_SANDSTORM)
-            spDefense = (150 * spDefense) / 100;
+        if (gBattleWeather & B_WEATHER_HAIL)
+        {
+            // Hail boost Defense by 50% to Ice-type Pokémon
+            if (IS_BATTLER_OF_TYPE(defender->species, TYPE_ICE))
+                defense = (150 * defense) / 100;
+        }
 
-        // Flower gift
-        if (attacker->ability == ABILITY_FLOWER_GIFT && gBattleWeather & B_WEATHER_SUN)
-            spAttack = (150 * spAttack) / 100;
-        if (defender->ability == ABILITY_FLOWER_GIFT && gBattleWeather & B_WEATHER_SUN)
-            spDefense = (150 * spDefense) / 100;
+        if (gBattleWeather & B_WEATHER_SANDSTORM)
+        {
+            // Sandstorm boost Special Defense by 50% to Rock, Ground, Steel-type Pokémon
+            if ((IS_BATTLER_OF_TYPE(defender->species, TYPE_GROUND) || IS_BATTLER_OF_TYPE(defender->species, TYPE_ROCK) || IS_BATTLER_OF_TYPE(defender->species, TYPE_STEEL)))
+                spDefense = (150 * spDefense) / 100;
+
+            // Sand Force
+            if (attacker->ability == ABILITY_SAND_FORCE && (type == TYPE_GROUND || type == TYPE_STEEL || type == TYPE_ROCK))
+                gBattleMovePower = (130 * gBattleMovePower) / 100;
+        }
+
+        if (gBattleWeather & B_WEATHER_SUN)
+        {
+            // Flower gift
+            if (attacker->ability == ABILITY_FLOWER_GIFT)
+                spAttack = (130 * spAttack) / 100;
+            if (defender->ability == ABILITY_FLOWER_GIFT)
+                spDefense = (130 * spDefense) / 100;
+
+            // Solar Power
+            if (attacker->ability == ABILITY_SOLAR_POWER)
+                spAttack = (150 * spAttack) / 100;
+        }
     }
 
     // Self-destruct / Explosion cut defense in half
@@ -3542,7 +3579,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             damage /= 2;
 
         // Apply Reflect
-        if ((sideStatus & SIDE_STATUS_REFLECT) && gCritMultiplier == 1)
+        if ((sideStatus & SIDE_STATUS_REFLECT) && gCritMultiplier == 1 && attacker->ability != ABILITY_INFILTRATOR)
         {
             if ((gBattleTypeFlags & BATTLE_TYPE_DOUBLE) && CountAliveMonsInBattle(BATTLE_ALIVE_DEF_SIDE) == 2)
                 damage = 2 * (damage / 3);
@@ -3593,7 +3630,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         damage /= 50;
 
         // Apply Lightscreen
-        if ((sideStatus & SIDE_STATUS_LIGHTSCREEN) && gCritMultiplier == 1)
+        if ((sideStatus & SIDE_STATUS_LIGHTSCREEN) && gCritMultiplier == 1 && attacker->ability != ABILITY_INFILTRATOR)
         {
             if ((gBattleTypeFlags & BATTLE_TYPE_DOUBLE) && CountAliveMonsInBattle(BATTLE_ALIVE_DEF_SIDE) == 2)
                 damage = 2 * (damage / 3);
@@ -3645,7 +3682,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     // Flash fire triggered
     if ((gBattleResources->flags->flags[battlerIdAtk] & RESOURCE_FLAG_FLASH_FIRE) && type == TYPE_FIRE)
         damage = (15 * damage) / 10;
-
+        
     return damage + 2;
 }
 

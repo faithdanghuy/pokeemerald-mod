@@ -2614,15 +2614,41 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                         effect++;
                     }
                     break;
+                case ABILITY_DRY_SKIN:
+                    if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_RAIN) && gBattleMons[battler].maxHP > gBattleMons[battler].hp)
+                    {
+                        BattleScriptPushCursorAndCallback(BattleScript_RainDishActivates);
+                        gBattleMoveDamage = gBattleMons[battler].maxHP / 8;
+                        if (gBattleMoveDamage == 0)
+                            gBattleMoveDamage = 1;
+                        gBattleMoveDamage *= -1;
+                        effect++;
+                    }
+                    if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_SUN))
+                    {
+                        gBattleMoveDamage = gBattleMons[battler].maxHP / 8;
+                        if (gBattleMoveDamage == 0)
+                            gBattleMoveDamage = 1;
+                        effect++;
+                    }
+                    break;
                 case ABILITY_ICE_BODY:
-                    if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_HAIL)
-                     && gBattleMons[battler].maxHP > gBattleMons[battler].hp)
+                    if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_HAIL) && gBattleMons[battler].maxHP > gBattleMons[battler].hp)
                     {
                         BattleScriptPushCursorAndCallback(BattleScript_RainDishActivates);
                         gBattleMoveDamage = gBattleMons[battler].maxHP / 16;
                         if (gBattleMoveDamage == 0)
                             gBattleMoveDamage = 1;
                         gBattleMoveDamage *= -1;
+                        effect++;
+                    }
+                    break;
+                case ABILITY_SOLAR_POWER:
+                    if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_SUN))
+                    {
+                        gBattleMoveDamage = gBattleMons[battler].maxHP / 8;
+                        if (gBattleMoveDamage == 0)
+                            gBattleMoveDamage = 1;
                         effect++;
                     }
                     break;
@@ -2699,6 +2725,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                     }
                     break;
                 case ABILITY_WATER_ABSORB:
+                case ABILITY_DRY_SKIN:
                     if (moveType == TYPE_WATER && gBattleMoves[move].power != 0)
                     {
                         if (gProtectStructs[gBattlerAttacker].notFirstStrike)

@@ -1151,6 +1151,8 @@ static void Cmd_accuracycheck(void)
 
         if (gBattleMons[gBattlerAttacker].ability == ABILITY_COMPOUND_EYES)
             calc = (calc * 130) / 100; // 1.3 compound eyes boost
+        if (gBattleMons[gBattlerTarget].ability == ABILITY_TANGLED_FEET && gBattleMons[gBattlerAttacker].status2 & STATUS2_CONFUSION)
+            calc /= 2;
         if (WEATHER_HAS_EFFECT && gBattleMons[gBattlerTarget].ability == ABILITY_SAND_VEIL && gBattleWeather & B_WEATHER_SANDSTORM)
             calc = (calc * 80) / 100; // 1.2 sand veil loss
         if (WEATHER_HAS_EFFECT && gBattleMons[gBattlerTarget].ability == ABILITY_SNOW_CLOAK && gBattleWeather & B_WEATHER_HAIL)
@@ -1308,6 +1310,10 @@ static void Cmd_damagecalc(void)
         gBattleMoveDamage = gBattleMoveDamage * 15 / 10;
     if (gBattleMons[gBattlerTarget].ability == ABILITY_HEATPROOF && gBattleMoves[gCurrentMove].type == TYPE_FIRE)
         gBattleMoveDamage /= 2;
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_DRY_SKIN && gBattleMoves[gCurrentMove].type == TYPE_FIRE)
+        gBattleMoveDamage = gBattleMoveDamage * 125 / 100;
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_MULTISCALE && gBattleMons[gBattlerTarget].hp == gBattleMons[gBattlerTarget].maxHP)
+        gBattleMoveDamage /= 2;
 
     gBattlescriptCurrInstr++;
 }
@@ -1325,7 +1331,11 @@ void AI_CalcDmg(u8 attacker, u8 defender)
         gBattleMoveDamage *= 2;
     if (gProtectStructs[attacker].helpingHand)
         gBattleMoveDamage = gBattleMoveDamage * 15 / 10;
-    if (gBattleMons[defender].ability == ABILITY_HEATPROOF )
+    if (gBattleMons[defender].ability == ABILITY_HEATPROOF && gBattleMoves[gCurrentMove].type == TYPE_FIRE)
+        gBattleMoveDamage /= 2;
+    if (gBattleMons[defender].ability == ABILITY_DRY_SKIN && gBattleMoves[gCurrentMove].type == TYPE_FIRE)
+        gBattleMoveDamage = gBattleMoveDamage * 125 / 100;
+    if (gBattleMons[defender].ability == ABILITY_MULTISCALE && gBattleMons[defender].hp == gBattleMons[defender].maxHP)
         gBattleMoveDamage /= 2;
 }
 
@@ -2000,7 +2010,7 @@ static void Cmd_critmessage(void)
 {
     if (gBattleControllerExecFlags == 0)
     {
-        if (gCritMultiplier == 2 && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT))
+        if (gCritMultiplier > 1 && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT))
         {
             PrepareStringBattle(STRINGID_CRITICALHIT, gBattlerAttacker);
             gBattleCommunication[MSG_DISPLAY] = 1;
@@ -3286,7 +3296,7 @@ static void Cmd_getexp(void)
         break;
     case 1: // calculate experience points to redistribute
         {
-            u16 calculatedExp;
+            u32 calculatedExp;
             s32 viaSentIn;
             gExpShareCheck = FALSE;
 
@@ -3464,11 +3474,10 @@ static void Cmd_getexp(void)
                     gBattleMons[0].maxHP = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_MAX_HP);
                     gBattleMons[0].attack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_ATK);
                     gBattleMons[0].defense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_DEF);
-                    // Speed is duplicated, likely due to a copy-paste error.
-                    gBattleMons[0].speed = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPEED);
-                    gBattleMons[0].speed = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPEED);
                     gBattleMons[0].spAttack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPATK);
                     gBattleMons[0].spDefense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPDEF);
+                    gBattleMons[0].speed = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPEED);
+
                 }
 
                 if (gBattlerPartyIndexes[2] == gBattleStruct->expGetterMonId && gBattleMons[2].hp && (gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
@@ -3478,14 +3487,9 @@ static void Cmd_getexp(void)
                     gBattleMons[2].maxHP = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_MAX_HP);
                     gBattleMons[2].attack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_ATK);
                     gBattleMons[2].defense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_DEF);
-                    gBattleMons[2].speed = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPEED);
-                    // Speed is duplicated again, but Special Defense is missing.
-#ifdef BUGFIX
                     gBattleMons[2].spDefense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPDEF);
-#else
-                    gBattleMons[2].speed = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPEED);
-#endif
                     gBattleMons[2].spAttack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPATK);
+                    gBattleMons[2].speed = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPEED);
                 }
                 gBattleScripting.getexpState = 5;
             }
@@ -5244,7 +5248,8 @@ static void Cmd_switchineffects(void)
     if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES_DAMAGED)
         && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES)
         && !IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_FLYING)
-        && gBattleMons[gActiveBattler].ability != ABILITY_LEVITATE)
+        && gBattleMons[gActiveBattler].ability != ABILITY_LEVITATE
+        && gBattleMons[gActiveBattler].ability != ABILITY_MAGIC_GUARD)
     {
         u8 spikesDmg;
 
@@ -7566,13 +7571,13 @@ static void Cmd_weatherdamage(void)
     {
         if (gBattleWeather & B_WEATHER_SANDSTORM)
         {
-            if (gBattleMons[gBattlerAttacker].type1 != TYPE_ROCK
-                && gBattleMons[gBattlerAttacker].type1 != TYPE_STEEL
-                && gBattleMons[gBattlerAttacker].type1 != TYPE_GROUND
-                && gBattleMons[gBattlerAttacker].type2 != TYPE_ROCK
-                && gBattleMons[gBattlerAttacker].type2 != TYPE_STEEL
-                && gBattleMons[gBattlerAttacker].type2 != TYPE_GROUND
+            if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GROUND)
+                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_STEEL)
+                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ROCK)
                 && gBattleMons[gBattlerAttacker].ability != ABILITY_SAND_VEIL
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_SAND_RUSH
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_SAND_FORCE
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_MAGIC_GUARD
                 && !(gStatuses3[gBattlerAttacker] & STATUS3_UNDERGROUND)
                 && !(gStatuses3[gBattlerAttacker] & STATUS3_UNDERWATER))
             {
@@ -7590,6 +7595,7 @@ static void Cmd_weatherdamage(void)
             if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ICE)
                 && gBattleMons[gBattlerAttacker].ability != ABILITY_SNOW_CLOAK 
                 && gBattleMons[gBattlerAttacker].ability != ABILITY_ICE_BODY
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_MAGIC_GUARD
                 && !(gStatuses3[gBattlerAttacker] & STATUS3_UNDERGROUND)
                 && !(gStatuses3[gBattlerAttacker] & STATUS3_UNDERWATER))
             {
