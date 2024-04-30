@@ -3140,6 +3140,27 @@ const u32 gMonShinyPalette_Spiritomb[] = INCBIN_U32("graphics/pokemon/spiritomb/
 const u8 gMonIcon_Spiritomb[] = INCBIN_U8("graphics/pokemon/spiritomb/icon.4bpp");
 const u8 gMonFootprint_Spiritomb[] = INCBIN_U8("graphics/pokemon/spiritomb/footprint.1bpp");
 
+const u32 gMonStillFrontPic_Gible[] = INCBIN_U32("graphics/pokemon/gible/front.4bpp.lz");
+const u32 gMonPalette_Gible[] = INCBIN_U32("graphics/pokemon/gible/normal.gbapal.lz");
+const u32 gMonBackPic_Gible[] = INCBIN_U32("graphics/pokemon/gible/back.4bpp.lz");
+const u32 gMonShinyPalette_Gible[] = INCBIN_U32("graphics/pokemon/gible/shiny.gbapal.lz");
+const u8 gMonIcon_Gible[] = INCBIN_U8("graphics/pokemon/gible/icon.4bpp");
+const u8 gMonFootprint_Gible[] = INCBIN_U8("graphics/pokemon/gible/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Gabite[] = INCBIN_U32("graphics/pokemon/gabite/front.4bpp.lz");
+const u32 gMonPalette_Gabite[] = INCBIN_U32("graphics/pokemon/gabite/normal.gbapal.lz");
+const u32 gMonBackPic_Gabite[] = INCBIN_U32("graphics/pokemon/gabite/back.4bpp.lz");
+const u32 gMonShinyPalette_Gabite[] = INCBIN_U32("graphics/pokemon/gabite/shiny.gbapal.lz");
+const u8 gMonIcon_Gabite[] = INCBIN_U8("graphics/pokemon/gabite/icon.4bpp");
+const u8 gMonFootprint_Gabite[] = INCBIN_U8("graphics/pokemon/gabite/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Garchomp[] = INCBIN_U32("graphics/pokemon/garchomp/front.4bpp.lz");
+const u32 gMonPalette_Garchomp[] = INCBIN_U32("graphics/pokemon/garchomp/normal.gbapal.lz");
+const u32 gMonBackPic_Garchomp[] = INCBIN_U32("graphics/pokemon/garchomp/back.4bpp.lz");
+const u32 gMonShinyPalette_Garchomp[] = INCBIN_U32("graphics/pokemon/garchomp/shiny.gbapal.lz");
+const u8 gMonIcon_Garchomp[] = INCBIN_U8("graphics/pokemon/garchomp/icon.4bpp");
+const u8 gMonFootprint_Garchomp[] = INCBIN_U8("graphics/pokemon/garchomp/footprint.1bpp");
+
 const u32 gMonStillFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
 

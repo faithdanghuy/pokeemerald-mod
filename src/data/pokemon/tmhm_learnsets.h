@@ -10927,4 +10927,16 @@ const union {
     [SPECIES_SPIRITOMB] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_GIBLE] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_GABITE] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_GARCHOMP] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

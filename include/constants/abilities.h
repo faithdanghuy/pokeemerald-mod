@@ -89,18 +89,18 @@
 #define ABILITY_UNBURDEN 84
 #define ABILITY_HEATPROOF 85        // Done
 #define ABILITY_SIMPLE 86
-#define ABILITY_DRY_SKIN 87         // Done? (No HP lost in sun)
+#define ABILITY_DRY_SKIN 87         // Done
 #define ABILITY_DOWNLOAD 88
 #define ABILITY_IRON_FIST 89        // Done
-#define ABILITY_POISON_HEAL 90
+#define ABILITY_POISON_HEAL 90      // Done
 #define ABILITY_ADAPTABILITY 91     // Done
 #define ABILITY_SKILL_LINK 92
-#define ABILITY_HYDRATION 93
-#define ABILITY_SOLAR_POWER 94
+#define ABILITY_HYDRATION 93        // Done
+#define ABILITY_SOLAR_POWER 94      // Done
 #define ABILITY_QUICK_FEET 95       // Done
 #define ABILITY_NORMALIZE 96
 #define ABILITY_SNIPER 97           // Done
-#define ABILITY_MAGIC_GUARD 98
+#define ABILITY_MAGIC_GUARD 98      // Done
 #define ABILITY_NO_GUARD 99
 #define ABILITY_BRUTALIZE 100       // Done
 #define ABILITY_TECHNICIAN 101      // Done

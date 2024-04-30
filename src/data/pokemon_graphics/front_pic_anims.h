@@ -5188,6 +5188,32 @@ static const union AnimCmd sAnim_Spiritomb_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Gible_1[] =
+{
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Gabite_1[] =
+{
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Garchomp_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5889,6 +5915,9 @@ SINGLE_ANIMATION(MimeJr);
 SINGLE_ANIMATION(Happiny);
 SINGLE_ANIMATION(Chatot);
 SINGLE_ANIMATION(Spiritomb);
+SINGLE_ANIMATION(Gible);
+SINGLE_ANIMATION(Gabite);
+SINGLE_ANIMATION(Garchomp);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6394,6 +6423,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_HAPPINY]     = sAnims_Happiny,
     [SPECIES_CHATOT]      = sAnims_Chatot,
     [SPECIES_SPIRITOMB]   = sAnims_Spiritomb,
+    [SPECIES_GIBLE]       = sAnims_Gible,
+    [SPECIES_GABITE]      = sAnims_Gabite,
+    [SPECIES_GARCHOMP]    = sAnims_Garchomp,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

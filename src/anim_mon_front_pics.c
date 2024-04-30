@@ -455,6 +455,9 @@ const u32 gMonFrontPic_Mime_Jr[] = INCBIN_U32("graphics/pokemon/mime_jr/anim_fro
 const u32 gMonFrontPic_Happiny[] = INCBIN_U32("graphics/pokemon/happiny/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Chatot[] = INCBIN_U32("graphics/pokemon/chatot/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Spiritomb[] = INCBIN_U32("graphics/pokemon/spiritomb/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Gible[] = INCBIN_U32("graphics/pokemon/gible/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Gabite[] = INCBIN_U32("graphics/pokemon/gabite/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Garchomp[] = INCBIN_U32("graphics/pokemon/garchomp/anim_front.4bpp.lz");
 
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
 

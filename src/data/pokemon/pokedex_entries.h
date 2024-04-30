@@ -5387,4 +5387,40 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 257,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_GIBLE] =
+    {
+        .categoryName = _("Land Shark"),
+        .height = 7,
+        .weight = 205,
+        .description = gGiblePokedexText,
+        .pokemonScale = 365,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_GABITE] =
+    {
+        .categoryName = _("Cave"),
+        .height = 14,
+        .weight = 560,
+        .description = gGabitePokedexText,
+        .pokemonScale = 265,
+        .pokemonOffset = 2,
+        .trainerScale = 262,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_GARCHOMP] =
+    {
+        .categoryName = _("Mach"),
+        .height = 19,
+        .weight = 950,
+        .description = gGarchompPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 1,
+        .trainerScale = 326,
+        .trainerOffset = 4,
+    },
 };

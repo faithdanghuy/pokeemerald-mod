@@ -6191,4 +6191,10 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_CHATOT]           = (TUTOR(MOVE_BODY_SLAM)),
 
     [SPECIES_SPIRITOMB]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_GIBLE]            = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_GABITE]           = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_GARCHOMP]         = (TUTOR(MOVE_BODY_SLAM)),
 };

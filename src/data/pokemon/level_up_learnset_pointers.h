@@ -474,4 +474,7 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_HAPPINY] = sHappinyLevelUpLearnset,
     [SPECIES_CHATOT] = sChatotLevelUpLearnset,
     [SPECIES_SPIRITOMB] = sSpiritombLevelUpLearnset,
+    [SPECIES_GIBLE] = sGibleLevelUpLearnset,
+    [SPECIES_GABITE] = sGabiteLevelUpLearnset,
+    [SPECIES_GARCHOMP] = sGarchompLevelUpLearnset,
 };

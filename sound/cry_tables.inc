@@ -448,6 +448,9 @@ gCryTable::
 	cry Cry_Happiny
 	cry Cry_Chatot
 	cry Cry_Spiritomb
+	cry Cry_Gible
+	cry Cry_Gabite
+	cry Cry_Garchomp
 
 	.align 2
 gCryTable_Reverse::
@@ -899,3 +902,6 @@ gCryTable_Reverse::
 	cry_reverse Cry_Happiny
 	cry_reverse Cry_Chatot
 	cry_reverse Cry_Spiritomb
+	cry_reverse Cry_Gible
+	cry_reverse Cry_Gabite
+	cry_reverse Cry_Garchomp

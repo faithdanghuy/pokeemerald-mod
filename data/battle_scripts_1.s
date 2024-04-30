@@ -3747,6 +3747,11 @@ BattleScript_DoTurnDmg::
 BattleScript_DoTurnDmgEnd::
 	end2
 
+BattleScript_PoisonHeal::
+	printstring STRINGID_PKMNHEALBYPOISON
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_DoTurnDmg
+
 BattleScript_BurnTurnDmg::
 	printstring STRINGID_PKMNHURTBYBURN
 	waitmessage B_WAIT_TIME_LONG
@@ -3976,6 +3981,14 @@ BattleScript_TraceActivates::
 
 BattleScript_RainDishActivates::
 	printstring STRINGID_PKMNSXRESTOREDHPALITTLE2
+	waitmessage B_WAIT_TIME_LONG
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	end3
+
+BattleScript_SolarPowerHPLost::
+	printstring STRINGID_PKMNSXLOSTHPALITTLE
 	waitmessage B_WAIT_TIME_LONG
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
 	healthbarupdate BS_ATTACKER

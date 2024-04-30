@@ -2611,3 +2611,17 @@ const u8 gSpiritombPokedexText[] = _(
     "Its constant mischief and misdeeds resulted\n"
     "in it being bound to an Odd Keystone by a\n"
     "mysterious spell.");
+
+const u8 gGiblePokedexText[] = _(
+    "It attacks using its huge mouth. While its\n"
+    "attacks are powerful, it hurts itself out\n"
+    "of clumsiness, too.");
+
+const u8 gGabitePokedexText[] = _(
+    "It loves sparkly things. It seeks treasures\n"
+    "in caves and hoards the loot in its nest.");
+
+const u8 gGarchompPokedexText[] = _(
+    "It is said that when one runs at high speed,\n"
+    "its wings create blades of wind that can\n"
+    "fell nearby trees.");

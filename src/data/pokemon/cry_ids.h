@@ -193,4 +193,7 @@ const u16 gSpeciesIdToCryId[] =
     [SPECIES_HAPPINY - 277] = 443,
     [SPECIES_CHATOT - 277] = 444,
     [SPECIES_SPIRITOMB - 277] = 445,
+    [SPECIES_GIBLE - 277] = 446,
+    [SPECIES_GABITE - 277] = 447,
+    [SPECIES_GARCHOMP - 277] = 448,
 };

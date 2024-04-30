@@ -473,4 +473,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_HAPPINY] = _("Happiny"),
     [SPECIES_CHATOT] = _("Chatot"),
     [SPECIES_SPIRITOMB] = _("Spiritomb"),
+    [SPECIES_GIBLE] = _("Gible"),
+    [SPECIES_GABITE] = _("Gabite"),
+    [SPECIES_GARCHOMP] = _("Garchomp"),
 };

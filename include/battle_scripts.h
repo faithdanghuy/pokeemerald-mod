@@ -101,6 +101,7 @@ extern const u8 BattleScript_MoveUsedIsAsleep[];
 extern const u8 BattleScript_MoveUsedWokeUp[];
 extern const u8 BattleScript_MonWokeUpInUproar[];
 extern const u8 BattleScript_PoisonTurnDmg[];
+extern const u8 BattleScript_PoisonHeal[];
 extern const u8 BattleScript_BurnTurnDmg[];
 extern const u8 BattleScript_MoveUsedIsFrozen[];
 extern const u8 BattleScript_MoveUsedUnfroze[];
@@ -223,5 +224,6 @@ extern const u8 BattleScript_ActionWatchesCarefully[];
 extern const u8 BattleScript_ActionGetNear[];
 extern const u8 BattleScript_ActionThrowPokeblock[];
 extern const u8 BattleScript_SnowWarningActivates[];
+extern const u8 BattleScript_SolarPowerHPLost[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H
