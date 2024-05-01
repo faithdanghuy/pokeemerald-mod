@@ -10939,4 +10939,16 @@ const union {
     [SPECIES_GARCHOMP] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_MUNCHLAX] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_RIOLU] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_LUCARIO] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

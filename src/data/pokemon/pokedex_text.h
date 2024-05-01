@@ -2625,3 +2625,18 @@ const u8 gGarchompPokedexText[] = _(
     "It is said that when one runs at high speed,\n"
     "its wings create blades of wind that can\n"
     "fell nearby trees.");
+
+const u8 gMunchlaxPokedexText[] = _(
+    "In its desperation to gulp down food, it\n"
+    "forgets about the food it has hidden under\n"
+    "its fur.");
+
+const u8 gRioluPokedexText[] = _(
+    "It has the peculiar power of being able to\n"
+    "see emotions such as joy and rage in the\n"
+    "form of waves.");
+
+const u8 gLucarioPokedexText[] = _(
+    "A well-trained one can sense auras to identify\n"
+    "and take in the feelings of creatures over\n"
+    "half a mile away.");

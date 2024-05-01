@@ -196,4 +196,7 @@ const u16 gSpeciesIdToCryId[] =
     [SPECIES_GIBLE - 277] = 446,
     [SPECIES_GABITE - 277] = 447,
     [SPECIES_GARCHOMP - 277] = 448,
+    [SPECIES_MUNCHLAX - 277] = 449,
+    [SPECIES_RIOLU - 277] = 450,
+    [SPECIES_LUCARIO - 277] = 451,
 };

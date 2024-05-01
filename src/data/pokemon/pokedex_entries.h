@@ -5423,4 +5423,40 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 326,
         .trainerOffset = 4,
     },
+
+    [NATIONAL_DEX_MUNCHLAX] =
+    {
+        .categoryName = _("Big Eater"),
+        .height = 6,
+        .weight = 1050,
+        .description = gMunchlaxPokedexText,
+        .pokemonScale = 422,
+        .pokemonOffset = 14,
+        .trainerScale = 326,
+        .trainerOffset = 4,
+    },
+
+    [NATIONAL_DEX_RIOLU] =
+    {
+        .categoryName = _("Emanation"),
+        .height = 7,
+        .weight = 202,
+        .description = gRioluPokedexText,
+        .pokemonScale = 365,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 4,
+    },
+
+    [NATIONAL_DEX_LUCARIO] =
+    {
+        .categoryName = _("Aura"),
+        .height = 12,
+        .weight = 540,
+        .description = gLucarioPokedexText,
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 4,
+    },
 };

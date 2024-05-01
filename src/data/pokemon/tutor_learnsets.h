@@ -6197,4 +6197,10 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_GABITE]           = (TUTOR(MOVE_BODY_SLAM)),
 
     [SPECIES_GARCHOMP]         = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_MUNCHLAX]         = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_RIOLU]            = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_LUCARIO]          = (TUTOR(MOVE_BODY_SLAM)),
 };

@@ -451,6 +451,9 @@ gCryTable::
 	cry Cry_Gible
 	cry Cry_Gabite
 	cry Cry_Garchomp
+	cry Cry_Munchlax
+	cry Cry_Riolu
+	cry Cry_Lucario
 
 	.align 2
 gCryTable_Reverse::
@@ -905,3 +908,6 @@ gCryTable_Reverse::
 	cry_reverse Cry_Gible
 	cry_reverse Cry_Gabite
 	cry_reverse Cry_Garchomp
+	cry_reverse Cry_Munchlax
+	cry_reverse Cry_Riolu
+	cry_reverse Cry_Lucario
