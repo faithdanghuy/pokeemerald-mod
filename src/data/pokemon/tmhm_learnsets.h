@@ -10951,4 +10951,20 @@ const union {
     [SPECIES_LUCARIO] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_HIPPOPOTAS] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_HIPPOWDON] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_SKORUPI] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_DRAPION] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

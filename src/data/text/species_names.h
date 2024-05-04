@@ -479,4 +479,8 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_MUNCHLAX] = _("Munchlax"),
     [SPECIES_RIOLU] = _("Riolu"),
     [SPECIES_LUCARIO] = _("Lucario"),
+    [SPECIES_HIPPOPOTAS] = _("Hippopotas"),
+    [SPECIES_HIPPOWDON] = _("Hippowdon"),
+    [SPECIES_SKORUPI] = _("Skorupi"),
+    [SPECIES_DRAPION] = _("Drapion"),
 };

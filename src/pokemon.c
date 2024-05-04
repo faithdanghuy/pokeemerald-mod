@@ -588,6 +588,10 @@ static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_HOENN(MUNCHLAX),
     SPECIES_TO_HOENN(RIOLU),
     SPECIES_TO_HOENN(LUCARIO),
+    SPECIES_TO_HOENN(HIPPOPOTAS),
+    SPECIES_TO_HOENN(HIPPOWDON),
+    SPECIES_TO_HOENN(SKORUPI),
+    SPECIES_TO_HOENN(DRAPION),
 };
 
 // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -1076,6 +1080,10 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(MUNCHLAX),
     SPECIES_TO_NATIONAL(RIOLU),
     SPECIES_TO_NATIONAL(LUCARIO),
+    SPECIES_TO_NATIONAL(HIPPOPOTAS),
+    SPECIES_TO_NATIONAL(HIPPOWDON),
+    SPECIES_TO_NATIONAL(SKORUPI),
+    SPECIES_TO_NATIONAL(DRAPION),
 };
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
@@ -1535,6 +1543,10 @@ static const u16 sHoennToNationalOrder[NUM_SPECIES - 1] =
     HOENN_TO_NATIONAL(MUNCHLAX),
     HOENN_TO_NATIONAL(RIOLU),
     HOENN_TO_NATIONAL(LUCARIO),
+    HOENN_TO_NATIONAL(HIPPOPOTAS),
+    HOENN_TO_NATIONAL(HIPPOWDON),
+    HOENN_TO_NATIONAL(SKORUPI),
+    HOENN_TO_NATIONAL(DRAPION),
     HOENN_TO_NATIONAL(OLD_UNOWN_B),
     HOENN_TO_NATIONAL(OLD_UNOWN_C),
     HOENN_TO_NATIONAL(OLD_UNOWN_D),
@@ -2068,6 +2080,10 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_MUNCHLAX - 1]    = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
     [SPECIES_RIOLU - 1]       = ANIM_RAPID_H_HOPS,
     [SPECIES_LUCARIO - 1]     = ANIM_V_STRETCH,
+    [SPECIES_HIPPOPOTAS - 1]  = ANIM_V_STRETCH,
+    [SPECIES_HIPPOWDON - 1]   = ANIM_V_SHAKE_TWICE,
+    [SPECIES_SKORUPI - 1]     = ANIM_H_SLIDE_SLOW,
+    [SPECIES_DRAPION - 1]     = ANIM_V_JUMPS_BIG,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -3375,6 +3391,7 @@ void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
 }
 
 #define PUNCHING_MOVES_END 0xFFFF
+#define BITING_MOVES_END 0xFFFF
 
 static const u16 sPunchingMovesTable[] =
 {
@@ -3383,6 +3400,13 @@ static const u16 sPunchingMovesTable[] =
     MOVE_METEOR_MASH, MOVE_SHADOW_PUNCH, MOVE_SKY_UPPERCUT, MOVE_THUNDER_PUNCH,
     PUNCHING_MOVES_END
 };
+
+static const u16 sBitingMovesTable[] =
+{
+    MOVE_BITE, MOVE_CRUNCH, MOVE_HYPER_FANG, MOVE_POISON_FANG, 
+    BITING_MOVES_END
+};
+
 
 s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *defender, u32 move, u16 sideStatus, u16 powerOverride, u8 typeOverride, u8 battlerIdAtk, u8 battlerIdDef)
 {
@@ -3487,7 +3511,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     {
         if (IS_MOVE_PHYSICAL(gCurrentMove))
             defense = (130 * defense) / 100;
-        else
+        else if (IS_MOVE_SPECIAL(gCurrentMove))
             spDefense = (130 * spDefense) / 100;
     }
     if (type == TYPE_ELECTRIC && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
@@ -3498,13 +3522,11 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     {
         if (IS_MOVE_SPECIAL(gCurrentMove))
             spAttack /= 2;
-        else
+        else if (IS_MOVE_PHYSICAL(gCurrentMove))
             attack /= 2;
     }
-    if (attacker->ability == ABILITY_RECKLESS && gBattleMoves[gCurrentMove].effect == EFFECT_RECOIL)
+    if (attacker->ability == ABILITY_RECKLESS && (gBattleMoves[gCurrentMove].effect == MOVE_EFFECT_RECOIL_25 || gBattleMoves[gCurrentMove].effect == MOVE_EFFECT_RECOIL_33))
         gBattleMovePower = (120 * gBattleMovePower) / 100;
-    if (attacker->ability == ABILITY_BRUTALIZE && defender->hp <= (defender->maxHP / 2))
-        gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_CLARITY && IS_MOVE_SPECIAL(gCurrentMove))
         gBattleMovePower = (130 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_TECHNICIAN && gBattleMovePower <= 60)
@@ -3524,6 +3546,17 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             if (sPunchingMovesTable[i] == gCurrentMove)
             {
                 gBattleMovePower = (120 * gBattleMovePower) / 100;
+                break;
+            }
+        }
+    }
+    if (attacker->ability == ABILITY_STRONG_JAW)
+    {
+        for (i = 0; sBitingMovesTable[i] != BITING_MOVES_END; i++)
+        {
+            if (sBitingMovesTable[i] == gCurrentMove)
+            {
+                gBattleMovePower = (150 * gBattleMovePower) / 100;
                 break;
             }
         }

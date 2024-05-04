@@ -454,6 +454,10 @@ gCryTable::
 	cry Cry_Munchlax
 	cry Cry_Riolu
 	cry Cry_Lucario
+	cry Cry_Hippopotas
+	cry Cry_Hippowdon
+	cry Cry_Skorupi
+	cry Cry_Drapion
 
 	.align 2
 gCryTable_Reverse::
@@ -911,3 +915,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Munchlax
 	cry_reverse Cry_Riolu
 	cry_reverse Cry_Lucario
+	cry_reverse Cry_Hippopotas
+	cry_reverse Cry_Hippowdon
+	cry_reverse Cry_Skorupi
+	cry_reverse Cry_Drapion

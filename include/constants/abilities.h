@@ -84,7 +84,7 @@
 #define ABILITY_RIVALRY 79
 #define ABILITY_STEADFAST 80
 #define ABILITY_SNOW_CLOAK 81       // Done
-#define ABILITY_GLUTTONY 82
+#define ABILITY_STRONG_JAW 82       // Done
 #define ABILITY_ANGER_POINT 83
 #define ABILITY_UNBURDEN 84
 #define ABILITY_HEATPROOF 85        // Done

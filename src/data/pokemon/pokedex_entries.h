@@ -5459,4 +5459,52 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 4,
     },
+
+    [NATIONAL_DEX_HIPPOPOTAS] =
+    {
+        .categoryName = _("Hippo"),
+        .height = 8,
+        .weight = 495,
+        .description = gHippopotasPokedexText,
+        .pokemonScale = 366,
+        .pokemonOffset = 11,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_HIPPOWDON] =
+    {
+        .categoryName = _("Heavyweight"),
+        .height = 20,
+        .weight = 3000,
+        .description = gHippowdonPokedexText,
+        .pokemonScale = 261,
+        .pokemonOffset = 2,
+        .trainerScale = 334,
+        .trainerOffset = 4,
+    },
+
+    [NATIONAL_DEX_SKORUPI] =
+    {
+        .categoryName = _("Scorpion"),
+        .height = 8,
+        .weight = 120,
+        .description = gSkorupiPokedexText,
+        .pokemonScale = 366,
+        .pokemonOffset = 12,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_DRAPION] =
+    {
+        .categoryName = _("Ogre Scorp"),
+        .height = 13,
+        .weight = 651,
+        .description = gDrapionPokedexText,
+        .pokemonScale = 272,
+        .pokemonOffset = 5,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

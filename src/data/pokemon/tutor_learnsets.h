@@ -6203,4 +6203,12 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_RIOLU]            = (TUTOR(MOVE_BODY_SLAM)),
 
     [SPECIES_LUCARIO]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_HIPPOPOTAS]       = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_HIPPOWDON]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_SKORUPI]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_DRAPION]          = (TUTOR(MOVE_BODY_SLAM)),
 };

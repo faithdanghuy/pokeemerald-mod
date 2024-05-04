@@ -2640,3 +2640,22 @@ const u8 gLucarioPokedexText[] = _(
     "A well-trained one can sense auras to identify\n"
     "and take in the feelings of creatures over\n"
     "half a mile away.");
+
+const u8 gHippopotasPokedexText[] = _(
+    "It shuts its nostrils tight then travels through\n"
+    "sand as if walking. They form colonies of\n"
+    "around ten.");
+
+const u8 gHippowdonPokedexText[] = _(
+    "It is surprisingly quick to anger. It holds\n"
+    "its mouth agape as a display of its strength.");
+
+const u8 gSkorupiPokedexText[] = _(
+    "As soon as the tail claws close, its needle\n"
+    "tips secrete poison. It can survive a year\n"
+    "without food.");
+
+const u8 gDrapionPokedexText[] = _(
+    "Possessing a sturdy build, it takes pride in\n"
+    "its strength, taking down foes without using\n"
+    "toxins.");

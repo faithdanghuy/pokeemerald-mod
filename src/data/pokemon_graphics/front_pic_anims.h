@@ -5238,6 +5238,56 @@ static const union AnimCmd sAnim_Lucario_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Hippopotas_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 36),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Hippowdon_1[] =
+{
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Skorupi_1[] =
+{
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Drapion_1[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -5945,6 +5995,10 @@ SINGLE_ANIMATION(Garchomp);
 SINGLE_ANIMATION(Munchlax);
 SINGLE_ANIMATION(Riolu);
 SINGLE_ANIMATION(Lucario);
+SINGLE_ANIMATION(Hippopotas);
+SINGLE_ANIMATION(Hippowdon);
+SINGLE_ANIMATION(Skorupi);
+SINGLE_ANIMATION(Drapion);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6456,6 +6510,10 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_MUNCHLAX]    = sAnims_Munchlax,
     [SPECIES_RIOLU]       = sAnims_Riolu,
     [SPECIES_LUCARIO]     = sAnims_Lucario,
+    [SPECIES_HIPPOPOTAS]  = sAnims_Hippopotas,
+    [SPECIES_HIPPOWDON]   = sAnims_Hippowdon,
+    [SPECIES_SKORUPI]     = sAnims_Skorupi,
+    [SPECIES_DRAPION]     = sAnims_Drapion,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,
