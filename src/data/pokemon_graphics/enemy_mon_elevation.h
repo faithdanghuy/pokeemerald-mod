@@ -2,13 +2,13 @@
 // is during battle. Species that float or fly have nonzero values.
 const u8 gEnemyMonElevation[NUM_SPECIES] =
 {
-    [SPECIES_BUTTERFREE] = 8,
-    [SPECIES_BEEDRILL] = 8,
-    [SPECIES_PIDGEOT] = 4,
+    [SPECIES_BUTTERFREE] = 10,
+    [SPECIES_BEEDRILL] = 9,
+    [SPECIES_PIDGEOT] = 5,
     [SPECIES_FEAROW] = 6,
-    [SPECIES_ZUBAT] = 8,
-    [SPECIES_GOLBAT] = 8,
-    [SPECIES_VENOMOTH] = 8,
+    [SPECIES_ZUBAT] = 10,
+    [SPECIES_GOLBAT] = 9,
+    [SPECIES_VENOMOTH] = 16,
     [SPECIES_GEODUDE] = 16,
     [SPECIES_MAGNEMITE] = 16,
     [SPECIES_MAGNETON] = 8,
