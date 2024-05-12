@@ -484,4 +484,7 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_HIPPOWDON] = sHippowdonLevelUpLearnset,
     [SPECIES_SKORUPI] = sSkorupiLevelUpLearnset,
     [SPECIES_DRAPION] = sDrapionLevelUpLearnset,
+    [SPECIES_CROAGUNK] = sCroagunkLevelUpLearnset,
+    [SPECIES_TOXICROAK] = sToxicroakLevelUpLearnset,
+    [SPECIES_CARNIVINE] = sCarnivineLevelUpLearnset,
 };

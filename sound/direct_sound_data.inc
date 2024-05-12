@@ -2219,6 +2219,18 @@ Cry_Drapion::
 	.incbin "sound/direct_sound_samples/cries/drapion.bin"
 
 	.align 2
+Cry_Croagunk::
+	.incbin "sound/direct_sound_samples/cries/croagunk.bin"
+
+	.align 2
+Cry_Toxicroak::
+	.incbin "sound/direct_sound_samples/cries/toxicroak.bin"
+
+	.align 2
+Cry_Carnivine::
+	.incbin "sound/direct_sound_samples/cries/carnivine.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

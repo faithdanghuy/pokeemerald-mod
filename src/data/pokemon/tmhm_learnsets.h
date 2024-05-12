@@ -10967,4 +10967,16 @@ const union {
     [SPECIES_DRAPION] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_CROAGUNK] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_TOXICROAK] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_CARNIVINE] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

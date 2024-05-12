@@ -2659,3 +2659,17 @@ const u8 gDrapionPokedexText[] = _(
     "Possessing a sturdy build, it takes pride in\n"
     "its strength, taking down foes without using\n"
     "toxins.");
+
+const u8 gCroagunkPokedexText[] = _(
+    "It rarely fights fairly, but that is strictly\n"
+    "to ensure survival. It is popular as a mascot.");
+
+const u8 gToxicroakPokedexText[] = _(
+    "It has a poison sac at its throat. When it\n"
+    "croaks, the stored poison is churned for\n"
+    "greater potency.");
+
+const u8 gCarnivinePokedexText[] = _(
+    "It binds itself to trees in marshes. It\n"
+    "attracts prey with its sweet-smelling drool\n"
+    "and gulps them down.");

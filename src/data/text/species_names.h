@@ -483,4 +483,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_HIPPOWDON] = _("Hippowdon"),
     [SPECIES_SKORUPI] = _("Skorupi"),
     [SPECIES_DRAPION] = _("Drapion"),
+    [SPECIES_CROAGUNK] = _("Croagunk"),
+    [SPECIES_TOXICROAK] = _("Toxicroak"),
+    [SPECIES_CARNIVINE] = _("Carnivine"),
 };

@@ -6211,4 +6211,10 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_SKORUPI]          = (TUTOR(MOVE_BODY_SLAM)),
 
     [SPECIES_DRAPION]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_CROAGUNK]         = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_TOXICROAK]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_CARNIVINE]        = (TUTOR(MOVE_BODY_SLAM)),
 };
