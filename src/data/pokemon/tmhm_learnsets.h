@@ -10979,4 +10979,24 @@ const union {
     [SPECIES_CARNIVINE] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_FINNEON] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_LUMINEON] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_MANTYKE] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_SNOVER] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_ABOMASNOW] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

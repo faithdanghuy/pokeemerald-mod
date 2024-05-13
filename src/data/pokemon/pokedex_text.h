@@ -2673,3 +2673,26 @@ const u8 gCarnivinePokedexText[] = _(
     "It binds itself to trees in marshes. It\n"
     "attracts prey with its sweet-smelling drool\n"
     "and gulps them down.");
+
+const u8 gFinneonPokedexText[] = _(
+    "The line running down its side can store\n"
+    "sunlight. It shines vividly at night.");
+
+const u8 gLumineonPokedexText[] = _(
+    "It crawls along the seafloor using its long\n"
+    "front fins like legs. It competes for food\n"
+    "with LANTURN.");
+
+const u8 gMantykePokedexText[] = _(
+    "People organize tours to see this Pokémon\n"
+    "frolic and skim the tops of waves with\n"
+    "REMORAID.");
+
+const u8 gSnoverPokedexText[] = _(
+    "Seemingly curious about people, they gather\n"
+    "around footsteps they find on snowy mountains.");
+
+const u8 gAbomasnowPokedexText[] = _(
+    "They appear when the snow flowers bloom.\n"
+    "When the petals fall, they retreat to places\n"
+    "unknown again.");

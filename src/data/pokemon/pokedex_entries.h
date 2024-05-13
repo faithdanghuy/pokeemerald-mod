@@ -5543,4 +5543,64 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 262,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_FINNEON] =
+    {
+        .categoryName = _("Wing Fish"),
+        .height = 4,
+        .weight = 70,
+        .description = gFinneonPokedexText,
+        .pokemonScale = 491,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_LUMINEON] =
+    {
+        .categoryName = _("Neon"),
+        .height = 12,
+        .weight = 240,
+        .description = gLumineonPokedexText,
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_MANTYKE] =
+    {
+        .categoryName = _("Kite"),
+        .height = 10,
+        .weight = 650,
+        .description = gMantykePokedexText,
+        .pokemonScale = 305,
+        .pokemonOffset = 7,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_SNOVER] =
+    {
+        .categoryName = _("Frost Tree"),
+        .height = 10,
+        .weight = 505,
+        .description = gSnoverPokedexText,
+        .pokemonScale = 305,
+        .pokemonOffset = 7,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_ABOMASNOW] =
+    {
+        .categoryName = _("Frost Tree"),
+        .height = 22,
+        .weight = 1355,
+        .description = gAbomasnowPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 348,
+        .trainerOffset = 6,
+    },
 };

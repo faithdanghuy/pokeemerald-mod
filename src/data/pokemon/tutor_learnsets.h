@@ -6217,4 +6217,14 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_TOXICROAK]        = (TUTOR(MOVE_BODY_SLAM)),
 
     [SPECIES_CARNIVINE]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_FINNEON]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_LUMINEON]         = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_MANTYKE]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_SNOVER]           = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_ABOMASNOW]        = (TUTOR(MOVE_BODY_SLAM)),
 };
