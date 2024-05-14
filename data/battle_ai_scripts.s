@@ -62,6 +62,8 @@ AI_CBM_CheckIfNegatesType:
 	if_equal ABILITY_FLASH_FIRE, CheckIfFlashFireCancelsFire
 	if_equal ABILITY_WONDER_GUARD, CheckIfWonderGuardCancelsMove
 	if_equal ABILITY_LEVITATE, CheckIfLevitateCancelsGroundMove
+	if_equal ABILITY_SOLAR_SOUL, CheckIfLevitateCancelsGroundMove
+	if_equal ABILITY_LUNAR_SOUL, CheckIfLevitateCancelsGroundMove
 	goto AI_CheckBadMove_CheckSoundproof_
 
 CheckIfVoltAbsorbCancelsElectric:
@@ -365,6 +367,8 @@ AI_CBM_OneHitKO:
 AI_CBM_Magnitude:
 	get_ability AI_TARGET
 	if_equal ABILITY_LEVITATE, Score_Minus10
+	if_equal ABILITY_SOLAR_SOUL, Score_Minus10
+	if_equal ABILITY_LUNAR_SOUL, Score_Minus10
 AI_CBM_HighRiskForDamage:
 	if_type_effectiveness AI_EFFECTIVENESS_x0, Score_Minus10
 	get_ability AI_TARGET
@@ -2803,11 +2807,14 @@ AI_DoubleBattleCheckUserStatus2:
 
 AI_DoubleBattleAllHittingGroundMove:
 	if_ability AI_USER_PARTNER, ABILITY_LEVITATE, Score_Plus2
+	if_ability AI_USER_PARTNER, ABILITY_SOLAR_SOUL, Score_Plus2
+	if_ability AI_USER_PARTNER, ABILITY_LUNAR_SOUL, Score_Plus2
 	if_type AI_USER_PARTNER, TYPE_FLYING, Score_Plus2
 	if_type AI_USER_PARTNER, TYPE_FIRE, Score_Minus10
 	if_type AI_USER_PARTNER, TYPE_ELECTRIC, Score_Minus10
 	if_type AI_USER_PARTNER, TYPE_POISON, Score_Minus10
 	if_type AI_USER_PARTNER, TYPE_ROCK, Score_Minus10
+	if_type AI_USER_PARTNER, TYPE_STEEL, Score_Minus10
 	goto Score_Minus3
 
 AI_DoubleBattleSkillSwap:
@@ -2816,6 +2823,11 @@ AI_DoubleBattleSkillSwap:
 	get_ability AI_TARGET
 	if_equal ABILITY_SHADOW_TAG, Score_Plus2
 	if_equal ABILITY_PURE_POWER, Score_Plus2
+	if_equal ABILITY_HUGE_POWER, Score_Plus2
+	if_equal ABILITY_WATER_ABSORB, Score_Plus2
+	if_equal ABILITY_VOLT_ABSORB, Score_Plus2
+	if_equal ABILITY_FLASH_FIRE, Score_Plus2
+	if_equal ABILITY_INTIMIDATE, Score_Plus2
 	end
 
 AI_DoubleBattleElectricMove:

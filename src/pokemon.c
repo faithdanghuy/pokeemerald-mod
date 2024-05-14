@@ -3424,6 +3424,7 @@ void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
 
 #define PUNCHING_MOVES_END 0xFFFF
 #define BITING_MOVES_END 0xFFFF
+#define SLICING_MOVES_END 0xFFFF
 
 static const u16 sPunchingMovesTable[] =
 {
@@ -3437,6 +3438,13 @@ static const u16 sBitingMovesTable[] =
 {
     MOVE_BITE, MOVE_CRUNCH, MOVE_HYPER_FANG, MOVE_POISON_FANG, 
     BITING_MOVES_END
+};
+
+static const u16 sSlicingMovesTable[] =
+{
+    MOVE_AERIAL_ACE, MOVE_AIR_CUTTER, MOVE_FURY_CUTTER, MOVE_LEAF_BLADE,
+    MOVE_SLASH,
+    SLICING_MOVES_END
 };
 
 
@@ -3537,6 +3545,12 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         spAttack = (150 * spAttack) / 100;
     if (attacker->ability == ABILITY_GUTS && attacker->status1)
         attack = (150 * attack) / 100;
+    if (attacker->ability == ABILITY_TOXIC_BOOST && attacker->status1 & STATUS1_PSN_ANY && IS_MOVE_PHYSICAL(gCurrentMove))
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_SOLAR_SOUL && (type == TYPE_FIRE || type == TYPE_PSYCHIC))
+        gBattleMovePower = (130 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_LUNAR_SOUL && (type == TYPE_ROCK || type == TYPE_PSYCHIC))
+        gBattleMovePower = (130 * gBattleMovePower) / 100;
     if (defender->ability == ABILITY_MARVEL_SCALE && defender->status1)
         defense = (150 * defense) / 100;
     if (defender->ability == ABILITY_FORTIFY && defender->hp <= (defender->maxHP / 2))
@@ -3587,6 +3601,18 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         for (i = 0; sBitingMovesTable[i] != BITING_MOVES_END; i++)
         {
             if (sBitingMovesTable[i] == gCurrentMove)
+            {
+                gBattleMovePower = (150 * gBattleMovePower) / 100;
+                break;
+            }
+        }
+    }
+
+    if (attacker->ability == ABILITY_SHARPNESS)
+    {
+        for (i = 0; sSlicingMovesTable[i] != SLICING_MOVES_END; i++)
+        {
+            if (sSlicingMovesTable[i] == gCurrentMove)
             {
                 gBattleMovePower = (150 * gBattleMovePower) / 100;
                 break;

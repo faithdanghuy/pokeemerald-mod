@@ -124,6 +124,12 @@ static const u8 sFlowerGiftDescription[] = _("Power up in sunshine.");
 static const u8 sBadDreamsDescription[] = _("Damages sleeping Pokémon.");
 static const u8 sInfiltratorDescription[] = _("Passes through barrier/screen.");
 static const u8 sMultiscaleDescription[] = _("Halves damage when full HP.");
+static const u8 sMercilessDescription[] = _("Crit if target is poisoned.");
+static const u8 sSharpnessDescription[] = _("Powers up slicing moves.");
+static const u8 sToxicBoostDescription[] = _("Powers up when poison.");
+static const u8 sSolarSoulDescription[] = _("Levitate, ups Fire/Psychic power.");
+static const u8 sLunarSoulDescription[] = _("Levitate, ups Rock/Psychic power.");
+static const u8 sHydropowerDescription[] = _("Boost power of Water-type move.");
 
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
 {
@@ -252,6 +258,12 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_BAD_DREAMS] = _("Bad Dreams"),
     [ABILITY_INFILTRATOR] = _("Infiltrator"),
     [ABILITY_MULTISCALE] = _("Multiscale"),
+    [ABILITY_MERCILESS] = _("Merciless"),
+    [ABILITY_SHARPNESS] = _("Sharpness"),
+    [ABILITY_TOXIC_BOOST] = _("Toxic Boost"),
+    [ABILITY_SOLAR_SOUL] = _("Solar Soul"),
+    [ABILITY_LUNAR_SOUL] = _("Lunar Soul"),
+    [ABILITY_HYDROPOWER] = _("Hydropower"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
@@ -381,4 +393,10 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_BAD_DREAMS] = sBadDreamsDescription,
     [ABILITY_INFILTRATOR] = sInfiltratorDescription,
     [ABILITY_MULTISCALE] = sMultiscaleDescription,
+    [ABILITY_MERCILESS] = sMercilessDescription,
+    [ABILITY_SHARPNESS] = sSharpnessDescription,
+    [ABILITY_TOXIC_BOOST] = sToxicBoostDescription,
+    [ABILITY_SOLAR_SOUL] = sSolarSoulDescription,
+    [ABILITY_LUNAR_SOUL] = sLunarSoulDescription,
+    [ABILITY_HYDROPOWER] = sHydropowerDescription,
 };

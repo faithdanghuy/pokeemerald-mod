@@ -518,15 +518,9 @@ static bool8 WildEncounterCheck(u32 encounterRate, bool8 ignoreAbility)
 
         if (ability == ABILITY_STENCH && gMapHeader.mapLayoutId == LAYOUT_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR)
             encounterRate = encounterRate * 3 / 4;
-        else if (ability == ABILITY_STENCH)
+        else if (ability == ABILITY_STENCH || ability == ABILITY_WHITE_SMOKE || ability == ABILITY_QUICK_FEET || ability == ABILITY_INFILTRATOR)
             encounterRate /= 2;
-        else if (ability == ABILITY_ILLUMINATE)
-            encounterRate *= 2;
-        else if (ability == ABILITY_WHITE_SMOKE)
-            encounterRate /= 2;
-        else if (ability == ABILITY_ARENA_TRAP)
-            encounterRate *= 2;
-        else if (ability == ABILITY_NO_GUARD)
+        else if (ability == ABILITY_ILLUMINATE || ability == ABILITY_NO_GUARD || ability == ABILITY_ARENA_TRAP)
             encounterRate *= 2;
         else if (ability == ABILITY_SAND_VEIL && gSaveBlock1Ptr->weather == WEATHER_SANDSTORM)
             encounterRate /= 2;

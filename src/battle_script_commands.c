@@ -1293,6 +1293,11 @@ static void Cmd_critcalc(void)
     else
         gCritMultiplier = 1;
 
+    if (gBattleMons[gBattlerAttacker].ability == ABILITY_MERCILESS && gBattleMons[gBattlerTarget].status1 & STATUS1_PSN_ANY)
+    {
+        gCritMultiplier = 2;
+    }
+
     gBattlescriptCurrInstr++;
 }
 
@@ -1393,13 +1398,15 @@ static void Cmd_typecalc(void)
     // check stab
     if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) && gBattleMons[gBattlerAttacker].ability == ABILITY_ADAPTABILITY)
         gBattleMoveDamage *= 2;
-    else if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType))
+    else if ((IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType)) || (moveType == TYPE_WATER && gBattleMons[gBattlerAttacker].ability == ABILITY_HYDROPOWER))
     {
         gBattleMoveDamage = gBattleMoveDamage * 15;
         gBattleMoveDamage = gBattleMoveDamage / 10;
     }
 
-    if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE && moveType == TYPE_GROUND)
+    if ((gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE
+       ||gBattleMons[gBattlerTarget].ability == ABILITY_SOLAR_SOUL
+       ||gBattleMons[gBattlerTarget].ability == ABILITY_LUNAR_SOUL) && moveType == TYPE_GROUND)
     {
         gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
         gMoveResultFlags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
@@ -1461,11 +1468,13 @@ static void CheckWonderGuardAndLevitate(void)
 
     GET_MOVE_TYPE(gCurrentMove, moveType);
 
-    if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE && moveType == TYPE_GROUND)
+    if ((gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE
+       ||gBattleMons[gBattlerTarget].ability == ABILITY_SOLAR_SOUL
+       ||gBattleMons[gBattlerTarget].ability == ABILITY_LUNAR_SOUL) && moveType == TYPE_GROUND)
     {
-        gLastUsedAbility = ABILITY_LEVITATE;
+        gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
         gBattleCommunication[MISS_TYPE] = B_MSG_GROUND_MISS;
-        RecordAbilityBattle(gBattlerTarget, ABILITY_LEVITATE);
+        RecordAbilityBattle(gBattlerTarget, gBattleMons[gBattlerTarget].ability);
         return;
     }
 
@@ -1574,13 +1583,15 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
     // check stab
     if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) && gBattleMons[attacker].ability == ABILITY_ADAPTABILITY)
         gBattleMoveDamage *= 2;
-    else if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType))
+    else if ((IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType)) || (moveType == TYPE_WATER && gBattleMons[attacker].ability == ABILITY_HYDROPOWER))
     {
         gBattleMoveDamage = gBattleMoveDamage * 15;
         gBattleMoveDamage = gBattleMoveDamage / 10;
     }
 
-    if (gBattleMons[defender].ability == ABILITY_LEVITATE && moveType == TYPE_GROUND)
+    if ((gBattleMons[defender].ability == ABILITY_LEVITATE
+       ||gBattleMons[defender].ability == ABILITY_SOLAR_SOUL
+       ||gBattleMons[defender].ability == ABILITY_LUNAR_SOUL) && moveType == TYPE_GROUND)
     {
         flags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
     }
@@ -1632,7 +1643,9 @@ u8 AI_TypeCalc(u16 move, u16 targetSpecies, u8 targetAbility)
 
     moveType = gBattleMoves[move].type;
 
-    if (targetAbility == ABILITY_LEVITATE && moveType == TYPE_GROUND)
+    if ((targetAbility == ABILITY_LEVITATE
+       ||targetAbility == ABILITY_SOLAR_SOUL
+       ||targetAbility == ABILITY_LUNAR_SOUL) && moveType == TYPE_GROUND)
     {
         flags = MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE;
     }
@@ -4540,7 +4553,9 @@ static void Cmd_typecalc2(void)
     s32 i = 0;
     u8 moveType = gBattleMoves[gCurrentMove].type;
 
-    if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE && moveType == TYPE_GROUND)
+    if ((gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE 
+       ||gBattleMons[gBattlerTarget].ability == ABILITY_SOLAR_SOUL
+       ||gBattleMons[gBattlerTarget].ability == ABILITY_LUNAR_SOUL) && moveType == TYPE_GROUND)
     {
         gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
         gMoveResultFlags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
@@ -5267,6 +5282,8 @@ static void Cmd_switchineffects(void)
         && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES)
         && !IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_FLYING)
         && gBattleMons[gActiveBattler].ability != ABILITY_LEVITATE
+        && gBattleMons[gActiveBattler].ability != ABILITY_SOLAR_SOUL
+        && gBattleMons[gActiveBattler].ability != ABILITY_LUNAR_SOUL
         && gBattleMons[gActiveBattler].ability != ABILITY_MAGIC_GUARD)
     {
         u8 spikesDmg;

@@ -128,7 +128,13 @@
 #define ABILITY_BAD_DREAMS 123
 #define ABILITY_INFILTRATOR 124     // No safeguard pass through yet
 #define ABILITY_MULTISCALE 125      // Done
+#define ABILITY_MERCILESS 126       // Done
+#define ABILITY_SHARPNESS 127       // Done
+#define ABILITY_TOXIC_BOOST 128     // Done
+#define ABILITY_SOLAR_SOUL 129      // Done
+#define ABILITY_LUNAR_SOUL 130      // Done
+#define ABILITY_HYDROPOWER 131      // Done
 
-#define ABILITIES_COUNT 126
+#define ABILITIES_COUNT 132
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H
