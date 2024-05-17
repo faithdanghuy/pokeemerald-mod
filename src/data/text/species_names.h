@@ -491,4 +491,9 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_MANTYKE] = _("Mantyke"),
     [SPECIES_SNOVER] = _("Snover"),
     [SPECIES_ABOMASNOW] = _("Abomasnow"),
+    [SPECIES_WEAVILE] = _("Weavile"),
+    [SPECIES_MAGNEZONE] = _("Magnezone"),
+    [SPECIES_LICKILICKY] = _("Lickilicky"),
+    [SPECIES_RHYPERIOR] = _("Rhyperior"),
+    [SPECIES_TANGROWTH] = _("Tangrowth"),
 };

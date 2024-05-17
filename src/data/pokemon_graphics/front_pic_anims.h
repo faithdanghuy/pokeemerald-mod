@@ -5373,6 +5373,59 @@ static const union AnimCmd sAnim_Abomasnow_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Weavile_1[] =
+{
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Magnezone_1[] =
+{
+    ANIMCMD_FRAME(0, 16),
+    ANIMCMD_FRAME(1, 16),
+    ANIMCMD_FRAME(0, 16),
+    ANIMCMD_FRAME(1, 16),
+    ANIMCMD_FRAME(0, 16),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Lickilicky_1[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Rhyperior_1[] =
+{
+    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Tangrowth_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -6092,6 +6145,11 @@ SINGLE_ANIMATION(Lumineon);
 SINGLE_ANIMATION(Mantyke);
 SINGLE_ANIMATION(Snover);
 SINGLE_ANIMATION(Abomasnow);
+SINGLE_ANIMATION(Weavile);
+SINGLE_ANIMATION(Magnezone);
+SINGLE_ANIMATION(Lickilicky);
+SINGLE_ANIMATION(Rhyperior);
+SINGLE_ANIMATION(Tangrowth);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6615,6 +6673,11 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_MANTYKE]     = sAnims_Mantyke,
     [SPECIES_SNOVER]      = sAnims_Snover,
     [SPECIES_ABOMASNOW]   = sAnims_Abomasnow,
+    [SPECIES_WEAVILE]     = sAnims_Weavile,
+    [SPECIES_MAGNEZONE]   = sAnims_Magnezone,
+    [SPECIES_LICKILICKY]  = sAnims_Lickilicky,
+    [SPECIES_RHYPERIOR]   = sAnims_Rhyperior,
+    [SPECIES_TANGROWTH]   = sAnims_Tangrowth,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

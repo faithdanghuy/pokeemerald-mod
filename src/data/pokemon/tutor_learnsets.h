@@ -6227,4 +6227,14 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_SNOVER]           = (TUTOR(MOVE_BODY_SLAM)),
 
     [SPECIES_ABOMASNOW]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_WEAVILE]          = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_MAGNEZONE]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_LICKILICKY]       = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_RHYPERIOR]        = (TUTOR(MOVE_BODY_SLAM)),
+
+    [SPECIES_TANGROWTH]        = (TUTOR(MOVE_BODY_SLAM)),
 };

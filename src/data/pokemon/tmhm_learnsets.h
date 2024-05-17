@@ -10999,4 +10999,24 @@ const union {
     [SPECIES_ABOMASNOW] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_WEAVILE] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_MAGNEZONE] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_LICKILICKY] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_RHYPERIOR] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_TANGROWTH] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

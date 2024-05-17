@@ -600,6 +600,11 @@ static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_HOENN(MANTYKE),
     SPECIES_TO_HOENN(SNOVER),
     SPECIES_TO_HOENN(ABOMASNOW),
+    SPECIES_TO_HOENN(WEAVILE),
+    SPECIES_TO_HOENN(MAGNEZONE),
+    SPECIES_TO_HOENN(LICKILICKY),
+    SPECIES_TO_HOENN(RHYPERIOR),
+    SPECIES_TO_HOENN(TANGROWTH),
 };
 
 // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -1100,6 +1105,11 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(MANTYKE),
     SPECIES_TO_NATIONAL(SNOVER),
     SPECIES_TO_NATIONAL(ABOMASNOW),
+    SPECIES_TO_NATIONAL(WEAVILE),
+    SPECIES_TO_NATIONAL(MAGNEZONE),
+    SPECIES_TO_NATIONAL(LICKILICKY),
+    SPECIES_TO_NATIONAL(RHYPERIOR),
+    SPECIES_TO_NATIONAL(TANGROWTH),
 };
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
@@ -1571,6 +1581,11 @@ static const u16 sHoennToNationalOrder[NUM_SPECIES - 1] =
     HOENN_TO_NATIONAL(MANTYKE),
     HOENN_TO_NATIONAL(SNOVER),
     HOENN_TO_NATIONAL(ABOMASNOW),
+    HOENN_TO_NATIONAL(WEAVILE),
+    HOENN_TO_NATIONAL(MAGNEZONE),
+    HOENN_TO_NATIONAL(LICKILICKY),
+    HOENN_TO_NATIONAL(RHYPERIOR),
+    HOENN_TO_NATIONAL(TANGROWTH),
     HOENN_TO_NATIONAL(OLD_UNOWN_B),
     HOENN_TO_NATIONAL(OLD_UNOWN_C),
     HOENN_TO_NATIONAL(OLD_UNOWN_D),
@@ -2116,6 +2131,11 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_MANTYKE - 1]     = ANIM_TWIST_TWICE,
     [SPECIES_SNOVER - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_ABOMASNOW - 1]   = ANIM_H_SHAKE,
+    [SPECIES_WEAVILE - 1]     = ANIM_H_VIBRATE,
+    [SPECIES_MAGNEZONE - 1]   = ANIM_H_SLIDE_WOBBLE,
+    [SPECIES_LICKILICKY - 1]  = ANIM_V_SQUISH_AND_BOUNCE,
+    [SPECIES_RHYPERIOR - 1]   = ANIM_V_SHAKE_TWICE,
+    [SPECIES_TANGROWTH - 1]   = ANIM_H_STRETCH,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -3633,7 +3653,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         if (gBattleWeather & B_WEATHER_SANDSTORM)
         {
             // Sandstorm boost Special Defense by 50% to Rock, Ground, Steel-type Pokémon
-            if ((IS_BATTLER_OF_TYPE(defender->species, TYPE_GROUND) || IS_BATTLER_OF_TYPE(defender->species, TYPE_ROCK) || IS_BATTLER_OF_TYPE(defender->species, TYPE_STEEL)))
+            if (IS_BATTLER_OF_TYPE(defender->species, TYPE_GROUND) || IS_BATTLER_OF_TYPE(defender->species, TYPE_ROCK) || IS_BATTLER_OF_TYPE(defender->species, TYPE_STEEL))
                 spDefense = (150 * spDefense) / 100;
 
             // Sand Force
@@ -3661,9 +3681,9 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
 
     if (IS_MOVE_PHYSICAL(gCurrentMove))
     {
-        if (gCritMultiplier > 1)
+        if (gCritMultiplier > 1 || attacker->ability == ABILITY_UNAWARE)
         {
-            // Critical hit, if attacker has lost attack stat stages then ignore stat drop
+            // Critical hit (or Unaware), if attacker has lost attack stat stages then ignore stat drop
             if (attacker->statStages[STAT_ATK] > DEFAULT_STAT_STAGE)
                 APPLY_STAT_MOD(damage, attacker, attack, STAT_ATK)
             else
@@ -3675,9 +3695,9 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         damage = damage * gBattleMovePower;
         damage *= (2 * attacker->level / 5 + 2);
 
-        if (gCritMultiplier > 1)
+        if (gCritMultiplier > 1 || attacker->ability == ABILITY_UNAWARE)
         {
-            // Critical hit, if defender has gained defense stat stages then ignore stat increase
+            // Critical hit (or Unaware), if defender has gained defense stat stages then ignore stat increase
             if (defender->statStages[STAT_DEF] < DEFAULT_STAT_STAGE)
                 APPLY_STAT_MOD(damageHelper, defender, defense, STAT_DEF)
             else
@@ -3716,9 +3736,9 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
 
     if (IS_MOVE_SPECIAL(gCurrentMove))
     {
-        if (gCritMultiplier > 1)
+        if (gCritMultiplier > 1 || attacker->ability == ABILITY_UNAWARE)
         {
-            // Critical hit, if attacker has lost sp. attack stat stages then ignore stat drop
+            // Critical hit (or Unaware), if attacker has lost sp. attack stat stages then ignore stat drop
             if (attacker->statStages[STAT_SPATK] > DEFAULT_STAT_STAGE)
                 APPLY_STAT_MOD(damage, attacker, spAttack, STAT_SPATK)
             else
@@ -3730,9 +3750,9 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         damage = damage * gBattleMovePower;
         damage *= (2 * attacker->level / 5 + 2);
 
-        if (gCritMultiplier > 1)
+        if (gCritMultiplier > 1 || attacker->ability == ABILITY_UNAWARE)
         {
-            // Critical hit, if defender has gained sp. defense stat stages then ignore stat increase
+            // Critical hit (or Unaware), if defender has gained sp. defense stat stages then ignore stat increase
             if (defender->statStages[STAT_SPDEF] < DEFAULT_STAT_STAGE)
                 APPLY_STAT_MOD(damageHelper, defender, spDefense, STAT_SPDEF)
             else

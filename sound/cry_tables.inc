@@ -466,6 +466,11 @@ gCryTable::
 	cry Cry_Mantyke
 	cry Cry_Snover
 	cry Cry_Abomasnow
+	cry Cry_Weavile
+	cry Cry_Magnezone
+	cry Cry_Lickilicky
+	cry Cry_Rhyperior
+	cry Cry_Tangrowth
 
 	.align 2
 gCryTable_Reverse::
@@ -935,3 +940,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Mantyke
 	cry_reverse Cry_Snover
 	cry_reverse Cry_Abomasnow
+	cry_reverse Cry_Weavile
+	cry_reverse Cry_Magnezone
+	cry_reverse Cry_Lickilicky
+	cry_reverse Cry_Rhyperior
+	cry_reverse Cry_Tangrowth

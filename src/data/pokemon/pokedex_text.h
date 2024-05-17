@@ -2696,3 +2696,26 @@ const u8 gAbomasnowPokedexText[] = _(
     "They appear when the snow flowers bloom.\n"
     "When the petals fall, they retreat to places\n"
     "unknown again.");
+
+const u8 gWeavilePokedexText[] = _(
+    "Evolution made it even more devious. It\n"
+    "communicates by clawing signs in boulders.");
+
+const u8 gMagnezonePokedexText[] = _(
+    "A group tried to use scientific means to make\n"
+    "MAGNEZONE evolve, but their efforts ended in\n"
+    "failure.");
+
+const u8 gLickilickyPokedexText[] = _(
+    "The long tongue is always soggy with slobber.\n"
+    "The saliva contains a solvent that causes\n"
+    "numbness.");
+
+const u8 gRhyperiorPokedexText[] = _(
+    "It can launch a rock held in its hand like\n"
+    "a missile by tightening then expanding\n"
+    "muscles instantly.");
+
+const u8 gTangrowthPokedexText[] = _(
+    "Its arms are made of plants that bind themselves\n"
+    "to things. They grow back right away if cut.");
