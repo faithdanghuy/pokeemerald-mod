@@ -344,6 +344,14 @@ const u8 gItemEffect_UpGrade[6] = {
     [4] = ITEM4_EVO_STONE,
 };
 
+const u8 gItemEffect_RazorFang[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_RazorClaw[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
 const u8 gItemEffect_CheriBerry[6] = {
     [3] = ITEM3_PARALYSIS,
 };
@@ -513,5 +521,7 @@ const u8 *const gItemEffectTable[] =
     [ITEM_MAGMARIZER - ITEM_POTION]    = gItemEffect_Magmarizer,
     [ITEM_DUBIOUS_DISC - ITEM_POTION]  = gItemEffect_DubiousDisc,
     [ITEM_PROTECTOR - ITEM_POTION]     = gItemEffect_Protector,
+    [ITEM_RAZOR_CLAW - ITEM_POTION]    = gItemEffect_RazorClaw,
+    [ITEM_RAZOR_FANG - ITEM_POTION]    = gItemEffect_RazorFang,
     [LAST_BERRY_INDEX - ITEM_POTION]   = NULL
 };

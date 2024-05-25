@@ -471,6 +471,15 @@ gCryTable::
 	cry Cry_Lickilicky
 	cry Cry_Rhyperior
 	cry Cry_Tangrowth
+	cry Cry_Electivire
+	cry Cry_Magmortar
+	cry Cry_Togekiss
+	cry Cry_Yanmega
+	cry Cry_Leafeon
+	cry Cry_Glaceon
+	cry Cry_Gliscor
+	cry Cry_Mamoswine
+	cry Cry_PorygonZ
 
 	.align 2
 gCryTable_Reverse::
@@ -945,3 +954,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Lickilicky
 	cry_reverse Cry_Rhyperior
 	cry_reverse Cry_Tangrowth
+	cry_reverse Cry_Electivire
+	cry_reverse Cry_Magmortar
+	cry_reverse Cry_Togekiss
+	cry_reverse Cry_Yanmega
+	cry_reverse Cry_Leafeon
+	cry_reverse Cry_Glaceon
+	cry_reverse Cry_Gliscor
+	cry_reverse Cry_Mamoswine
+	cry_reverse Cry_PorygonZ

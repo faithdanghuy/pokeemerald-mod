@@ -2717,5 +2717,50 @@ const u8 gRhyperiorPokedexText[] = _(
     "muscles instantly.");
 
 const u8 gTangrowthPokedexText[] = _(
-    "Its arms are made of plants that bind themselves\n"
-    "to things. They grow back right away if cut.");
+    "Its arms are made of plants that bind\n"
+    "themselves to things. They grow back right\n"
+    "away if cut.");
+
+const u8 gElectivirePokedexText[] = _(
+    "Heedless of enemy attacks, it closes in,\n"
+    "shoves its tails onto the foe, then looses\n"
+    "high voltage.");
+
+const u8 gMagmortarPokedexText[] = _(
+    "When launching 3,600 degrees F fireballs,\n"
+    "its body takes on a whitish hue from the\n"
+    "intense heat.");
+
+const u8 gTogekissPokedexText[] = _(
+    "It shares many blessings with people who\n"
+    "respect one another's rights and avoid\n"
+    "needless strife.");
+
+const u8 gYanmegaPokedexText[] = _(
+    "Its jaw power is incredible. It is adept at\n"
+    "biting apart foes while flying by at high\n"
+    "speed.");
+
+const u8 gLeafeonPokedexText[] = _(
+    "It basically does not fight. With cells\n"
+    "similar to those of plants, it can perform\n"
+    "photosynthesis.");
+
+const u8 gGlaceonPokedexText[] = _(
+    "By controlling its body heat, it can freeze\n"
+    "the atmosphere around it to make a diamond-dust\n"
+    "flurry.");
+
+const u8 gGliscorPokedexText[] = _(
+    "If it succeeds in catching even a faint breeze\n"
+    "properly, it can circle the globe without\n"
+    "flapping once.");
+
+const u8 gMamoswinePokedexText[] = _(
+    "A frozen one was dug up from soil dating back\n"
+    "10,000 years. It woke up to much amazement.");
+
+const u8 gPorygonZPokedexText[] = _(
+    "Its programming was modified to enable work\n"
+    "in alien dimensions. It did not work as\n"
+    "planned.");

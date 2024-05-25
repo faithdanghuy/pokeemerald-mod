@@ -11019,4 +11019,40 @@ const union {
     [SPECIES_TANGROWTH] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_ELECTIVIRE] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_MAGMORTAR] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_TOGEKISS] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_YANMEGA] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_LEAFEON] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_GLACEON] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_GLISCOR] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_MAMOSWINE] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_PORYGON_Z] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

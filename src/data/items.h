@@ -901,15 +901,17 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_PPUp,
     },
 
-    [ITEM_048] =
+    [ITEM_RAZOR_FANG] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
+        .name = _("RAZOR FANG"),
+        .itemId = ITEM_RAZOR_FANG,
+        .price = 2000,
+        .holdEffect = HOLD_EFFECT_FLINCH,
+        .holdEffectParam = 10,
+        .description = sRazorFangDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
 // Battle items
@@ -1031,15 +1033,16 @@ const struct Item gItems[] =
         .battleUseFunc = ItemUseInBattle_Escape,
     },
 
-    [ITEM_052] =
+    [ITEM_RAZOR_CLAW] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
+        .name = _("RAZOR CLAW"),
+        .itemId = ITEM_RAZOR_CLAW,
+        .price = 2000,
+        .holdEffect = HOLD_EFFECT_SCOPE_LENS,
+        .description = sRazorClawDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
 // Field items

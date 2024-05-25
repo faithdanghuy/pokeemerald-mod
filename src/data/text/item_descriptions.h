@@ -296,6 +296,16 @@ static const u8 sPPMaxDesc[] = _(
     "move to its maximum\n"
     "points.");
 
+static const u8 sRazorFangDesc[] = _(
+    "A hold item that\n"
+    "may cause flinching\n"
+    "when the foe is hit.");
+
+static const u8 sRazorClawDesc[] = _(
+    "A hold item that\n"
+    "improves the\n"
+    "critical-hit rate.");
+
 // Battle items
 static const u8 sGuardSpecDesc[] = _(
     "Prevents stat\n"

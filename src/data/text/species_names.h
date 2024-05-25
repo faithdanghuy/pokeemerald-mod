@@ -496,4 +496,13 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_LICKILICKY] = _("Lickilicky"),
     [SPECIES_RHYPERIOR] = _("Rhyperior"),
     [SPECIES_TANGROWTH] = _("Tangrowth"),
+    [SPECIES_ELECTIVIRE] = _("Electivire"),
+    [SPECIES_MAGMORTAR] = _("Magmortar"),
+    [SPECIES_TOGEKISS] = _("Togekiss"),
+    [SPECIES_YANMEGA] = _("Yanmega"),
+    [SPECIES_LEAFEON] = _("Leafeon"),
+    [SPECIES_GLACEON] = _("Glaceon"),
+    [SPECIES_GLISCOR] = _("Gliscor"),
+    [SPECIES_MAMOSWINE] = _("Mamoswine"),
+    [SPECIES_PORYGON_Z] = _("Porygon-Z"),
 };

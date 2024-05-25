@@ -77,9 +77,8 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_PP_UP] = {gItemIcon_PPUp, gItemIconPalette_PPUp},
     [ITEM_ZINC] = {gItemIcon_Vitamin, gItemIconPalette_Zinc},
     [ITEM_PP_MAX] = {gItemIcon_PPMax, gItemIconPalette_PPMax},
-    // ????????
-    [ITEM_048] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     // Battle items
+    [ITEM_RAZOR_FANG] = {gItemIcon_RazorFang, gItemIconPalette_RazorFang},
     [ITEM_GUARD_SPEC] = {gItemIcon_BattleStatItem, gItemIconPalette_GuardSpec},
     [ITEM_DIRE_HIT] = {gItemIcon_BattleStatItem, gItemIconPalette_DireHit},
     [ITEM_X_ATTACK] = {gItemIcon_BattleStatItem, gItemIconPalette_XAttack},
@@ -89,8 +88,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_X_SPECIAL] = {gItemIcon_BattleStatItem, gItemIconPalette_XSpecial},
     [ITEM_POKE_DOLL] = {gItemIcon_PokeDoll, gItemIconPalette_PokeDoll},
     [ITEM_FLUFFY_TAIL] = {gItemIcon_FluffyTail, gItemIconPalette_FluffyTail},
-    // ????????
-    [ITEM_052] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
+    [ITEM_RAZOR_CLAW] = {gItemIcon_RazorClaw, gItemIconPalette_RazorClaw},
     // Field items
     [ITEM_SUPER_REPEL] = {gItemIcon_Repel, gItemIconPalette_SuperRepel},
     [ITEM_MAX_REPEL] = {gItemIcon_Repel, gItemIconPalette_MaxRepel},

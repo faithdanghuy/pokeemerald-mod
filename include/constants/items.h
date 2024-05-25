@@ -83,7 +83,7 @@
 #define ITEM_PP_UP 69
 #define ITEM_ZINC 70
 #define ITEM_PP_MAX 71
-#define ITEM_048 72
+#define ITEM_RAZOR_FANG 72
 #define ITEM_GUARD_SPEC 73
 #define ITEM_DIRE_HIT 74
 #define ITEM_X_ATTACK 75
@@ -93,7 +93,7 @@
 #define ITEM_X_SPECIAL 79
 #define ITEM_POKE_DOLL 80
 #define ITEM_FLUFFY_TAIL 81
-#define ITEM_052 82
+#define ITEM_RAZOR_CLAW 82
 #define ITEM_SUPER_REPEL 83
 #define ITEM_MAX_REPEL 84
 #define ITEM_ESCAPE_ROPE 85

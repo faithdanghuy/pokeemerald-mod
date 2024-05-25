@@ -5426,6 +5426,106 @@ static const union AnimCmd sAnim_Tangrowth_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Electivire_1[] =
+{
+    ANIMCMD_FRAME(1, 50),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Magmortar_1[] =
+{
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Togekiss_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Yanmega_1[] =
+{
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Leafeon_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Glaceon_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 36),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Gliscor_1[] =
+{
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 40),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Mamoswine_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Porygon_Z_1[] =
+{
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 40),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -6150,6 +6250,15 @@ SINGLE_ANIMATION(Magnezone);
 SINGLE_ANIMATION(Lickilicky);
 SINGLE_ANIMATION(Rhyperior);
 SINGLE_ANIMATION(Tangrowth);
+SINGLE_ANIMATION(Electivire);
+SINGLE_ANIMATION(Magmortar);
+SINGLE_ANIMATION(Togekiss);
+SINGLE_ANIMATION(Yanmega);
+SINGLE_ANIMATION(Leafeon);
+SINGLE_ANIMATION(Glaceon);
+SINGLE_ANIMATION(Gliscor);
+SINGLE_ANIMATION(Mamoswine);
+SINGLE_ANIMATION(Porygon_Z);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6678,6 +6787,15 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_LICKILICKY]  = sAnims_Lickilicky,
     [SPECIES_RHYPERIOR]   = sAnims_Rhyperior,
     [SPECIES_TANGROWTH]   = sAnims_Tangrowth,
+    [SPECIES_ELECTIVIRE]  = sAnims_Electivire,
+    [SPECIES_MAGMORTAR]   = sAnims_Magmortar,
+    [SPECIES_TOGEKISS]    = sAnims_Togekiss,
+    [SPECIES_YANMEGA]     = sAnims_Yanmega,
+    [SPECIES_LEAFEON]     = sAnims_Leafeon,
+    [SPECIES_GLACEON]     = sAnims_Glaceon,
+    [SPECIES_GLISCOR]     = sAnims_Gliscor,
+    [SPECIES_MAMOSWINE]   = sAnims_Mamoswine,
+    [SPECIES_PORYGON_Z]   = sAnims_Porygon_Z,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,
