@@ -480,6 +480,16 @@ gCryTable::
 	cry Cry_Gliscor
 	cry Cry_Mamoswine
 	cry Cry_PorygonZ
+	cry Cry_Gallade
+	cry Cry_Probopass
+	cry Cry_Dusknoir
+	cry Cry_Froslass
+	cry Cry_Rotom
+	cry Cry_RotomFan
+	cry Cry_RotomFrost
+	cry Cry_RotomHeat
+	cry Cry_RotomMow
+	cry Cry_RotomWash
 
 	.align 2
 gCryTable_Reverse::
@@ -963,3 +973,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_Gliscor
 	cry_reverse Cry_Mamoswine
 	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_Gallade
+	cry_reverse Cry_Probopass
+	cry_reverse Cry_Dusknoir
+	cry_reverse Cry_Froslass
+	cry_reverse Cry_Rotom
+	cry_reverse Cry_RotomFan
+	cry_reverse Cry_RotomFrost
+	cry_reverse Cry_RotomHeat
+	cry_reverse Cry_RotomMow
+	cry_reverse Cry_RotomWash
+

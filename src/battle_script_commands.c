@@ -1157,6 +1157,8 @@ static void Cmd_accuracycheck(void)
             calc = (calc * 80) / 100; // 1.2 sand veil loss
         if (WEATHER_HAS_EFFECT && gBattleMons[gBattlerTarget].ability == ABILITY_SNOW_CLOAK && gBattleWeather & B_WEATHER_HAIL)
             calc = (calc * 80) / 100; // 1.2 snow cloak loss
+        if (gBattleMons[gBattlerTarget].ability == ABILITY_ILLUMINATE)
+            calc = (calc * 90) / 100; // 1.1 illuminate loss
         if (gBattleMons[gBattlerAttacker].ability == ABILITY_HUSTLE && IS_MOVE_PHYSICAL(move))
             calc = (calc * 80) / 100; // 1.2 hustle loss
 

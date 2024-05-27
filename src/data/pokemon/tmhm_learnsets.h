@@ -11055,4 +11055,44 @@ const union {
     [SPECIES_PORYGON_Z] = { .learnset = {
         .PROTECT = TRUE,
     } },
+
+    [SPECIES_GALLADE] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_PROBOPASS] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_DUSKNOIR] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_FROSLASS] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_ROTOM] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_ROTOM_FAN] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_ROTOM_FROST] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_ROTOM_HEAT] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_ROTOM_MOW] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
+
+    [SPECIES_ROTOM_WASH] = { .learnset = {
+        .PROTECT = TRUE,
+    } },
 };

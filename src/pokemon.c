@@ -614,6 +614,16 @@ static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_HOENN(GLISCOR),
     SPECIES_TO_HOENN(MAMOSWINE),
     SPECIES_TO_HOENN(PORYGON_Z),
+    SPECIES_TO_HOENN(GALLADE),
+    SPECIES_TO_HOENN(PROBOPASS),
+    SPECIES_TO_HOENN(DUSKNOIR),
+    SPECIES_TO_HOENN(FROSLASS),
+    SPECIES_TO_HOENN(ROTOM),
+    SPECIES_TO_HOENN(ROTOM_FAN),
+    SPECIES_TO_HOENN(ROTOM_FROST),
+    SPECIES_TO_HOENN(ROTOM_HEAT),
+    SPECIES_TO_HOENN(ROTOM_MOW),
+    SPECIES_TO_HOENN(ROTOM_WASH),
 };
 
 // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -1128,6 +1138,16 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(GLISCOR),
     SPECIES_TO_NATIONAL(MAMOSWINE),
     SPECIES_TO_NATIONAL(PORYGON_Z),
+    SPECIES_TO_NATIONAL(GALLADE),
+    SPECIES_TO_NATIONAL(PROBOPASS),
+    SPECIES_TO_NATIONAL(DUSKNOIR),
+    SPECIES_TO_NATIONAL(FROSLASS),
+    SPECIES_TO_NATIONAL(ROTOM),
+    SPECIES_TO_NATIONAL(ROTOM_FAN),
+    SPECIES_TO_NATIONAL(ROTOM_FROST),
+    SPECIES_TO_NATIONAL(ROTOM_HEAT),
+    SPECIES_TO_NATIONAL(ROTOM_MOW),
+    SPECIES_TO_NATIONAL(ROTOM_WASH),
 };
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
@@ -1613,6 +1633,16 @@ static const u16 sHoennToNationalOrder[NUM_SPECIES - 1] =
     HOENN_TO_NATIONAL(GLISCOR),
     HOENN_TO_NATIONAL(MAMOSWINE),
     HOENN_TO_NATIONAL(PORYGON_Z),
+    HOENN_TO_NATIONAL(GALLADE),
+    HOENN_TO_NATIONAL(PROBOPASS),
+    HOENN_TO_NATIONAL(DUSKNOIR),
+    HOENN_TO_NATIONAL(FROSLASS),
+    HOENN_TO_NATIONAL(ROTOM),
+    HOENN_TO_NATIONAL(ROTOM_FAN),
+    HOENN_TO_NATIONAL(ROTOM_FROST),
+    HOENN_TO_NATIONAL(ROTOM_HEAT),
+    HOENN_TO_NATIONAL(ROTOM_MOW),
+    HOENN_TO_NATIONAL(ROTOM_WASH),
     HOENN_TO_NATIONAL(OLD_UNOWN_B),
     HOENN_TO_NATIONAL(OLD_UNOWN_C),
     HOENN_TO_NATIONAL(OLD_UNOWN_D),
@@ -2172,6 +2202,16 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_GLISCOR - 1]     = ANIM_SWING_CONVEX,
     [SPECIES_MAMOSWINE - 1]   = ANIM_BACK_AND_LUNGE,
     [SPECIES_PORYGON_Z - 1]   = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
+    [SPECIES_GALLADE - 1]     = ANIM_H_VIBRATE,
+    [SPECIES_PROBOPASS - 1]   = ANIM_V_SLIDE,
+    [SPECIES_DUSKNOIR - 1]    = ANIM_H_SLIDE,
+    [SPECIES_FROSLASS - 1]    = ANIM_V_SLIDE_WOBBLE,
+    [SPECIES_ROTOM - 1]       = ANIM_GLOW_YELLOW,
+    [SPECIES_ROTOM_FAN - 1]   = ANIM_H_SLIDE_WOBBLE,
+    [SPECIES_ROTOM_FROST - 1] = ANIM_H_STRETCH,
+    [SPECIES_ROTOM_HEAT - 1]  = ANIM_V_SQUISH_AND_BOUNCE,
+    [SPECIES_ROTOM_MOW - 1]   = ANIM_TIP_MOVE_FORWARD,
+    [SPECIES_ROTOM_WASH - 1]  = ANIM_V_JUMPS_SMALL,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -3375,6 +3415,9 @@ void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon)
         u16 move;
 
         moveLevel = (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV);
+
+        if (moveLevel == 0)
+            continue;
 
         if (moveLevel > (level << 9))
             break;
@@ -7596,4 +7639,28 @@ u8 *MonSpritesGfxManager_GetSpritePtr(u8 spriteNum)
         return gfx->spritePointers[spriteNum];
     }
     return NULL;
+}
+
+u16 MonTryLearningNewMoveEvolution(struct Pokemon *mon, bool8 firstMove)
+{
+    u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
+    u8 level = GetMonData(mon, MON_DATA_LEVEL, NULL);
+
+    if (firstMove)
+    {
+        sLearningMoveTableID = 0;
+    }
+    while (gLevelUpLearnsets[species][sLearningMoveTableID] != LEVEL_UP_END)
+    {
+        u16 moveLevel;
+        moveLevel = (gLevelUpLearnsets[species][sLearningMoveTableID] & LEVEL_UP_MOVE_LV);
+        while (moveLevel == 0 || moveLevel == (level << 9))
+        {
+            gMoveToLearn = (gLevelUpLearnsets[species][sLearningMoveTableID] & LEVEL_UP_MOVE_ID);
+            sLearningMoveTableID++;
+            return GiveMoveToMon(mon, gMoveToLearn);
+        }
+        sLearningMoveTableID++;
+    }
+    return 0;
 }

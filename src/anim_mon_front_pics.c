@@ -487,6 +487,16 @@ const u32 gMonFrontPic_Glaceon[] = INCBIN_U32("graphics/pokemon/glaceon/anim_fro
 const u32 gMonFrontPic_Gliscor[] = INCBIN_U32("graphics/pokemon/gliscor/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Mamoswine[] = INCBIN_U32("graphics/pokemon/mamoswine/anim_front.4bpp.lz");
 const u32 gMonFrontPic_PorygonZ[] = INCBIN_U32("graphics/pokemon/porygon_z/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Gallade[] = INCBIN_U32("graphics/pokemon/gallade/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Probopass[] = INCBIN_U32("graphics/pokemon/probopass/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Dusknoir[] = INCBIN_U32("graphics/pokemon/dusknoir/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Froslass[] = INCBIN_U32("graphics/pokemon/froslass/anim_front.4bpp.lz");
+const u32 gMonFrontPic_Rotom[] = INCBIN_U32("graphics/pokemon/rotom/normal/anim_front.4bpp.lz");
+const u32 gMonFrontPic_RotomFan[] = INCBIN_U32("graphics/pokemon/rotom/fan/anim_front.4bpp.lz");
+const u32 gMonFrontPic_RotomFrost[] = INCBIN_U32("graphics/pokemon/rotom/frost/anim_front.4bpp.lz");
+const u32 gMonFrontPic_RotomHeat[] = INCBIN_U32("graphics/pokemon/rotom/heat/anim_front.4bpp.lz");
+const u32 gMonFrontPic_RotomMow[] = INCBIN_U32("graphics/pokemon/rotom/mow/anim_front.4bpp.lz");
+const u32 gMonFrontPic_RotomWash[] = INCBIN_U32("graphics/pokemon/rotom/wash/anim_front.4bpp.lz");
 
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
 

@@ -5526,6 +5526,120 @@ static const union AnimCmd sAnim_Porygon_Z_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Gallade_1[] =
+{
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Probopass_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Dusknoir_1[] =
+{
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Froslass_1[] =
+{
+    ANIMCMD_FRAME(1, 50),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Rotom_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_RotomHeat_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_RotomWash_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_RotomFrost_1[] =
+{
+    ANIMCMD_FRAME(1, 50),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_RotomFan_1[] =
+{
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_RotomMow_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -6259,6 +6373,16 @@ SINGLE_ANIMATION(Glaceon);
 SINGLE_ANIMATION(Gliscor);
 SINGLE_ANIMATION(Mamoswine);
 SINGLE_ANIMATION(Porygon_Z);
+SINGLE_ANIMATION(Gallade);
+SINGLE_ANIMATION(Probopass);
+SINGLE_ANIMATION(Dusknoir);
+SINGLE_ANIMATION(Froslass);
+SINGLE_ANIMATION(Rotom);
+SINGLE_ANIMATION(RotomFan);
+SINGLE_ANIMATION(RotomFrost);
+SINGLE_ANIMATION(RotomHeat);
+SINGLE_ANIMATION(RotomMow);
+SINGLE_ANIMATION(RotomWash);
 SINGLE_ANIMATION(Egg);
 SINGLE_ANIMATION(UnownB);
 SINGLE_ANIMATION(UnownC);
@@ -6796,6 +6920,16 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_GLISCOR]     = sAnims_Gliscor,
     [SPECIES_MAMOSWINE]   = sAnims_Mamoswine,
     [SPECIES_PORYGON_Z]   = sAnims_Porygon_Z,
+    [SPECIES_GALLADE]     = sAnims_Gallade,
+    [SPECIES_PROBOPASS]   = sAnims_Probopass,
+    [SPECIES_DUSKNOIR]    = sAnims_Dusknoir,
+    [SPECIES_FROSLASS]    = sAnims_Froslass,
+    [SPECIES_ROTOM]       = sAnims_Rotom,
+    [SPECIES_ROTOM_FAN]   = sAnims_RotomFan,
+    [SPECIES_ROTOM_FROST] = sAnims_RotomFrost,
+    [SPECIES_ROTOM_HEAT]  = sAnims_RotomHeat,
+    [SPECIES_ROTOM_MOW]   = sAnims_RotomMow,
+    [SPECIES_ROTOM_WASH]  = sAnims_RotomWash,
     [SPECIES_EGG]         = sAnims_Egg,
     [SPECIES_UNOWN_B]     = sAnims_UnownB,
     [SPECIES_UNOWN_C]     = sAnims_UnownC,

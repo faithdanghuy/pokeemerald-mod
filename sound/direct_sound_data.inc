@@ -2307,6 +2307,46 @@ Cry_PorygonZ::
 	.incbin "sound/direct_sound_samples/cries/porygon_z.bin"
 
 	.align 2
+Cry_Gallade::
+	.incbin "sound/direct_sound_samples/cries/gallade.bin"
+
+	.align 2
+Cry_Probopass::
+	.incbin "sound/direct_sound_samples/cries/probopass.bin"
+
+	.align 2
+Cry_Dusknoir::
+	.incbin "sound/direct_sound_samples/cries/dusknoir.bin"
+
+	.align 2
+Cry_Froslass::
+	.incbin "sound/direct_sound_samples/cries/froslass.bin"
+
+	.align 2
+Cry_Rotom::
+	.incbin "sound/direct_sound_samples/cries/rotom.bin"
+
+	.align 2
+Cry_RotomFan::
+	.incbin "sound/direct_sound_samples/cries/rotom.bin"
+
+	.align 2
+Cry_RotomFrost::
+	.incbin "sound/direct_sound_samples/cries/rotom.bin"
+
+	.align 2
+Cry_RotomHeat::
+	.incbin "sound/direct_sound_samples/cries/rotom.bin"
+
+	.align 2
+Cry_RotomMow::
+	.incbin "sound/direct_sound_samples/cries/rotom.bin"
+
+	.align 2
+Cry_RotomWash::
+	.incbin "sound/direct_sound_samples/cries/rotom.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

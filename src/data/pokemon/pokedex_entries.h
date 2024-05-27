@@ -5771,4 +5771,124 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_GALLADE] =
+    {
+        .categoryName = _("Blade"),
+        .height = 16,
+        .weight = 520,
+        .description = gGalladePokedexText,
+        .pokemonScale = 259,
+        .pokemonOffset = 1,
+        .trainerScale = 296,
+        .trainerOffset = 1,
+    },
+
+    [NATIONAL_DEX_PROBOPASS] =
+    {
+        .categoryName = _("Compass"),
+        .height = 14,
+        .weight = 3400,
+        .description = gProbopassPokedexText,
+        .pokemonScale = 265,
+        .pokemonOffset = 2,
+        .trainerScale = 262,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_DUSKNOIR] =
+    {
+        .categoryName = _("Gripper"),
+        .height = 22,
+        .weight = 1066,
+        .description = gDusknoirPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 348,
+        .trainerOffset = 6,
+    },
+
+    [NATIONAL_DEX_FROSLASS] =
+    {
+        .categoryName = _("Snow Land"),
+        .height = 13,
+        .weight = 266,
+        .description = gFroslassPokedexText,
+        .pokemonScale = 272,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_ROTOM] =
+    {
+        .categoryName = _("Plasma"),
+        .height = 3,
+        .weight = 3,
+        .description = gRotomPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_ROTOM_FAN] =
+    {
+        .categoryName = _("Plasma"),
+        .height = 3,
+        .weight = 3,
+        .description = gRotomPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_ROTOM_FROST] =
+    {
+        .categoryName = _("Plasma"),
+        .height = 3,
+        .weight = 3,
+        .description = gRotomPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_ROTOM_HEAT] =
+    {
+        .categoryName = _("Plasma"),
+        .height = 3,
+        .weight = 3,
+        .description = gRotomPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_ROTOM_MOW] =
+    {
+        .categoryName = _("Plasma"),
+        .height = 3,
+        .weight = 3,
+        .description = gRotomPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_ROTOM_WASH] =
+    {
+        .categoryName = _("Plasma"),
+        .height = 3,
+        .weight = 3,
+        .description = gRotomPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

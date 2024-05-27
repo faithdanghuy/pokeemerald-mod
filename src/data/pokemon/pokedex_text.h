@@ -2764,3 +2764,26 @@ const u8 gPorygonZPokedexText[] = _(
     "Its programming was modified to enable work\n"
     "in alien dimensions. It did not work as\n"
     "planned.");
+
+const u8 gGalladePokedexText[] = _(
+    "When trying to protect someone, it extends\n"
+    "its elbows as if they were swords and fights\n"
+    "savagely.");
+
+const u8 gProbopassPokedexText[] = _(
+    "It freely controls three small units called\n"
+    "Mini-Noses using magnetic force.");
+
+const u8 gDusknoirPokedexText[] = _(
+    "It is said to take lost spirits into its\n"
+    "pliant body and guide them home.");
+
+const u8 gFroslassPokedexText[] = _(
+    "It freezes prey by blowing its -58 degrees F\n"
+    "breath. It is said to then secretly display\n"
+    "its prey.");
+
+const u8 gRotomPokedexText[] = _(
+    "Its electric-like body can enter some kinds\n"
+    "of machines and take control in order to make\n"
+    "mischief.");
