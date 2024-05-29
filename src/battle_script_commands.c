@@ -665,6 +665,7 @@ static const u8 *const sMoveEffectBS_Ptrs[] =
     [MOVE_EFFECT_REMOVE_PARALYSIS] = BattleScript_MoveEffectSleep,
     [MOVE_EFFECT_ATK_DEF_DOWN]     = BattleScript_MoveEffectSleep,
     [MOVE_EFFECT_RECOIL_33]        = BattleScript_MoveEffectRecoil,
+    [MOVE_EFFECT_RECOIL_50]        = BattleScript_MoveEffectRecoil,
 };
 
 static const struct WindowTemplate sUnusedWinTemplate =
@@ -2670,7 +2671,7 @@ void SetMoveEffect(bool8 primary, u8 certain)
                 }
                 break;
             case MOVE_EFFECT_RECOIL_25: // 25% recoil
-                if (gBattleMons[gEffectBattler].ability == ABILITY_MAGIC_GUARD)
+                if (gBattleMons[gEffectBattler].ability != ABILITY_MAGIC_GUARD)
                 {
                     gBattleMoveDamage = (gHpDealt) / 4;
                     if (gBattleMoveDamage == 0)
@@ -2884,9 +2885,24 @@ void SetMoveEffect(bool8 primary, u8 certain)
                 gBattlescriptCurrInstr = BattleScript_AtkDefDown;
                 break;
             case MOVE_EFFECT_RECOIL_33: // Double Edge
-                if (gBattleMons[gEffectBattler].ability == ABILITY_MAGIC_GUARD)
+                if (gBattleMons[gEffectBattler].ability != ABILITY_MAGIC_GUARD)
                 {
                     gBattleMoveDamage = gHpDealt / 3;
+                    if (gBattleMoveDamage == 0)
+                        gBattleMoveDamage = 1;
+
+                    BattleScriptPush(gBattlescriptCurrInstr + 1);
+                    gBattlescriptCurrInstr = sMoveEffectBS_Ptrs[gBattleCommunication[MOVE_EFFECT_BYTE]];
+                }
+                else 
+                {
+                    gBattleMoveDamage = 0;
+                }
+                break;
+            case MOVE_EFFECT_RECOIL_50: // Head Smash
+                if (gBattleMons[gEffectBattler].ability != ABILITY_MAGIC_GUARD)
+                {
+                    gBattleMoveDamage = gHpDealt / 2;
                     if (gBattleMoveDamage == 0)
                         gBattleMoveDamage = 1;
 
@@ -2947,6 +2963,10 @@ void SetMoveEffect(bool8 primary, u8 certain)
             case MOVE_EFFECT_SP_ATK_TWO_DOWN: // Overheat
                 BattleScriptPush(gBattlescriptCurrInstr + 1);
                 gBattlescriptCurrInstr = BattleScript_SAtkDown2;
+                break;
+            case MOVE_EFFECT_DEF_SPDEF_ONE_DOWN:
+                BattleScriptPush(gBattlescriptCurrInstr + 1);
+                gBattlescriptCurrInstr = BattleScript_DefSpDefDown1;
                 break;
             }
         }
@@ -6797,8 +6817,7 @@ static void Cmd_manipulatedamage(void)
         gBattleMoveDamage /= 2;
         if (gBattleMoveDamage == 0)
             gBattleMoveDamage = 1;
-        if ((gBattleMons[gBattlerTarget].maxHP / 2) < gBattleMoveDamage)
-            gBattleMoveDamage = gBattleMons[gBattlerTarget].maxHP / 2;
+        gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 2;
         break;
     case DMG_DOUBLED:
         gBattleMoveDamage *= 2;

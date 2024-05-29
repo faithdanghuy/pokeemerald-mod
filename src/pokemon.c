@@ -3559,6 +3559,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     u8 defenderHoldEffectParam;
     u8 attackerHoldEffect;
     u8 attackerHoldEffectParam;
+    u16 effect;
 
     if (!powerOverride)
         gBattleMovePower = gBattleMoves[move].power;
@@ -3574,6 +3575,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     defense = defender->defense;
     spAttack = attacker->spAttack;
     spDefense = defender->spDefense;
+    effect = gBattleMoves[move].effect;
 
     // Get attacker hold item info
     if (attacker->item == ITEM_ENIGMA_BERRY)
@@ -3597,6 +3599,18 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     {
         defenderHoldEffect = ItemId_GetHoldEffect(defender->item);
         defenderHoldEffectParam = ItemId_GetHoldEffectParam(defender->item);
+    }
+
+    switch (effect)
+    {
+    case EFFECT_FOUL_PLAY:
+        attack = defender->attack;
+        break;
+
+    case EFFECT_DOUBLE_POWER_IF_STATUS:
+        if (defender->status1)
+            gBattleMovePower *= 2;
+        break;
     }
 
     if (attacker->ability == ABILITY_HUGE_POWER || attacker->ability == ABILITY_PURE_POWER)
@@ -3644,7 +3658,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         spAttack = (150 * spAttack) / 100;
     if (attacker->ability == ABILITY_GUTS && attacker->status1)
         attack = (150 * attack) / 100;
-    if (attacker->ability == ABILITY_TOXIC_BOOST && attacker->status1 & STATUS1_PSN_ANY && IS_MOVE_PHYSICAL(gCurrentMove))
+    if (attacker->ability == ABILITY_TOXIC_BOOST && attacker->status1 & STATUS1_PSN_ANY && IS_MOVE_PHYSICAL(move))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_SOLAR_SOUL && (type == TYPE_FIRE || type == TYPE_PSYCHIC))
         gBattleMovePower = (130 * gBattleMovePower) / 100;
@@ -3670,7 +3684,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         else if (IS_MOVE_PHYSICAL(gCurrentMove))
             attack /= 2;
     }
-    if (attacker->ability == ABILITY_RECKLESS && (gBattleMoves[gCurrentMove].effect == MOVE_EFFECT_RECOIL_25 || gBattleMoves[gCurrentMove].effect == MOVE_EFFECT_RECOIL_33))
+    if (attacker->ability == ABILITY_RECKLESS && (effect == MOVE_EFFECT_RECOIL_25 || effect == MOVE_EFFECT_RECOIL_33 || effect == MOVE_EFFECT_RECOIL_50))
         gBattleMovePower = (120 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_CLARITY && IS_MOVE_SPECIAL(gCurrentMove))
         gBattleMovePower = (130 * gBattleMovePower) / 100;

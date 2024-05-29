@@ -1417,6 +1417,94 @@ static const u8 sPsychoBoostDescription[] = _(
     "Allows a full-power attack,\n"
     "but sharply lowers SP. ATK.");
 
+static const u8 sNightSlashDescription[] = _(
+    "Slashes the foe in an instant\n"
+    "High critical-hit ratio.");
+
+static const u8 sDarkPulseDescription[] = _(
+    "Emits a dark aura. May\n"
+    "cause flinching.");
+
+static const u8 sFoulPlayDescription[] = _(
+    "Turns the foe's power against.\n"
+    "it. Use foe's Attack stat.");
+
+static const u8 sDragonPulseDescription[] = _(
+    "Launch a shock wave make\n"
+    "by the user's gaping mouth.");
+
+static const u8 sDracoMeteorDescription[] = _(
+    "Summon comets down from the\n"
+    "sky. Sharply lowers SP. ATK.");
+
+static const u8 sDragonRushDescription[] = _(
+    "Hit foe with powerful menace.\n"
+    "May cause flinching.");
+
+static const u8 sShadowSneakDescription[] = _(
+    "Extend shadow to attack from\n"
+    "behind. Always goes first.");
+
+static const u8 sShadowClawDescription[] = _(
+    "Slash with a shadow claw.\n"
+    "High critical-hit ratio.");
+
+static const u8 sShadowStrikeDescription[] = _(
+    "Strike foe from the shadow.\n"
+    "Bypass protect.");
+
+static const u8 sDrillRunDescription[] = _(
+    "Crash into target like a drill.\n"
+    "High critical-hit ratio.");
+
+static const u8 sEarthPowerDescription[] = _(
+    "Erupt the ground under foe.\n"
+    "May lower the foe's SP. DEF.");
+
+static const u8 sBulldozeDescription[] = _(
+    "Stomp the ground and attacks\n"
+    "everything. Lower foe's SPEED.");
+
+static const u8 sHeadlongRushDescription[] = _(
+    "Smash the foe in a full-body\n"
+    "tackle. Lower DEF and SP. DEF.");
+
+static const u8 sIceShardDescription[] = _(
+    "Hurl flash-freeze chunks of\n"
+    "ice. Always goes first.");
+
+static const u8 sIceFangDescription[] = _(
+    "Bites with cold-infused fangs.\n"
+    "May cause flinching.");
+
+static const u8 sHexDescription[] = _(
+    "Does double damage to foe\n"
+    "affected by status problems.");
+
+static const u8 sIcicleCrashDescription[] = _(
+    "Drop an icicle onto the\n"
+    "target. May cause flinching.");
+
+static const u8 sHeadSmashDescription[] = _(
+    "Deliver a fatal head butt\n"
+    "that also hurt the user.");
+
+static const u8 sPowerGemDescription[] = _(
+    "Attack with a sparkling ray\n"
+    "of light. May lower SP. DEF.");
+
+static const u8 sFlashCannonDescription[] = _(
+    "Attack with strong light\n"
+    "energy. May lower SP. DEF.");
+
+static const u8 sBulletPunchDescription[] = _(
+    "Punch as fast as a bullet\n"
+    "Always goes first.");
+
+static const u8 sIronHeadDescription[] = _(
+    "Slam foe with steel-hard\n"
+    "head. May cause flinching.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
@@ -1774,4 +1862,26 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
+    [MOVE_NIGHT_SLASH - 1] = sNightSlashDescription,
+    [MOVE_DARK_PULSE - 1] = sDarkPulseDescription,
+    [MOVE_FOUL_PLAY - 1] = sFoulPlayDescription,
+    [MOVE_DRAGON_PULSE - 1] = sDragonPulseDescription,
+    [MOVE_DRACO_METEOR - 1] = sDracoMeteorDescription,
+    [MOVE_DRAGON_RUSH - 1] = sDragonRushDescription,
+    [MOVE_SHADOW_SNEAK - 1] = sShadowSneakDescription,
+    [MOVE_SHADOW_CLAW - 1] = sShadowClawDescription,
+    [MOVE_SHADOW_STRIKE - 1] = sShadowStrikeDescription,
+    [MOVE_DRILL_RUN - 1] = sDrillRunDescription,
+    [MOVE_EARTH_POWER - 1] = sEarthPowerDescription,
+    [MOVE_BULLDOZE - 1] = sBulldozeDescription,
+    [MOVE_HEADLONG_RUSH - 1] = sHeadlongRushDescription,
+    [MOVE_ICE_SHARD - 1] = sIceShardDescription,
+    [MOVE_ICE_FANG - 1] = sIceFangDescription,
+    [MOVE_HEX - 1] = sHexDescription,
+    [MOVE_ICICLE_CRASH - 1] = sIcicleCrashDescription,
+    [MOVE_HEAD_SMASH - 1] = sHeadSmashDescription,
+    [MOVE_POWER_GEM - 1] = sPowerGemDescription,
+    [MOVE_FLASH_CANNON - 1] = sFlashCannonDescription,
+    [MOVE_BULLET_PUNCH - 1] = sBulletPunchDescription,
+    [MOVE_IRON_HEAD - 1] = sIronHeadDescription,
 };

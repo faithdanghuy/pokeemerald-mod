@@ -232,6 +232,10 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectCalmMind               @ EFFECT_CALM_MIND
 	.4byte BattleScript_EffectDragonDance            @ EFFECT_DRAGON_DANCE
 	.4byte BattleScript_EffectCamouflage             @ EFFECT_CAMOUFLAGE
+	.4byte BattleScript_EffectFoulPlay               @ EFFECT_FOUL_PLAY
+	.4byte BattleScript_EffectLowerDefSpDef          @ EFFECT_LOWER_DEF_SPDEF
+	.4byte BattleScript_EffectHex                    @ EFFECT_DOUBLE_POWER_IF_STATUS
+	.4byte BattleScript_EffectRecoil50               @ EFFECT_RECOIL_50
 
 BattleScript_EffectHit::
 	jumpifnotmove MOVE_SURF, BattleScript_HitFromAtkCanceler
@@ -3706,6 +3710,18 @@ BattleScript_SAtkDown2::
 BattleScript_SAtkDown2End::
 	return
 
+BattleScript_DefSpDefDown1::
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_ATTACKER, BIT_DEF, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE | STAT_CHANGE_BY_TWO
+	setstatchanger STAT_DEF, 1, TRUE
+	setstatchanger STAT_SPDEF, 1, TRUE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_DefSpDefDown1End
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_DefSpDefDown1End
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_DefSpDefDown1End::
+	return
+
 BattleScript_FocusPunchSetUp::
 	printstring STRINGID_EMPTYSTRING3
 	waitmessage 1
@@ -4581,3 +4597,17 @@ BattleScript_SnowWarningActivates::
 	playanimation BS_BATTLER_0, B_ANIM_HAIL_CONTINUES, NULL
 	call BattleScript_WeatherFormChanges
 	end3
+
+BattleScript_EffectFoulPlay::
+	goto BattleScript_EffectHit
+
+BattleScript_EffectLowerDefSpDef::
+	setmoveeffect MOVE_EFFECT_DEF_SPDEF_ONE_DOWN | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
+	goto BattleScript_EffectHit
+
+BattleScript_EffectHex::
+	goto BattleScript_EffectHit
+
+BattleScript_EffectRecoil50::
+	setmoveeffect MOVE_EFFECT_RECOIL_50 | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
+	goto BattleScript_EffectHit
