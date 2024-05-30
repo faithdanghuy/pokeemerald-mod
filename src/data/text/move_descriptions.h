@@ -1474,7 +1474,7 @@ static const u8 sIceShardDescription[] = _(
     "ice. Always goes first.");
 
 static const u8 sIceFangDescription[] = _(
-    "Bites with cold-infused fangs.\n"
+    "Bite with cold-infused fangs.\n"
     "May cause flinching.");
 
 static const u8 sHexDescription[] = _(
@@ -1504,6 +1504,66 @@ static const u8 sBulletPunchDescription[] = _(
 static const u8 sIronHeadDescription[] = _(
     "Slam foe with steel-hard\n"
     "head. May cause flinching.");
+
+static const u8 sFlareBlitzDescription[] = _(
+    "Cloak in fire and charges at\n"
+    "foe and also hurt the user.");
+
+static const u8 sFireFangDescription[] = _(
+    "Bite with flame-cloaked\n"
+    "fangs. May cause flinching.");
+
+static const u8 sMysticalFireDescription[] = _(
+    "Attack with a mystical fire.\n"
+    "Lower foe's SP. ATK.");
+
+static const u8 sBugBuzzDescription[] = _(
+    "Generate a damaging sound\n"
+    "wave. May lower foe's SP. DEF.");
+
+static const u8 sXScissorDescription[] = _(
+    "Slash the foe like a pair of\n"
+    "scissors. May cause flinching.");
+
+static const u8 sPounceDescription[] = _(
+    "Pouncing on the target.\n"
+    "Lower foe's SPEED.");
+
+static const u8 sStruggleBugDescription[] = _(
+    "Attack foe while resisting.\n"
+    "Lower foe's SP. ATK.");
+
+static const u8 sAirSlashDescription[] = _(
+    "Attack with a blade of air\n"
+    "May cause flinching.");
+
+static const u8 sDualWingbeatDescription[] = _(
+    "Slam foe with wings. Hit\n"
+    "twice.");
+
+static const u8 sBraveBirdDescription[] = _(
+    "Charge from a low altitude.\n"
+    "Also hurt the user.");
+
+static const u8 sWildChargeDescription[] = _(
+    "Shroud in electricity and\n"
+    "smash foe. Also hurt the user.");
+
+static const u8 sThunderFangDescription[] = _(
+    "Bites with electrified\n"
+    "fangs. May cause flinching.");
+
+static const u8 sNuzzleDescription[] = _(
+    "Nuzzling electrified cheeks\n"
+    "at foe. Paralyse foe.");
+
+static const u8 sSuperSlamDescription[] = _(
+    "Electrify body and slam\n"
+    "at foe. Also hurt user.");
+
+static const u8 sZenHeadbuttDescription[] = _(
+    "Focus willpower and ram foe\n"
+    "May cause flinching.");
 
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
@@ -1884,4 +1944,19 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_FLASH_CANNON - 1] = sFlashCannonDescription,
     [MOVE_BULLET_PUNCH - 1] = sBulletPunchDescription,
     [MOVE_IRON_HEAD - 1] = sIronHeadDescription,
+    [MOVE_FLARE_BLITZ - 1] = sFlareBlitzDescription,
+    [MOVE_FIRE_FANG - 1] = sFireFangDescription,
+    [MOVE_MYSTICAL_FIRE - 1] = sMysticalFireDescription,
+    [MOVE_BUG_BUZZ - 1] = sBugBuzzDescription,
+    [MOVE_X_SCISSOR - 1] = sXScissorDescription,
+    [MOVE_POUNCE - 1] = sPounceDescription,
+    [MOVE_STRUGGLE_BUG - 1] = sStruggleBugDescription,
+    [MOVE_AIR_SLASH - 1] = sAirSlashDescription,
+    [MOVE_DUAL_WINGBEAT - 1] = sDualWingbeatDescription,
+    [MOVE_BRAVE_BIRD - 1] = sBraveBirdDescription,
+    [MOVE_WILD_CHARGE - 1] = sWildChargeDescription,
+    [MOVE_THUNDER_FANG - 1] = sThunderFangDescription,
+    [MOVE_NUZZLE - 1] = sNuzzleDescription,
+    [MOVE_SUPER_SLAM - 1] = sSuperSlamDescription,
+    [MOVE_ZEN_HEADBUTT - 1] = sZenHeadbuttDescription,
 };
