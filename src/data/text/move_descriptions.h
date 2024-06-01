@@ -1565,6 +1565,107 @@ static const u8 sZenHeadbuttDescription[] = _(
     "Focus willpower and ram foe\n"
     "May cause flinching.");
 
+static const u8 sPsychoCutDescription[] = _(
+    "Tear foe with psychic blades.\n"
+    "High critical-hit ratio.");
+
+static const u8 sPsychicFangsDescription[] = _(
+    "Bite with psychic power.\n"
+    "Destroy all screens.");
+
+static const u8 sPetalStormDescription[] = _(
+    "Stir up a violent petal storm\n"
+    "and attack everything.");
+
+static const u8 sSeedBombDescription[] = _(
+    "Slam a barrage of hard\n"
+    "shelled seeds down on foe.");
+
+static const u8 sEnergyBallDescription[] = _(
+    "Draw power from nature and\n"
+    "fire. May lower SP. DEF.");
+
+static const u8 sCloseCombatDescription[] = _(
+    "Fight foe in close without\n"
+    "guarding. Lower DEF and SP. DEF.");
+
+static const u8 sFocusBlastDescription[] = _(
+    "Heighten mental focus and\n"
+    "unleash. May lower SP. DEF.");
+
+static const u8 sDrainPunchDescription[] = _(
+    "An energy-draining punch.\n"
+    "Heal half of the damage dealt.");
+
+static const u8 sBodyPressDescription[] = _(
+    "Slam the body into the target.\n"
+    "Use DEF as attack stat.");
+
+static const u8 sAquaJetDescription[] = _(
+    "Lunge at foe at a high speed.\n"
+    "Always strike first.");
+
+static const u8 sScaldDescription[] = _(
+    "Shoot boiling hot water at\n"
+    "target. May burn foe.");
+
+static const u8 sAquaTailDescription[] = _(
+    "Swinging the tail like a\n"
+    "wave. May cause flinching.");
+
+static const u8 sLiquidationDescription[] = _(
+    "Slam into foe with a blast\n"
+    "of water. May lower DEF.");
+
+static const u8 sPoisonJabDescription[] = _(
+    "Stab with an arm steeped in\n"
+    "poison. May poison foe.");
+
+static const u8 sSludgeWaveDescription[] = _(
+    "Swamp the area with a giant\n"
+    "sludge wave. May poison foe.");
+
+static const u8 sGunkShotDescription[] = _(
+    "Shoot filthy garbage at\n"
+    "foe. May poison foe.");
+
+static const u8 sVenoshockDescription[] = _(
+    "Drench foe in a poisonous\n"
+    "liquid. Double power if poison.");
+
+static const u8 sGigaImpactDescription[] = _(
+    "Charge at foe with full\n"
+    "force. Recharge next turn.");
+
+static const u8 sBoomburstDescription[] = _(
+    "Attack everything with the\n"
+    "power of an explosive sound.");
+
+static const u8 sFairyWindDescription[] = _(
+    "Stir up a fairy wind and\n"
+    "strikes the target with it.");
+
+static const u8 sDisarmVoiceDescription[] = _(
+    "Let out a charming cry.\n"
+    "This attack never miss.");
+
+static const u8 sMoonblastDescription[] = _(
+    "Attack with the power of.\n"
+    "the moon. May lower SP. ATK");
+
+static const u8 sPlayRoughDescription[] = _(
+    "Play rough with the target.\n"
+    "May lower foe's ATK");
+
+static const u8 sDrainingKissDescription[] = _(
+    "Steals foe's energy with a\n"
+    "kiss. Heal half of damage.");
+
+static const u8 sShiningGleamDescription[] = _(
+    "Damage opposing Pokémon by\n"
+    "emitting a powerful flash.");
+
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
@@ -1959,4 +2060,29 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_NUZZLE - 1] = sNuzzleDescription,
     [MOVE_SUPER_SLAM - 1] = sSuperSlamDescription,
     [MOVE_ZEN_HEADBUTT - 1] = sZenHeadbuttDescription,
+    [MOVE_PSYCHO_CUT - 1] = sPsychoCutDescription,
+    [MOVE_PSYCHIC_FANGS - 1] = sPsychicFangsDescription,
+    [MOVE_PETAL_STORM - 1] = sPetalStormDescription,
+    [MOVE_SEED_BOMB - 1] = sSeedBombDescription,
+    [MOVE_ENERGY_BALL - 1] = sEnergyBallDescription,
+    [MOVE_CLOSE_COMBAT - 1] = sCloseCombatDescription,
+    [MOVE_FOCUS_BLAST - 1] = sFocusBlastDescription,
+    [MOVE_DRAIN_PUNCH - 1] = sDrainPunchDescription,
+    [MOVE_BODY_PRESS - 1] = sBodyPressDescription,
+    [MOVE_AQUA_JET - 1] = sAquaJetDescription,
+    [MOVE_SCALD - 1] = sScaldDescription,
+    [MOVE_AQUA_TAIL - 1] = sAquaTailDescription,
+    [MOVE_LIQUIDATION - 1] = sLiquidationDescription,
+    [MOVE_POISON_JAB - 1] = sPoisonJabDescription,
+    [MOVE_SLUDGE_WAVE - 1] = sSludgeWaveDescription,
+    [MOVE_GUNK_SHOT - 1] = sGunkShotDescription,
+    [MOVE_VENOSHOCK - 1] = sVenoshockDescription,
+    [MOVE_GIGA_IMPACT - 1] = sGigaImpactDescription,
+    [MOVE_BOOMBURST - 1] = sBoomburstDescription,
+    [MOVE_FAIRY_WIND - 1] = sFairyWindDescription,
+    [MOVE_DISARM_VOICE - 1] = sDisarmVoiceDescription,
+    [MOVE_MOONBLAST - 1] = sMoonblastDescription,
+    [MOVE_PLAY_ROUGH - 1] = sPlayRoughDescription,
+    [MOVE_DRAINING_KISS - 1] = sDrainingKissDescription,
+    [MOVE_SHINING_GLEAM - 1] = sShiningGleamDescription,
 };

@@ -3530,20 +3530,21 @@ static const u16 sPunchingMovesTable[] =
     MOVE_COMET_PUNCH, MOVE_DIZZY_PUNCH, MOVE_DYNAMIC_PUNCH, MOVE_FIRE_PUNCH, 
     MOVE_FOCUS_PUNCH, MOVE_ICE_PUNCH, MOVE_MACH_PUNCH, MOVE_MEGA_PUNCH,
     MOVE_METEOR_MASH, MOVE_SHADOW_PUNCH, MOVE_SKY_UPPERCUT, MOVE_THUNDER_PUNCH,
+    MOVE_DRAIN_PUNCH,
     PUNCHING_MOVES_END
 };
 
 static const u16 sBitingMovesTable[] =
 {
     MOVE_BITE, MOVE_CRUNCH, MOVE_HYPER_FANG, MOVE_POISON_FANG,
-    MOVE_ICE_FANG, MOVE_FIRE_FANG, 
+    MOVE_ICE_FANG, MOVE_FIRE_FANG, MOVE_THUNDER_FANG, MOVE_PSYCHIC_FANGS,
     BITING_MOVES_END
 };
 
 static const u16 sSlicingMovesTable[] =
 {
     MOVE_AERIAL_ACE, MOVE_AIR_CUTTER, MOVE_FURY_CUTTER, MOVE_LEAF_BLADE,
-    MOVE_SLASH, MOVE_X_SCISSOR,
+    MOVE_SLASH, MOVE_X_SCISSOR, MOVE_PSYCHO_CUT, MOVE_AIR_SLASH,
     SLICING_MOVES_END
 };
 
@@ -3610,6 +3611,15 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
 
     case EFFECT_DOUBLE_POWER_IF_STATUS:
         if (defender->status1)
+            gBattleMovePower *= 2;
+        break;
+
+    case EFFECT_USE_DEFENSE_TO_ATTACK:
+        attack = attacker->defense;
+        break;
+
+    case EFFECT_DOUBLE_POWER_IF_POISON:
+        if (defender->status1 & STATUS1_PSN_ANY)
             gBattleMovePower *= 2;
         break;
     }
