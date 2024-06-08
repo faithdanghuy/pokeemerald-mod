@@ -6097,12 +6097,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_GIRAFARIG] =
     {
-        .baseHP        = 70,
+        .baseHP        = 80,
         .baseAttack    = 70,
         .baseDefense   = 65,
         .baseSpeed     = 85,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 65,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 70,
         .types = { TYPE_NORMAL, TYPE_PSYCHIC },
         .catchRate = 60,
         .expYield = 159,
@@ -6188,7 +6188,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_DUNSPARCE] =
     {
         .baseHP        = 100,
-        .baseAttack    = 80,
+        .baseAttack    = 100,
         .baseDefense   = 70,
         .baseSpeed     = 60,
         .baseSpAttack  = 70,
@@ -6581,8 +6581,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 50,
         .baseDefense   = 120,
         .baseSpeed     = 30,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 80,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 90,
         .types = { TYPE_FIRE, TYPE_ROCK },
         .catchRate = 75,
         .expYield = 151,
