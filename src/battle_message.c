@@ -427,6 +427,7 @@ static const u8 sText_SpAtk2[] = _("SP. ATK");
 static const u8 sText_SpDef2[] = _("SP. DEF");
 static const u8 sText_Accuracy[] = _("accuracy");
 static const u8 sText_Evasiveness[] = _("evasiveness");
+static const u8 sText_PkmnSturdyEnduredHit[] = _("{B_DEF_NAME_WITH_PREFIX}'s STURDY\nendured the hit!");
 
 const u8 * const gStatNamesTable[NUM_BATTLE_STATS] =
 {
@@ -886,6 +887,7 @@ const u8 * const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_S
     [STRINGID_PKMNSXWHIPPEDUPHAILSTORM - BATTLESTRINGS_TABLE_START] = sText_PkmnsXWhippedUpHailstorm,
     [STRINGID_PKMNSXLOSTHPALITTLE - BATTLESTRINGS_TABLE_START] = sText_PkmnsXLostHPALittle,
     [STRINGID_PKMNHEALBYPOISON - BATTLESTRINGS_TABLE_START] = sText_PkmnHealByPoison,
+    [STRINGID_PKMNSTURDYENDUREDHIT - BATTLESTRINGS_TABLE_START] = sText_PkmnSturdyEnduredHit,
 };
 
 const u16 gMissStringIds[] =

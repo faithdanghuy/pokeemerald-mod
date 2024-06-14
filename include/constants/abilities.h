@@ -93,7 +93,7 @@
 #define ABILITY_IRON_FIST 89        // Done
 #define ABILITY_POISON_HEAL 90      // Done
 #define ABILITY_ADAPTABILITY 91     // Done
-#define ABILITY_SKILL_LINK 92
+#define ABILITY_SKILL_LINK 92       // Done
 #define ABILITY_HYDRATION 93        // Done
 #define ABILITY_SOLAR_POWER 94      // Done
 #define ABILITY_QUICK_FEET 95       // Done
@@ -110,14 +110,14 @@
 #define ABILITY_AFTERMATH 106
 #define ABILITY_ANTICIPATION 107
 #define ABILITY_FOREWARN 108
-#define ABILITY_UNAWARE 109
-#define ABILITY_TINTED_LENS 110
-#define ABILITY_FILTER 111
+#define ABILITY_UNAWARE 109         // Done?
+#define ABILITY_TINTED_LENS 110     // Done
+#define ABILITY_FILTER 111          // Done
 #define ABILITY_SAND_FORCE 112      // Done
-#define ABILITY_SCRAPPY 113
+#define ABILITY_SCRAPPY 113         // Done
 #define ABILITY_STORM_DRAIN 114
 #define ABILITY_ICE_BODY 115        // Done
-#define ABILITY_SOLID_ROCK 116
+#define ABILITY_SOLID_ROCK 116      // Done
 #define ABILITY_SNOW_WARNING 117    // Done
 #define ABILITY_SAND_RUSH 118       // Done
 #define ABILITY_FRISK 119
