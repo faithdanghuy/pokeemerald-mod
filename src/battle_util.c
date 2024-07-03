@@ -2595,11 +2595,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 }
                 break;
             case ABILITY_INTIMIDATE:
-                if (!(gSpecialStatuses[battler].intimidatedMon) 
-                    && gBattleMons[battler].ability != ABILITY_OBLIVIOUS
-                    && gBattleMons[battler].ability != ABILITY_OWN_TEMPO
-                    && gBattleMons[battler].ability != ABILITY_INNER_FOCUS
-                    && gBattleMons[battler].ability != ABILITY_SCRAPPY)
+                if (!gSpecialStatuses[battler].intimidatedMon)
                 {
                     gStatuses3[battler] |= STATUS3_INTIMIDATE_POKES;
                     gSpecialStatuses[battler].intimidatedMon = 1;
