@@ -58,7 +58,9 @@ AI_CBM_CheckIfNegatesType:
 	if_type_effectiveness AI_EFFECTIVENESS_x0, Score_Minus10
 	get_ability AI_TARGET
 	if_equal ABILITY_VOLT_ABSORB, CheckIfVoltAbsorbCancelsElectric
+	if_equal ABILITY_LIGHTNING_ROD, CheckIfVoltAbsorbCancelsElectric
 	if_equal ABILITY_WATER_ABSORB, CheckIfWaterAbsorbCancelsWater
+	if_equal ABILITY_STORM_DRAIN, CheckIfWaterAbsorbCancelsWater
 	if_equal ABILITY_FLASH_FIRE, CheckIfFlashFireCancelsFire
 	if_equal ABILITY_WONDER_GUARD, CheckIfWonderGuardCancelsMove
 	if_equal ABILITY_LEVITATE, CheckIfLevitateCancelsGroundMove
@@ -103,6 +105,10 @@ AI_CheckBadMove_CheckSoundproof:
 	if_move MOVE_UPROAR, Score_Minus10
 	if_move MOVE_METAL_SOUND, Score_Minus10
 	if_move MOVE_GRASS_WHISTLE, Score_Minus10
+	if_move MOVE_BUG_BUZZ, Score_Minus10
+	if_move MOVE_HYPER_VOICE, Score_Minus10
+	if_move MOVE_BOOMBURST, Score_Minus10
+	if_move MOVE_DISARM_VOICE, Score_Minus10
 AI_CheckBadMove_CheckEffect:
 	if_effect EFFECT_SLEEP, AI_CBM_Sleep
 	if_effect EFFECT_EXPLOSION, AI_CBM_Explosion
@@ -284,6 +290,8 @@ AI_CBM_AttackDown:
 
 AI_CBM_DefenseDown:
 	if_stat_level_equal AI_TARGET, STAT_DEF, MIN_STAT_STAGE, Score_Minus10
+	get_ability AI_TARGET
+	if_equal ABILITY_FORTIFY, Score_Minus10
 	goto CheckIfAbilityBlocksStatChange
 
 AI_CBM_SpeedDown:
@@ -297,6 +305,8 @@ AI_CBM_SpAtkDown:
 
 AI_CBM_SpDefDown:
 	if_stat_level_equal AI_TARGET, STAT_SPDEF, MIN_STAT_STAGE, Score_Minus10
+	get_ability AI_TARGET
+	if_equal ABILITY_FORTIFY, Score_Minus10
 	goto CheckIfAbilityBlocksStatChange
 
 AI_CBM_AccDown:
@@ -2331,10 +2341,14 @@ AI_CV_Trick_EffectsToEncourage:
 	.byte HOLD_EFFECT_CONFUSE_SOUR
 	.byte HOLD_EFFECT_MACHO_BRACE
 	.byte HOLD_EFFECT_CHOICE_BAND
+	.byte HOLD_EFFECT_CHOICE_SPECS
+	.byte HOLD_EFFECT_CHOICE_SCARF
 	.byte -1
 
 AI_CV_Trick_EffectsToEncourage2:
 	.byte HOLD_EFFECT_CHOICE_BAND
+	.byte HOLD_EFFECT_CHOICE_SPECS
+	.byte HOLD_EFFECT_CHOICE_SCARF
 	.byte -1
 
 AI_CV_ChangeSelfAbility:
@@ -2370,6 +2384,9 @@ AI_CV_ChangeSelfAbility_AbilitiesToEncourage:
 	.byte ABILITY_PURE_POWER
 	.byte ABILITY_CHLOROPHYLL
 	.byte ABILITY_SHIELD_DUST
+	.byte ABILITY_BRUTALIZE
+	.byte ABILITY_CLARITY
+	.byte ABILITY_SAND_FORCE
 	.byte -1
 
 AI_CV_Superpower:
@@ -2422,6 +2439,7 @@ AI_CV_Recycle_ItemsToEncourage:
 	.byte ITEM_CHESTO_BERRY
 	.byte ITEM_LUM_BERRY
 	.byte ITEM_STARF_BERRY
+	.byte ITEM_SITRUS_BERRY
 	.byte -1
 
 AI_CV_Revenge:

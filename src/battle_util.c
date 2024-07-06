@@ -1037,7 +1037,7 @@ u8 TrySetCantSelectMoveBattleScript(void)
 
     gPotentialItemEffectBattler = gActiveBattler;
 
-    if ((holdEffect == HOLD_EFFECT_CHOICE_BAND || holdEffect == HOLD_EFFECT_CHOICE_SPECS) 
+    if ((holdEffect == HOLD_EFFECT_CHOICE_BAND || holdEffect == HOLD_EFFECT_CHOICE_SPECS || holdEffect == HOLD_EFFECT_CHOICE_SCARF) 
         && *choicedMove != MOVE_NONE 
         && *choicedMove != MOVE_UNAVAILABLE 
         && *choicedMove != move)
@@ -1108,7 +1108,7 @@ u8 CheckMoveLimitations(u8 battlerId, u8 unusableMoves, u8 check)
         if (gDisableStructs[battlerId].encoreTimer && gDisableStructs[battlerId].encoredMove != gBattleMons[battlerId].moves[i])
             unusableMoves |= gBitTable[i];
         // Choice Band/Spec
-        if ((holdEffect == HOLD_EFFECT_CHOICE_BAND || holdEffect == HOLD_EFFECT_CHOICE_SPECS)
+        if ((holdEffect == HOLD_EFFECT_CHOICE_BAND || holdEffect == HOLD_EFFECT_CHOICE_SPECS || holdEffect == HOLD_EFFECT_CHOICE_SCARF)
             && *choicedMove != MOVE_NONE 
             && *choicedMove != MOVE_UNAVAILABLE 
             && *choicedMove != gBattleMons[battlerId].moves[i])

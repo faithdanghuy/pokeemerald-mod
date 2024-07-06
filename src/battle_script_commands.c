@@ -4260,7 +4260,9 @@ static void Cmd_playstatchangeanimation(void)
                         && gBattleMons[gActiveBattler].ability != ABILITY_CLEAR_BODY
                         && gBattleMons[gActiveBattler].ability != ABILITY_WHITE_SMOKE
                         && !(gBattleMons[gActiveBattler].ability == ABILITY_KEEN_EYE && currStat == STAT_ACC)
-                        && !(gBattleMons[gActiveBattler].ability == ABILITY_HYPER_CUTTER && currStat == STAT_ATK))
+                        && !(gBattleMons[gActiveBattler].ability == ABILITY_HYPER_CUTTER && currStat == STAT_ATK)
+                        && !(gBattleMons[gActiveBattler].ability == ABILITY_FORTIFY && currStat == STAT_DEF)
+                        && !(gBattleMons[gActiveBattler].ability == ABILITY_FORTIFY && currStat == STAT_SPDEF))
                 {
                     if (gBattleMons[gActiveBattler].statStages[currStat] > MIN_STAT_STAGE)
                     {
@@ -4413,7 +4415,7 @@ static void Cmd_moveend(void)
             break;
         case MOVEEND_CHOICE_MOVE: // update choice band/spec move
             if (gHitMarker & HITMARKER_OBEYS
-             && (holdEffectAtk == HOLD_EFFECT_CHOICE_BAND || holdEffectAtk == HOLD_EFFECT_CHOICE_SPECS) 
+             && (holdEffectAtk == HOLD_EFFECT_CHOICE_BAND || holdEffectAtk == HOLD_EFFECT_CHOICE_SPECS || holdEffectAtk == HOLD_EFFECT_CHOICE_SCARF) 
              && gChosenMove != MOVE_STRUGGLE
              && (*choicedMoveAtk == MOVE_NONE || *choicedMoveAtk == MOVE_UNAVAILABLE))
             {

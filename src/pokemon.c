@@ -3622,6 +3622,11 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         if (defender->status1 & STATUS1_PSN_ANY)
             gBattleMovePower *= 2;
         break;
+
+    case EFFECT_KNOCK_OFF:
+        if (defenderHoldEffect != HOLD_EFFECT_NONE)
+            gBattleMovePower = (gBattleMovePower * 150) / 100;
+        break;
     }
 
     if (attacker->ability == ABILITY_HUGE_POWER || attacker->ability == ABILITY_PURE_POWER)
