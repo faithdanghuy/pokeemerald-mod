@@ -4513,7 +4513,7 @@ static const u16 sSceptileLevelUpLearnset[] = {
 };
 
 static const u16 sTorchicLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_RAZOR_WIND),
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 6, MOVE_EMBER),
     LEVEL_UP_MOVE( 9, MOVE_QUICK_ATTACK),
@@ -4571,7 +4571,7 @@ static const u16 sBlazikenLevelUpLearnset[] = {
 };
 
 static const u16 sMudkipLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 6, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 9, MOVE_ROCK_SMASH),
