@@ -53,10 +53,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 25,
-      "y": 15,
+      "x": 17,
+      "y": 7,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -66,14 +66,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 8,
-      "y": 7,
+      "x": 1,
+      "y": 6,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "Route102_EventScript_Tiana",
       "flag": "0"
     },
@@ -131,8 +131,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 19,
-      "y": 4,
+      "x": 14,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -143,8 +143,12 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
-  "coord_events": [],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

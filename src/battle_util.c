@@ -2780,7 +2780,8 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 {
                 case ABILITY_LIGHTNING_ROD:
                 case ABILITY_VOLT_ABSORB:
-                    if (moveType == TYPE_ELECTRIC && gBattleMoves[move].power != 0)
+                    if (moveType == TYPE_ELECTRIC && gBattleMoves[move].power != 0
+                        && gBattleMons[gBattlerAttacker].ability != ABILITY_MOLD_BREAKER)
                     {
                         if (gProtectStructs[gBattlerAttacker].notFirstStrike)
                             gBattlescriptCurrInstr = BattleScript_MoveHPDrain;
@@ -2793,7 +2794,8 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 case ABILITY_WATER_ABSORB:
                 case ABILITY_STORM_DRAIN:
                 case ABILITY_DRY_SKIN:
-                    if (moveType == TYPE_WATER && gBattleMoves[move].power != 0)
+                    if (moveType == TYPE_WATER && gBattleMoves[move].power != 0
+                        && gBattleMons[gBattlerAttacker].ability != ABILITY_MOLD_BREAKER)
                     {
                         if (gProtectStructs[gBattlerAttacker].notFirstStrike)
                             gBattlescriptCurrInstr = BattleScript_MoveHPDrain;
@@ -2804,7 +2806,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                     }
                     break;
                 case ABILITY_FLASH_FIRE:
-                    if (moveType == TYPE_FIRE)
+                    if (moveType == TYPE_FIRE && gBattleMons[gBattlerAttacker].ability != ABILITY_MOLD_BREAKER)
                     {
                         if (!(gBattleResources->flags->flags[battler] & RESOURCE_FLAG_FLASH_FIRE))
                         {

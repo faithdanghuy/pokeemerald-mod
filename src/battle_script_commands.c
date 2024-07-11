@@ -1419,12 +1419,17 @@ static void Cmd_typecalc(void)
     GET_MOVE_TYPE(gCurrentMove, moveType);
 
     // check stab
-    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) && gBattleMons[gBattlerAttacker].ability == ABILITY_ADAPTABILITY)
-        gBattleMoveDamage *= 2;
-    else if ((IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType)) || (moveType == TYPE_WATER && gBattleMons[gBattlerAttacker].ability == ABILITY_HYDROPOWER))
+    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) || (moveType == TYPE_WATER && gBattleMons[gBattlerAttacker].ability == ABILITY_HYDROPOWER))
     {
-        gBattleMoveDamage = gBattleMoveDamage * 15;
-        gBattleMoveDamage = gBattleMoveDamage / 10;
+        if (gBattleMons[gBattlerAttacker].ability == ABILITY_ADAPTABILITY)
+        {
+            gBattleMoveDamage *= 2;
+        }
+        else
+        {
+            gBattleMoveDamage *= 15;
+            gBattleMoveDamage /= 10;
+        }
     }
 
     if ((gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE
@@ -1609,12 +1614,17 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
     moveType = gBattleMoves[move].type;
 
     // check stab
-    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) && gBattleMons[attacker].ability == ABILITY_ADAPTABILITY)
-        gBattleMoveDamage *= 2;
-    else if ((IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType)) || (moveType == TYPE_WATER && gBattleMons[attacker].ability == ABILITY_HYDROPOWER))
+    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) || (moveType == TYPE_WATER && gBattleMons[gBattlerAttacker].ability == ABILITY_HYDROPOWER))
     {
-        gBattleMoveDamage = gBattleMoveDamage * 15;
-        gBattleMoveDamage = gBattleMoveDamage / 10;
+        if (gBattleMons[gBattlerAttacker].ability == ABILITY_ADAPTABILITY)
+        {
+            gBattleMoveDamage *= 2;
+        }
+        else
+        {
+            gBattleMoveDamage *= 15;
+            gBattleMoveDamage /= 10;
+        }
     }
 
     if ((gBattleMons[defender].ability == ABILITY_LEVITATE

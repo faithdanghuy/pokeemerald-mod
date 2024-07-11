@@ -3524,6 +3524,7 @@ void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
 #define PUNCHING_MOVES_END 0xFFFF
 #define BITING_MOVES_END 0xFFFF
 #define SLICING_MOVES_END 0xFFFF
+#define SOUND_MOVES_END 0xFFFF
 
 static const u16 sPunchingMovesTable[] =
 {
@@ -3548,6 +3549,11 @@ static const u16 sSlicingMovesTable[] =
     SLICING_MOVES_END
 };
 
+static const u16 sAttackingSoundMovesTable[] =
+{
+    MOVE_SNORE, MOVE_UPROAR,MOVE_HYPER_VOICE, MOVE_BUG_BUZZ, MOVE_BOOMBURST,
+    MOVE_DISARM_VOICE, SOUND_MOVES_END
+};
 
 s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *defender, u32 move, u16 sideStatus, u16 powerOverride, u8 typeOverride, u8 battlerIdAtk, u8 battlerIdDef)
 {
@@ -3643,6 +3649,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         }
     }
 
+    // Technician
+    if (attacker->ability == ABILITY_TECHNICIAN && gBattleMovePower <= 60)
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
+
     // Apply boosts from hold items
     if (attackerHoldEffect == HOLD_EFFECT_CHOICE_BAND)
         attack = (150 * attack) / 100;
@@ -3704,8 +3714,6 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower = (120 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_CLARITY && IS_MOVE_SPECIAL(gCurrentMove))
         gBattleMovePower = (130 * gBattleMovePower) / 100;
-    if (attacker->ability == ABILITY_TECHNICIAN && gBattleMovePower <= 60)
-        gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (type == TYPE_GRASS && attacker->ability == ABILITY_OVERGROW && attacker->hp <= (attacker->maxHP / 3))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (type == TYPE_FIRE && attacker->ability == ABILITY_BLAZE && attacker->hp <= (attacker->maxHP / 3))
@@ -3744,6 +3752,30 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             if (sSlicingMovesTable[i] == gCurrentMove)
             {
                 gBattleMovePower = (150 * gBattleMovePower) / 100;
+                break;
+            }
+        }
+    }
+
+    if (attacker->ability == ABILITY_AMPLIFY)
+    {
+        for (i = 0; sAttackingSoundMovesTable[i] != SOUND_MOVES_END; i++)
+        {
+            if (sAttackingSoundMovesTable[i] == gCurrentMove)
+            {
+                gBattleMovePower = (130 * gBattleMovePower) / 100;
+                break;
+            }
+        }
+    }
+
+    if (defender->ability == ABILITY_AMPLIFY)
+    {
+        for (i = 0; sAttackingSoundMovesTable[i] != SOUND_MOVES_END; i++)
+        {
+            if (sAttackingSoundMovesTable[i] == gCurrentMove)
+            {
+                gBattleMovePower /= 2;
                 break;
             }
         }

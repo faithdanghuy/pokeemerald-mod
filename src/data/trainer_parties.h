@@ -3655,48 +3655,48 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
 
 static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     {
-    .iv = 200,
-    .lvl = 16,
+    .iv = 100,
+    .lvl = 15,
     .species = SPECIES_LILEEP,
     .heldItem = ITEM_MIRACLE_SEED,
     .moves = {MOVE_MEGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_ACID, MOVE_PROTECT},
     .abilityNums = 1
     },
     {
-    .iv = 200,
-    .lvl = 16,
+    .iv = 100,
+    .lvl = 15,
     .species = SPECIES_ANORITH,
     .heldItem = ITEM_LUM_BERRY,
     .moves = {MOVE_CUT, MOVE_ROCK_TOMB, MOVE_METAL_CLAW, MOVE_AQUA_JET},
     .abilityNums = 0
     },
     {
-    .iv = 200,
-    .lvl = 16,
+    .iv = 100,
+    .lvl = 15,
     .species = SPECIES_NOSEPASS,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_THUNDER_WAVE, MOVE_ROCK_TOMB, MOVE_SEISMIC_TOSS, MOVE_YAWN},
     .abilityNums = 0
     },
     {
-    .iv = 200,
-    .lvl = 16,
+    .iv = 100,
+    .lvl = 15,
     .species = SPECIES_ARON,
     .heldItem = ITEM_BERRY_JUICE,
     .moves = {MOVE_ROCK_TOMB, MOVE_METAL_CLAW, MOVE_HEADBUTT, MOVE_PROTECT},
     .abilityNums = 0
     },
     {
-    .iv = 200,
-    .lvl = 16,
+    .iv = 100,
+    .lvl = 15,
     .species = SPECIES_CRANIDOS,
     .heldItem = ITEM_SALAC_BERRY,
     .moves = {MOVE_HEADBUTT, MOVE_ROCK_TOMB, MOVE_ROCK_SMASH, MOVE_PURSUIT},
     .abilityNums = 0
     },
     {
-    .iv = 200,
-    .lvl = 17,
+    .iv = 150,
+    .lvl = 16,
     .species = SPECIES_LARVITAR,
     .heldItem = ITEM_FOCUS_BAND,
     .moves = {MOVE_BITE, MOVE_ROCK_SLIDE, MOVE_QUICK_ATTACK, MOVE_BULLDOZE},
@@ -3707,7 +3707,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
 static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     {
     .iv = 100,
-    .lvl = 19,
+    .lvl = 18,
     .species = SPECIES_HITMONTOP,
     .heldItem = ITEM_MUSCLE_BAND,
     .moves = {MOVE_FAKE_OUT, MOVE_ROCK_TOMB, MOVE_ROLLING_KICK, MOVE_MACH_PUNCH},
@@ -3715,7 +3715,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     },
     {
     .iv = 100,
-    .lvl = 19,
+    .lvl = 18,
     .species = SPECIES_HITMONLEE,
     .heldItem = ITEM_BERRY_JUICE,
     .moves = {MOVE_DOUBLE_KICK, MOVE_ROCK_TOMB, MOVE_BULLDOZE, MOVE_FAKE_OUT},
@@ -3723,7 +3723,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     },
     {
     .iv = 100,
-    .lvl = 19,
+    .lvl = 18,
     .species = SPECIES_HITMONCHAN,
     .heldItem = ITEM_LUM_BERRY,
     .moves = {MOVE_SHADOW_PUNCH, MOVE_ICE_PUNCH, MOVE_FIRE_PUNCH, MOVE_MACH_PUNCH},
@@ -3731,7 +3731,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     },
     {
     .iv = 100,
-    .lvl = 19,
+    .lvl = 18,
     .species = SPECIES_MEDITITE,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_FAKE_OUT, MOVE_ROCK_TOMB, MOVE_JUMP_KICK, MOVE_PSYBEAM},
@@ -3739,15 +3739,15 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     },
     {
     .iv = 100,
-    .lvl = 19,
+    .lvl = 18,
     .species = SPECIES_CROAGUNK,
     .heldItem = ITEM_SALAC_BERRY,
     .moves = {MOVE_KARATE_CHOP, MOVE_KNOCK_OFF, MOVE_ROCK_TOMB, MOVE_MACH_PUNCH},
     .abilityNums = 0
     },
     {
-    .iv = 200,
-    .lvl = 20,
+    .iv = 150,
+    .lvl = 19,
     .species = SPECIES_MAKUHITA,
     .heldItem = ITEM_BLACK_BELT,
     .moves = {MOVE_VITAL_THROW, MOVE_ROCK_TOMB, MOVE_REVERSAL, MOVE_BULK_UP},

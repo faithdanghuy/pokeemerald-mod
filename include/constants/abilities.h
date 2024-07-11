@@ -124,7 +124,7 @@
 #define ABILITY_RECKLESS 120        // Done
 #define ABILITY_MULTITYPE 121
 #define ABILITY_FLOWER_GIFT 122     // Done
-#define ABILITY_BAD_DREAMS 123
+#define ABILITY_AMPLIFY 123         // Done
 #define ABILITY_INFILTRATOR 124     // No safeguard pass through yet
 #define ABILITY_MULTISCALE 125      // Done
 #define ABILITY_MERCILESS 126       // Done
