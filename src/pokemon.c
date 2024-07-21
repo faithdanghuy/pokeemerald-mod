@@ -3720,8 +3720,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (type == TYPE_WATER && attacker->ability == ABILITY_TORRENT && attacker->hp <= (attacker->maxHP / 3))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
-    if (type == TYPE_BUG && attacker->ability == ABILITY_SWARM && attacker->hp <= (attacker->maxHP / 3))
-        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (type == TYPE_BUG && attacker->ability == ABILITY_SWARM)
+        gBattleMovePower = (130 * gBattleMovePower) / 100;
+    if (type == TYPE_ELECTRIC && attacker->ability == ABILITY_TRANSISTOR)
+        gBattleMovePower = (130 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_IRON_FIST)
     {
         for (i = 0; sPunchingMovesTable[i] != PUNCHING_MOVES_END; i++)

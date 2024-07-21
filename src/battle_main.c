@@ -4649,8 +4649,8 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
 
     if (holdEffect == HOLD_EFFECT_CHOICE_SCARF)
     {
-        speedBattler1 = speedBattler1 * 15;
-        speedBattler1 = speedBattler1 / 10;
+        speedBattler1 *= 15;
+        speedBattler1 /= 10;
     }
 
     if (gBattleMons[battler1].status1 & STATUS1_PARALYSIS && gBattleMons[battler1].ability != ABILITY_QUICK_FEET)
@@ -4658,8 +4658,8 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
 
     if (gBattleMons[battler1].status1 & STATUS1_ANY && gBattleMons[battler1].ability == ABILITY_QUICK_FEET)
     {
-        speedBattler1 = speedBattler1 * 15;
-        speedBattler1 = speedBattler1 / 10;
+        speedBattler1 *= 15;
+        speedBattler1 /= 10;
     }
 
     if (holdEffect == HOLD_EFFECT_QUICK_CLAW && gRandomTurnNumber < (0xFFFF * holdEffectParam) / 100)
@@ -4687,8 +4687,8 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
 
     if (holdEffect == HOLD_EFFECT_CHOICE_SCARF)
     {
-        speedBattler2 = speedBattler2 * 15;
-        speedBattler2 = speedBattler2 / 10;
+        speedBattler2 *= 15;
+        speedBattler2 /= 10;
     }
 
     if (gBattleMons[battler2].status1 & STATUS1_PARALYSIS && gBattleMons[battler2].ability != ABILITY_QUICK_FEET)
@@ -4696,8 +4696,8 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
 
     if (gBattleMons[battler2].status1 & STATUS1_ANY && gBattleMons[battler2].ability == ABILITY_QUICK_FEET)
     {
-        speedBattler2 = speedBattler1 * 15;
-        speedBattler2 = speedBattler1 / 10;
+        speedBattler2 *= 15;
+        speedBattler2 /= 10;
     }
 
     if (holdEffect == HOLD_EFFECT_QUICK_CLAW && gRandomTurnNumber < (0xFFFF * holdEffectParam) / 100)
