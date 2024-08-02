@@ -1152,6 +1152,8 @@ static void Cmd_accuracycheck(void)
 
         if (gBattleMons[gBattlerAttacker].ability == ABILITY_COMPOUND_EYES)
             calc = (calc * 130) / 100; // 1.3 compound eyes boost
+        if (gBattleMons[gBattlerAttacker].ability == ABILITY_KEEN_EYE)
+            calc = (calc * 110) / 100; // 1.1 keen eyes boost
         if (gBattleMons[gBattlerTarget].ability == ABILITY_TANGLED_FEET && gBattleMons[gBattlerTarget].status2 & STATUS2_CONFUSION)
             calc /= 2;
         if (WEATHER_HAS_EFFECT && gBattleMons[gBattlerTarget].ability == ABILITY_SAND_VEIL && gBattleWeather & B_WEATHER_SANDSTORM)
@@ -1318,6 +1320,8 @@ static void Cmd_damagecalc(void)
         gBattleMoveDamage = gBattleMoveDamage * 15 / 10;
     if (gBattleMons[gBattlerTarget].ability == ABILITY_HEATPROOF && gBattleMoves[gCurrentMove].type == TYPE_FIRE)
         gBattleMoveDamage /= 2;
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_MAGMA_ARMOR && gBattleMoves[gCurrentMove].type == TYPE_WATER)
+        gBattleMoveDamage /= 2;
     if (gBattleMons[gBattlerTarget].ability == ABILITY_DRY_SKIN && gBattleMoves[gCurrentMove].type == TYPE_FIRE)
         gBattleMoveDamage = gBattleMoveDamage * 125 / 100;
     if (gBattleMons[gBattlerTarget].ability == ABILITY_MULTISCALE && gBattleMons[gBattlerTarget].hp == gBattleMons[gBattlerTarget].maxHP)
@@ -1342,6 +1346,8 @@ void AI_CalcDmg(u8 attacker, u8 defender)
     if (gProtectStructs[attacker].helpingHand)
         gBattleMoveDamage = gBattleMoveDamage * 15 / 10;
     if (gBattleMons[defender].ability == ABILITY_HEATPROOF && gBattleMoves[gCurrentMove].type == TYPE_FIRE)
+        gBattleMoveDamage /= 2;
+    if (gBattleMons[defender].ability == ABILITY_MAGMA_ARMOR && gBattleMoves[gCurrentMove].type == TYPE_WATER)
         gBattleMoveDamage /= 2;
     if (gBattleMons[defender].ability == ABILITY_DRY_SKIN && gBattleMoves[gCurrentMove].type == TYPE_FIRE)
         gBattleMoveDamage = gBattleMoveDamage * 125 / 100;
@@ -4270,6 +4276,7 @@ static void Cmd_playstatchangeanimation(void)
                         && gBattleMons[gActiveBattler].ability != ABILITY_CLEAR_BODY
                         && gBattleMons[gActiveBattler].ability != ABILITY_WHITE_SMOKE
                         && !(gBattleMons[gActiveBattler].ability == ABILITY_KEEN_EYE && currStat == STAT_ACC)
+                        && !(gBattleMons[gActiveBattler].ability == ABILITY_ILLUMINATE && currStat == STAT_ACC)
                         && !(gBattleMons[gActiveBattler].ability == ABILITY_HYPER_CUTTER && currStat == STAT_ATK)
                         && !(gBattleMons[gActiveBattler].ability == ABILITY_FORTIFY && currStat == STAT_DEF)
                         && !(gBattleMons[gActiveBattler].ability == ABILITY_FORTIFY && currStat == STAT_SPDEF))
@@ -7132,7 +7139,8 @@ static u8 ChangeStatBuffs(s8 statValue, u8 statId, u8 flags, const u8 *BS_ptr)
             }
             return STAT_CHANGE_DIDNT_WORK;
         }
-        else if (gBattleMons[gActiveBattler].ability == ABILITY_KEEN_EYE
+        else if ((gBattleMons[gActiveBattler].ability == ABILITY_KEEN_EYE 
+                ||gBattleMons[gActiveBattler].ability == ABILITY_ILLUMINATE)
                  && !certain && statId == STAT_ACC)
         {
             if (flags == STAT_CHANGE_ALLOW_PTR)
