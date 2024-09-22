@@ -2434,7 +2434,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Jeff),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Jeff),
     },
 
     [TRAINER_AXLE] =
@@ -2458,7 +2458,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Jace),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Jace),
     },
 
     [TRAINER_KEEGAN] =
@@ -2470,7 +2470,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Keegan),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Keegan),
     },
 
     [TRAINER_BERNIE_1] =
@@ -3862,7 +3862,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Tommy),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Tommy),
     },
 
     [TRAINER_JOEY] =
@@ -6022,7 +6022,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Eli),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Eli),
     },
 
     [TRAINER_ANNIKA] =
@@ -6862,7 +6862,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Marc),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Marc),
     },
 
     [TRAINER_BRENDEN] =
