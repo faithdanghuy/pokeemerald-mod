@@ -130,7 +130,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntPetalburgWoods),
+        .party = ITEM_CUSTOM_MOVES(sParty_GruntPetalburgWoods),
     },
 
     [TRAINER_MARCEL] =
@@ -202,7 +202,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntRusturfTunnel),
+        .party = ITEM_CUSTOM_MOVES(sParty_GruntRusturfTunnel),
     },
 
     [TRAINER_GRUNT_WEATHER_INST_1] =

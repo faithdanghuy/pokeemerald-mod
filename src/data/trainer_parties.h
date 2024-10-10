@@ -110,36 +110,38 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Gabrielle1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntPetalburgWoods[] = {
+static const struct TrainerMonItemCustomMoves sParty_GruntPetalburgWoods[] = {
     {
     .iv = 50,
-    .lvl = 9,
-    .species = SPECIES_DUSKULL,
-    },
-    {
-    .iv = 50,
-    .lvl = 9,
-    .species = SPECIES_BAGON,
-    },
-    {
-    .iv = 50,
-    .lvl = 9,
-    .species = SPECIES_STUNKY,
+    .lvl = 10,
+    .species = SPECIES_SNORUNT,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_BITE, MOVE_ICE_SHARD, MOVE_HEADBUTT, MOVE_ASTONISH},
+    .abilityNums = 1
     },
     {
     .iv = 50,
     .lvl = 10,
-    .species = SPECIES_MAGNEMITE,
-    },
-    {
-    .iv = 50,
-    .lvl = 10,
-    .species = SPECIES_KRABBY,
+    .species = SPECIES_TANGELA,
+    .heldItem = ITEM_APICOT_BERRY,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_LEECH_SEED, MOVE_ACID, MOVE_STUN_SPORE},
+    .abilityNums = 1
     },
     {
     .iv = 50,
     .lvl = 10,
     .species = SPECIES_CARVANHA,
+    .heldItem = ITEM_BERRY_JUICE,
+    .moves = {MOVE_BITE, MOVE_AQUA_JET, MOVE_POISON_FANG, MOVE_WATER_PULSE},
+    .abilityNums = 1
+    },
+    {
+    .iv = 50,
+    .lvl = 10,
+    .species = SPECIES_STUNKY,
+    .heldItem = ITEM_LIECHI_BERRY,
+    .moves = {MOVE_HEADBUTT, MOVE_PURSUIT, MOVE_POISON_STING, MOVE_POISON_GAS},
+    .abilityNums = 0
     }
 };
 
@@ -198,36 +200,46 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Declan[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntRusturfTunnel[] = {
+static const struct TrainerMonItemCustomMoves sParty_GruntRusturfTunnel[] = {
     {
-    .iv = 75,
+    .iv = 85,
     .lvl = 15,
-    .species = SPECIES_DUSKULL,
+    .species = SPECIES_SNORUNT,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_BITE, MOVE_ICE_SHARD, MOVE_HEADBUTT, MOVE_AURORA_BEAM},
+    .abilityNums = 1
     },
     {
-    .iv = 75,
+    .iv = 85,
     .lvl = 15,
-    .species = SPECIES_BAGON,
+    .species = SPECIES_TANGELA,
+    .heldItem = ITEM_APICOT_BERRY,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_LEECH_SEED, MOVE_ACID, MOVE_STUN_SPORE},
+    .abilityNums = 1
     },
     {
-    .iv = 75,
+    .iv = 85,
+    .lvl = 15,
+    .species = SPECIES_CARVANHA,
+    .heldItem = ITEM_BERRY_JUICE,
+    .moves = {MOVE_BITE, MOVE_AQUA_JET, MOVE_POISON_FANG, MOVE_ICE_FANG},
+    .abilityNums = 1
+    },
+    {
+    .iv = 85,
     .lvl = 15,
     .species = SPECIES_STUNKY,
+    .heldItem = ITEM_LIECHI_BERRY,
+    .moves = {MOVE_HEADBUTT, MOVE_PURSUIT, MOVE_SLUDGE, MOVE_BITE},
+    .abilityNums = 0
     },
     {
-    .iv = 75,
-    .lvl = 16,
-    .species = SPECIES_MAGNEMITE,
-    },
-    {
-    .iv = 75,
-    .lvl = 16,
-    .species = SPECIES_KRABBY,
-    },
-    {
-    .iv = 75,
-    .lvl = 16,
-    .species = SPECIES_CARVANHA,
+    .iv = 85,
+    .lvl = 15,
+    .species = SPECIES_PSYDUCK,
+    .heldItem = ITEM_SALAC_BERRY,
+    .moves = {MOVE_PSYBEAM, MOVE_WATER_PULSE, MOVE_ICY_WIND, MOVE_DISABLE},
+    .abilityNums = 1
     }
 };
 
