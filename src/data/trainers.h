@@ -9037,16 +9037,16 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Marlene),
     },
 
-    [TRAINER_DEVAN] =
+    [TRAINER_ANABEL_1] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
-        .trainerName = _("DEVAN"),
+        .trainerClass = TRAINER_CLASS_SALON_MAIDEN,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SALON_MAIDEN_ANABEL,
+        .trainerName = _("ANABEL"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Devan),
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_Anabel1),
     },
 
     [TRAINER_JOHNSON] =

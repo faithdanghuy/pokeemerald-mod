@@ -27,6 +27,7 @@ SlateportCity_Mart_Pokemart:
 	.2byte ITEM_HONDEW_BERRY
 	.2byte ITEM_GREPA_BERRY
 
+	.2byte ITEM_LUM_BERRY
 	.2byte ITEM_CHERI_BERRY
 	.2byte ITEM_CHESTO_BERRY
 	.2byte ITEM_PECHA_BERRY
@@ -39,6 +40,7 @@ SlateportCity_Mart_Pokemart:
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_AWAKENING
 
+	.2byte ITEM_HEART_SCALE
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_REPEL
 	.2byte ITEM_SUPER_REPEL

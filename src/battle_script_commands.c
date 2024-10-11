@@ -785,7 +785,7 @@ static const u16 sWeightToDamageTable[] =
 static const u16 sPickupItems[] =
 {
     ITEM_POTION,
-    ITEM_ANTIDOTE,
+    ITEM_HEART_SCALE,
     ITEM_SUPER_POTION,
     ITEM_GREAT_BALL,
     ITEM_REPEL,
@@ -812,11 +812,11 @@ static const u16 sRarePickupItems[] =
     ITEM_FULL_RESTORE,
     ITEM_ETHER,
     ITEM_WHITE_HERB,
-    ITEM_TM_REST,
+    ITEM_SITRUS_BERRY,
     ITEM_ELIXIR,
-    ITEM_TM_FOCUS_PUNCH,
+    ITEM_BIG_PEARL,
     ITEM_LEFTOVERS,
-    ITEM_TM_EARTHQUAKE,
+    ITEM_CHOICE_BAND,
 };
 
 static const u8 sPickupProbabilities[] =
@@ -844,7 +844,7 @@ static const u8 sBallCatchBonuses[] =
     [ITEM_ULTRA_BALL - ITEM_ULTRA_BALL]  = 20,
     [ITEM_GREAT_BALL - ITEM_ULTRA_BALL]  = 15,
     [ITEM_POKE_BALL - ITEM_ULTRA_BALL]   = 10,
-    [ITEM_SAFARI_BALL - ITEM_ULTRA_BALL] = 15
+    [ITEM_SAFARI_BALL - ITEM_ULTRA_BALL] = 50
 };
 
 // In Battle Palace, moves are chosen based on the pokemons nature rather than by the player
@@ -10039,18 +10039,18 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_REPEAT_BALL:
                 if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gBattlerTarget].species), FLAG_GET_CAUGHT))
-                    ballMultiplier = 30;
+                    ballMultiplier = 50;
                 else
                     ballMultiplier = 10;
                 break;
             case ITEM_TIMER_BALL:
                 ballMultiplier = gBattleResults.battleTurnCounter + 10;
-                if (ballMultiplier > 40)
-                    ballMultiplier = 40;
+                if (ballMultiplier > 50)
+                    ballMultiplier = 50;
                 break;
             case ITEM_LUXURY_BALL:
             case ITEM_PREMIER_BALL:
-                ballMultiplier = 10;
+                ballMultiplier = 15;
                 break;
             }
         }

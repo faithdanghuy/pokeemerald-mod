@@ -2316,16 +2316,25 @@ Route116_Text_DawsonPostBattle:
 	.string "You've ruined my hairdo, too!\l"
 	.string "I'll have to call my stylist now!$"
 
-Route116_Text_DevanIntro:
-	.string "We'll rock you hard!$"
+Route116_Text_AnabelIntro:
+	.string "ANABEL: Oh hi! My name is ANNABEL\n"
+	.string "I'm a part of the Hoenn Frontier Brain\l"
+	.string "I'm currently on a journey around\l"
+	.string "Hoenn to document some new POKéMONs\l"
+	.string "Say are you currently on your own\l"
+	.string "POKéMON journey as well?\l"
+	.string "Great! Let's see how strong you are.\l"
+	.string "Shall we begin?$"
 
-Route116_Text_DevanDefeat:
-	.string "Aiyiyi!\n"
-	.string "No contest at all!$"
+Route116_Text_AnabelDefeat:
+	.string "Amazing! You've fought well.\n"
+	.string "Maybe I should've gone all out!$"
 
-Route116_Text_DevanPostBattle:
-	.string "I should try different POKéMON\n"
-	.string "types, that's what I ought to do.$"
+Route116_Text_AnabelPostBattle:
+	.string "That was fun...\n"
+	.string "I haven't had an enjoyable\n"
+	.string "POKéMON battle in a while!\l"
+	.string "We'll meet again one day.$"
 
 Route116_Text_JohnsonIntro:
 	.string "It's a dead end up here.\n"

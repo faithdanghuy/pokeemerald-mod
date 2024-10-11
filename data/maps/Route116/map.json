@@ -377,16 +377,16 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 42,
-      "y": 13,
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 52,
+      "y": 14,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
-      "script": "Route116_EventScript_Devan",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_EventScript_Annabel",
       "flag": "0"
     }
   ],
