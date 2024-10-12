@@ -1437,17 +1437,28 @@ Route111_Text_CeliaPostBattle:
 	.string "the places for a picnic even with my\l"
 	.string "GO-GOGGLES on…$"
 
-Route111_Text_BryanIntro:
-	.string "How tough are you?\n"
-	.string "We shall expose that secret!$"
+Route111_Text_BrandonIntro:
+	.string "BRANDON: What do I see here?\n"
+	.string "A young explorer?\l"
+	.string "It seems that the thrill of\l"
+	.string "eploration comes deep within\l"
+	.string "your heart...\l"
+	.string "You are exactly as I was in\l"
+	.string "my youth...\l"
+	.string "Now then, I feel that your\l"
+	.string "battle spirit is of the chart!\l"
+	.string "Now show me how confident you\l"
+	.string "are!$"
 
-Route111_Text_BryanDefeat:
-	.string "Oh! Your strength!\n"
-	.string "It is shrouded in mystery!$"
+Route111_Text_BrandonDefeat:
+	.string "That's it! You've done it!\n"
+	.string "Keep up the spirit young explorer!$"
 
-Route111_Text_BryanPostBattle:
-	.string "This desert hoards mysteries in\n"
-	.string "its shifting sands!$"
+Route111_Text_BrandonPostBattle:
+	.string "Remarkable! You've bested me\n"
+	.string "I sense a strong fighting spirit\l"
+	.string "within you. We'll meet again\l"
+	.string "young explorer!$"
 
 Route111_Text_BrandenIntro:
 	.string "I'll give you some of my sandwich\n"

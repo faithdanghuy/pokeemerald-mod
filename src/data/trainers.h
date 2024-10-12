@@ -250,7 +250,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMuseum1),
+        .party = ITEM_CUSTOM_MOVES(sParty_GruntMuseum1),
     },
 
     [TRAINER_GRUNT_MUSEUM_2] =
@@ -262,7 +262,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMuseum2),
+        .party = ITEM_CUSTOM_MOVES(sParty_GruntMuseum2),
     },
 
     [TRAINER_GRUNT_SPACE_CENTER_1] =
@@ -7233,7 +7233,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("MAXIE"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY | AI_SCRIPT_SETUP_FIRST_TURN,
         .party = ITEM_CUSTOM_MOVES(sParty_MaxieMtChimney),
     },
 
@@ -8929,16 +8929,16 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Celia),
     },
 
-    [TRAINER_BRYAN] =
+    [TRAINER_BRANDON1] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .trainerClass = TRAINER_CLASS_PYRAMID_KING,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .trainerName = _("BRYAN"),
+        .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
+        .trainerName = _("BRANDON"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Bryan),
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_Brandon1),
     },
 
     [TRAINER_BRANDEN] =

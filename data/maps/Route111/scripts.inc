@@ -559,9 +559,9 @@ Route111_EventScript_Celia::
 	msgbox Route111_Text_CeliaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route111_EventScript_Bryan::
-	trainerbattle_single TRAINER_BRYAN, Route111_Text_BryanIntro, Route111_Text_BryanDefeat
-	msgbox Route111_Text_BryanPostBattle, MSGBOX_AUTOCLOSE
+Route111_EventScript_Brandon::
+	trainerbattle_single TRAINER_BRANDON1, Route111_Text_BrandonIntro, Route111_Text_BrandonDefeat
+	msgbox Route111_Text_BrandonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route111_EventScript_Branden::
