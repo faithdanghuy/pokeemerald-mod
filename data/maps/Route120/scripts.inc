@@ -322,9 +322,9 @@ Route120_EventScript_RematchJeffrey::
 	msgbox Route120_Text_JeffreyPostRematch, MSGBOX_AUTOCLOSE
 	end
 
-Route120_EventScript_Jennifer::
-	trainerbattle_single TRAINER_JENNIFER, Route120_Text_JenniferIntro, Route120_Text_JenniferDefeat
-	msgbox Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE
+Route120_EventScript_Greta::
+	trainerbattle_single TRAINER_GRETA1, Route120_Text_GretaIntro, Route120_Text_GretaDefeat
+	msgbox Route120_Text_GretaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route120_EventScript_Chip::

@@ -96,7 +96,7 @@
 #define TRAINER_WENDY                        92
 #define TRAINER_KEIRA                        93
 #define TRAINER_BROOKE_1                     94
-#define TRAINER_JENNIFER                     95
+#define TRAINER_GRETA1                       95
 #define TRAINER_HOPE                         96
 #define TRAINER_SHANNON                      97
 #define TRAINER_MICHELLE                     98
@@ -750,7 +750,7 @@
 #define TRAINER_BRYANT                      746
 #define TRAINER_SHAYLA                      747
 #define TRAINER_KYRA                        748
-#define TRAINER_JAIDEN                      749
+#define TRAINER_LUCY1                       749
 #define TRAINER_ALIX                        750
 #define TRAINER_HELENE                      751
 #define TRAINER_MARLENE                     752

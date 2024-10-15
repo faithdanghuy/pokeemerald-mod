@@ -2133,17 +2133,21 @@ Route115_Text_KyraPostBattle:
 	.string "while running!\p"
 	.string "I should take a run to calm down…$"
 
-Route115_Text_JaidenIntro:
-	.string "Take that!\n"
-	.string "Ultra POKéMON ninja attack!$"
+Route115_Text_LucyIntro:
+	.string "LUCY: I am LUCY\n"
+	.string "I am the PIKE QUEEN of Hoenn\l"
+	.string "Battle Frontier.\l"
+	.string "Our eyes have met so we must have\l"
+	.string "a battle.\l"
+	.string "I'm not one for idle chatter.\l"
+	.string "So hurry, come on...$"
 
-Route115_Text_JaidenDefeat:
-	.string "Waaah!\n"
-	.string "Our strategy failed!$"
+Route115_Text_LucyDefeat:
+	.string "Urk...$"
 
-Route115_Text_JaidenPostBattle:
-	.string "But my POKéMON were ultra,\n"
-	.string "weren't they?$"
+Route115_Text_LucyPostBattle:
+	.string "Huh? You just lucky kid.\n"
+	.string "Now disappear already...$"
 
 Route115_Text_HeleneIntro:
 	.string "My POKéMON have black belt-level\n"
@@ -3058,17 +3062,22 @@ Route120_Text_JeffreyPostRematch:
 	.string "I'll try harder…\l"
 	.string "For my precious BUG POKéMON…$"
 
-Route120_Text_JenniferIntro:
-	.string "POKéMON have many special abilities.\n"
-	.string "If you want to become a first-class\l"
-	.string "TRAINER, learn about them.$"
+Route120_Text_GretaIntro:
+	.string "Hey, Howdy!\n"
+	.string "Wait, you want to challenge me?\l"
+	.string "I don't know how to say it but\l"
+	.string "to put it bluntly, you look pretty\l"
+	.string "weak. Are you sure you're ready\l"
+	.string "to battle me?\l"
+	.string "Hmm...alright I'll go easy on you.\l"
+	.string "Let's start!$"
 
-Route120_Text_JenniferDefeat:
-	.string "You're obviously thinking.$"
+Route120_Text_GretaDefeat:
+	.string "No way! You've done a good job.$"
 
-Route120_Text_JenniferPostBattle:
-	.string "The special abilities of POKéMON\n"
-	.string "will make battle styles change.$"
+Route120_Text_GretaPostBattle:
+	.string "Oh woah, you're tough after all!\n"
+	.string "I like you. We'll meet again.$"
 
 Route120_Text_ChipIntro:
 	.string "Who might you be?\p"

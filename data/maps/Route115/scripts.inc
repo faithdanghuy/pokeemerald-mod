@@ -109,9 +109,9 @@ Route115_EventScript_Kyra::
 	msgbox Route115_Text_KyraPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route115_EventScript_Jaiden::
-	trainerbattle_single TRAINER_JAIDEN, Route115_Text_JaidenIntro, Route115_Text_JaidenDefeat
-	msgbox Route115_Text_JaidenPostBattle, MSGBOX_AUTOCLOSE
+Route115_EventScript_Lucy::
+	trainerbattle_single TRAINER_LUCY1, Route115_Text_LucyIntro, Route115_Text_LucyDefeat
+	msgbox Route115_Text_LucyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route115_EventScript_Alix::
