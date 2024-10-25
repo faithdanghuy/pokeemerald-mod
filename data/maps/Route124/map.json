@@ -84,7 +84,7 @@
       "x": 7,
       "y": 23,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 6,
       "movement_range_y": 8,
       "trainer_type": "TRAINER_TYPE_NORMAL",

@@ -76,7 +76,7 @@
 #define TRAINER_PARKER                       72
 #define TRAINER_GEORGE                       73
 #define TRAINER_BERKE                        74
-#define TRAINER_BRAXTON                      75
+#define TRAINER_SPENSER1                     75
 #define TRAINER_VINCENT                      76
 #define TRAINER_LEROY                        77
 #define TRAINER_WILTON_1                     78
