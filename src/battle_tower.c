@@ -772,28 +772,28 @@ struct
 } static const sStevenMons[MULTI_PARTY_SIZE] =
 {
     {
-        .species = SPECIES_METANG,
+        .species = SPECIES_METAGROSS,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 42,
-        .nature = NATURE_BRAVE,
-        .evs = {0, 252, 252, 0, 6, 0},
-        .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METAL_CLAW}
+        .level = 72,
+        .nature = NATURE_JOLLY,
+        .evs = {0, 252, 6, 0, 0, 252},
+        .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC_FANGS, MOVE_ICE_PUNCH, MOVE_BULLET_PUNCH}
     },
     {
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_EMPOLEON,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 43,
-        .nature = NATURE_IMPISH,
-        .evs = {252, 0, 0, 0, 6, 252},
-        .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING}
+        .level = 72,
+        .nature = NATURE_TIMID,
+        .evs = {0, 0, 0, 252, 6, 252},
+        .moves = {MOVE_HYDRO_PUMP, MOVE_FLASH_CANNON, MOVE_ICE_BEAM, MOVE_AIR_SLASH}
     },
     {
         .species = SPECIES_AGGRON,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 44,
-        .nature = NATURE_ADAMANT,
-        .evs = {0, 252, 0, 0, 252, 6},
-        .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
+        .level = 72,
+        .nature = NATURE_CAREFUL,
+        .evs = {6, 252, 252, 0, 0, 0},
+        .moves = {MOVE_HEAD_SMASH, MOVE_IRON_HEAD, MOVE_BODY_PRESS, MOVE_FIRE_PUNCH}
     }
 };
 
