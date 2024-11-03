@@ -560,7 +560,7 @@ Route111_EventScript_Celia::
 	end
 
 Route111_EventScript_Brandon::
-	trainerbattle_single TRAINER_BRANDON1, Route111_Text_BrandonIntro, Route111_Text_BrandonDefeat
+	trainerbattle_single TRAINER_MINIBOSS_BRANDON, Route111_Text_BrandonIntro, Route111_Text_BrandonDefeat
 	msgbox Route111_Text_BrandonPostBattle, MSGBOX_AUTOCLOSE
 	end
 

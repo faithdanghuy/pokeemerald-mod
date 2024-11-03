@@ -76,7 +76,7 @@
 #define TRAINER_PARKER                       72
 #define TRAINER_GEORGE                       73
 #define TRAINER_BERKE                        74
-#define TRAINER_SPENSER1                     75
+#define TRAINER_MINIBOSS_SPENSER             75
 #define TRAINER_VINCENT                      76
 #define TRAINER_LEROY                        77
 #define TRAINER_WILTON_1                     78
@@ -96,7 +96,7 @@
 #define TRAINER_WENDY                        92
 #define TRAINER_KEIRA                        93
 #define TRAINER_BROOKE_1                     94
-#define TRAINER_GRETA1                       95
+#define TRAINER_MINIBOSS_GRETA               95
 #define TRAINER_HOPE                         96
 #define TRAINER_SHANNON                      97
 #define TRAINER_MICHELLE                     98
@@ -745,16 +745,16 @@
 #define TRAINER_CAROLINA                    741
 #define TRAINER_ELIJAH                      742
 #define TRAINER_CELIA                       743
-#define TRAINER_BRANDON1                    744
+#define TRAINER_MINIBOSS_BRANDON            744
 #define TRAINER_BRANDEN                     745
 #define TRAINER_BRYANT                      746
 #define TRAINER_SHAYLA                      747
 #define TRAINER_KYRA                        748
-#define TRAINER_LUCY1                       749
+#define TRAINER_MINIBOSS_LUCY               749
 #define TRAINER_ALIX                        750
 #define TRAINER_HELENE                      751
 #define TRAINER_MARLENE                     752
-#define TRAINER_ANABEL_1                    753
+#define TRAINER_MINIBOSS_ANABEL             753
 #define TRAINER_JOHNSON                     754
 #define TRAINER_MELINA                      755
 #define TRAINER_BRANDI                      756

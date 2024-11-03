@@ -323,7 +323,7 @@ Route120_EventScript_RematchJeffrey::
 	end
 
 Route120_EventScript_Greta::
-	trainerbattle_single TRAINER_GRETA1, Route120_Text_GretaIntro, Route120_Text_GretaDefeat
+	trainerbattle_single TRAINER_MINIBOSS_GRETA, Route120_Text_GretaIntro, Route120_Text_GretaDefeat
 	msgbox Route120_Text_GretaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

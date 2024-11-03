@@ -342,7 +342,7 @@ Route116_EventScript_Dawson::
 	end
 
 Route116_EventScript_Annabel::
-	trainerbattle_single TRAINER_ANABEL_1, Route116_Text_AnabelIntro, Route116_Text_AnabelDefeat
+	trainerbattle_single TRAINER_MINIBOSS_ANABEL, Route116_Text_AnabelIntro, Route116_Text_AnabelDefeat
 	msgbox Route116_Text_AnabelPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -9455,6 +9455,71 @@
         {
           "map": "MAP_EVER_GRANDE_CITY",
           "base_label": "gEverGrandeCity",
+          "land_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_TORCHIC"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_TREECKO"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_MUDKIP"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_MUDKIP"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_EEVEE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_EEVEE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_BAYLEEF"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_GROTLE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_IVYSAUR"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_GROVYLE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_IVYSAUR"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_GROVYLE"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 4,
             "mons": [
@@ -9537,71 +9602,6 @@
                 "min_level": 65,
                 "max_level": 65,
                 "species": "SPECIES_EMPOLEON"
-              }
-            ]
-          },
-          "land_mons": {
-            "encounter_rate": 30,
-            "mons": [
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_TORCHIC"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_TREECKO"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_MUDKIP"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_MUDKIP"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_EEVEE"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_EEVEE"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_BAYLEEF"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_GROTLE"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_IVYSAUR"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_GROVYLE"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_IVYSAUR"
-              },
-              {
-                "min_level": 70,
-                "max_level": 70,
-                "species": "SPECIES_GROVYLE"
               }
             ]
           }

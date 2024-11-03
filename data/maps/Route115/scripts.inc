@@ -110,7 +110,7 @@ Route115_EventScript_Kyra::
 	end
 
 Route115_EventScript_Lucy::
-	trainerbattle_single TRAINER_LUCY1, Route115_Text_LucyIntro, Route115_Text_LucyDefeat
+	trainerbattle_single TRAINER_MINIBOSS_LUCY, Route115_Text_LucyIntro, Route115_Text_LucyDefeat
 	msgbox Route115_Text_LucyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
