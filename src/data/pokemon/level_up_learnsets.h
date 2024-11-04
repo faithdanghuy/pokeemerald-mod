@@ -6032,7 +6032,7 @@ static const u16 sLunatoneLevelUpLearnset[] = {
 static const u16 sSolrockLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_MORNING_SUN),
-    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 1, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE(10, MOVE_ANCIENT_POWER),
