@@ -774,7 +774,7 @@ struct
     {
         .species = SPECIES_METAGROSS,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 72,
+        .level = 76,
         .nature = NATURE_JOLLY,
         .evs = {0, 252, 6, 0, 0, 252},
         .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC_FANGS, MOVE_ICE_PUNCH, MOVE_BULLET_PUNCH}
@@ -782,7 +782,7 @@ struct
     {
         .species = SPECIES_EMPOLEON,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 72,
+        .level = 76,
         .nature = NATURE_TIMID,
         .evs = {0, 0, 0, 252, 6, 252},
         .moves = {MOVE_HYDRO_PUMP, MOVE_FLASH_CANNON, MOVE_ICE_BEAM, MOVE_AIR_SLASH}
@@ -790,7 +790,7 @@ struct
     {
         .species = SPECIES_AGGRON,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 72,
+        .level = 76,
         .nature = NATURE_CAREFUL,
         .evs = {6, 252, 252, 0, 0, 0},
         .moves = {MOVE_HEAD_SMASH, MOVE_IRON_HEAD, MOVE_BODY_PRESS, MOVE_FIRE_PUNCH}

@@ -219,7 +219,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_Grunt4::
 	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt2::
+MossdeepCity_SpaceCenter_1F_EventScript_Courtney::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F, MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated
