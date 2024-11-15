@@ -1326,8 +1326,6 @@ static void Cmd_damagecalc(void)
         gBattleMoveDamage = gBattleMoveDamage * 125 / 100;
     if (gBattleMons[gBattlerTarget].ability == ABILITY_MULTISCALE && gBattleMons[gBattlerTarget].hp == gBattleMons[gBattlerTarget].maxHP)
         gBattleMoveDamage /= 2;
-    if (gBattleMons[gBattlerAttacker].ability == ABILITY_BRUTALIZE && gBattleMons[gBattlerTarget].hp <= (gBattleMons[gBattlerTarget].maxHP / 2))
-        gBattleMoveDamage = gBattleMoveDamage * 15 / 10;
 
     gBattlescriptCurrInstr++;
 }
@@ -1353,8 +1351,6 @@ void AI_CalcDmg(u8 attacker, u8 defender)
         gBattleMoveDamage = gBattleMoveDamage * 125 / 100;
     if (gBattleMons[defender].ability == ABILITY_MULTISCALE && gBattleMons[defender].hp == gBattleMons[defender].maxHP)
         gBattleMoveDamage /= 2;
-    if (gBattleMons[attacker].ability == ABILITY_BRUTALIZE && gBattleMons[defender].hp <= (gBattleMons[defender].maxHP / 2))
-        gBattleMoveDamage = gBattleMoveDamage * 15 / 10;
 }
 
 static void ModulateDmgByType(u8 multiplier)

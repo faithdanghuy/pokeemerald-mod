@@ -101,7 +101,7 @@
 #define ABILITY_SNIPER 97           // Done
 #define ABILITY_MAGIC_GUARD 98      // Done
 #define ABILITY_NO_GUARD 99
-#define ABILITY_BRUTALIZE 100       // Done
+#define ABILITY_BRUTALIZE 100
 #define ABILITY_TECHNICIAN 101      // Done
 #define ABILITY_FORTIFY 102         // Done
 #define ABILITY_CLARITY 103         // Done
