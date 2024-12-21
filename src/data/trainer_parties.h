@@ -15600,10 +15600,10 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson5[] = {
     {
     .iv = 255,
     .lvl = 100,
-    .species = SPECIES_LANTURN,
+    .species = SPECIES_ZAPDOS,
     .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_SCALD, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_THUNDER_WAVE},
-    .abilityNums = 1
+    .moves = {MOVE_RAZOR_WIND, MOVE_THUNDERBOLT, MOVE_HEAT_WAVE, MOVE_THUNDER_WAVE},
+    .abilityNums = 0
     },
     {
     .iv = 255,
@@ -15632,10 +15632,10 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson5[] = {
     {
     .iv = 255,
     .lvl = 100,
-    .species = SPECIES_AMPHAROS,
+    .species = SPECIES_RAIKOU,
     .heldItem = ITEM_WISE_GLASSES,
-    .moves = {MOVE_THUNDERBOLT, MOVE_DRAGON_PULSE, MOVE_ICE_PUNCH, MOVE_THUNDER_WAVE},
-    .abilityNums = 1
+    .moves = {MOVE_THUNDERBOLT, MOVE_EXTREME_SPEED, MOVE_SHADOW_BALL, MOVE_THUNDER_WAVE},
+    .abilityNums = 0
     },
     {
     .iv = 255,
@@ -16540,7 +16540,7 @@ static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     .iv = 255,
     .lvl = 100,
     .species = SPECIES_METAGROSS,
-    .heldItem = ITEM_METAL_COAT,
+    .heldItem = ITEM_MUSCLE_BAND,
     .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC_FANGS, MOVE_ICE_PUNCH, MOVE_BULLET_PUNCH},
     .abilityNums = 1
     }
