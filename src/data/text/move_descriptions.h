@@ -1665,6 +1665,21 @@ static const u8 sShiningGleamDescription[] = _(
     "Damage opposing Pokémon by\n"
     "emitting a powerful flash.");
 
+static const u8 sBrineDescription[] = _(
+    "Double power if the foe's HP\n"
+    "is at half or less.");
+
+static const u8 sForcePalmDescription[] = _(
+    "Attack foe with a shock wave.\n"
+    "May paralyze foe.");
+
+static const u8 sAuraSphereDescription[] = _(
+    "Fire a pulse of aura power.\n"
+    "This attack never misses.");
+
+static const u8 sPowerUpPunchDescription[] = _(
+    "Damage opposing Pokémon by\n"
+    "emitting a powerful flash.");
 
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
@@ -2085,4 +2100,8 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_PLAY_ROUGH - 1] = sPlayRoughDescription,
     [MOVE_DRAINING_KISS - 1] = sDrainingKissDescription,
     [MOVE_SHINING_GLEAM - 1] = sShiningGleamDescription,
+    [MOVE_BRINE - 1] = sBrineDescription,
+    [MOVE_AURA_SPHERE - 1] = sAuraSphereDescription,
+    [MOVE_FORCE_PALM - 1] = sForcePalmDescription,
+    [MOVE_POWER_UP_PUNCH - 1] = sPowerUpPunchDescription,
 };

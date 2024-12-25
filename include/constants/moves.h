@@ -420,8 +420,12 @@
 #define MOVE_PLAY_ROUGH 414
 #define MOVE_DRAINING_KISS 415
 #define MOVE_SHINING_GLEAM 416
+#define MOVE_BRINE 417
+#define MOVE_AURA_SPHERE 418
+#define MOVE_FORCE_PALM 419
+#define MOVE_POWER_UP_PUNCH 420
 
-#define MOVES_COUNT 417
+#define MOVES_COUNT 421
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF
 

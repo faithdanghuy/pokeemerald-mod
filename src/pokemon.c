@@ -3633,6 +3633,11 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         if (defender->item != ITEM_NONE)
             gBattleMovePower = (gBattleMovePower * 150) / 100;
         break;
+
+    case EFFECT_DOUBLE_POWER_IF_BELOW_50:
+        if (defender->hp <= (defender->maxHP / 2))
+            gBattleMovePower *= 2;
+        break;
     }
 
     if (attacker->ability == ABILITY_HUGE_POWER || attacker->ability == ABILITY_PURE_POWER)

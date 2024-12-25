@@ -417,4 +417,8 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_PLAY_ROUGH] = _("Play Rough"),
     [MOVE_DRAINING_KISS] = _("Draining Kiss"),
     [MOVE_SHINING_GLEAM] = _("Shining Gleam"),
+    [MOVE_BRINE] = _("Brine"),
+    [MOVE_AURA_SPHERE] = _("Aura Sphere"),
+    [MOVE_FORCE_PALM] = _("Force Palm"),
+    [MOVE_POWER_UP_PUNCH] = _("PowerUp Punch"),
 };

@@ -238,6 +238,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectRecoil50               @ EFFECT_RECOIL_50
 	.4byte BattleScript_EffectUseDefToAtk            @ EFFECT_USE_DEFENSE_TO_ATTACK
 	.4byte BattleScript_EffectDoubleIfPoison         @ EFFECT_DOUBLE_POWER_IF_POISON
+	.4byte BattleScript_EffectDoubleIfBelow50        @ EFFECT_DOUBLE_POWER_IF_BELOW_50
 
 BattleScript_EffectHit::
 	jumpifnotmove MOVE_SURF, BattleScript_HitFromAtkCanceler
@@ -4623,4 +4624,7 @@ BattleScript_EffectUseDefToAtk::
 	goto BattleScript_EffectHit
 
 BattleScript_EffectDoubleIfPoison::
+	goto BattleScript_EffectHit
+
+BattleScript_EffectDoubleIfBelow50::
 	goto BattleScript_EffectHit
