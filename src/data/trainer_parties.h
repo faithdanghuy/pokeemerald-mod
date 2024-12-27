@@ -273,7 +273,7 @@ static const struct TrainerMonItemCustomMoves sParty_GruntSeafloorCavern3[] = {
     .lvl = 70,
     .species = SPECIES_LUXRAY,
     .heldItem = ITEM_MAGNET,
-    .moves = {MOVE_SUPER_SLAM, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_FIRE_FANG},
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_FIRE_FANG},
     .abilityNums = 0
     },
 };
@@ -1092,7 +1092,7 @@ static const struct TrainerMonItemCustomMoves sParty_Felix[] = {
     .lvl = 84,
     .species = SPECIES_ESPEON,
     .heldItem = ITEM_WISE_GLASSES,
-    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_DAZZLING_GLEAM},
     .abilityNums = 0,
     },
     {
@@ -1771,7 +1771,7 @@ static const struct TrainerMonItemCustomMoves sParty_Vincent[] = {
     .lvl = 80,
     .species = SPECIES_GENGAR,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_SHADOW_BALL, MOVE_SLUDGE_WAVE, MOVE_SHINING_GLEAM, MOVE_THUNDERBOLT},
+    .moves = {MOVE_SHADOW_BALL, MOVE_SLUDGE_WAVE, MOVE_DAZZLING_GLEAM, MOVE_THUNDERBOLT},
     .abilityNums = 0
     }
 };
@@ -1891,7 +1891,7 @@ static const struct TrainerMonItemCustomMoves sParty_Edgar[] = {
     .lvl = 85,
     .species = SPECIES_GIRAFARIG,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_PSYCHIC, MOVE_HYPER_VOICE, MOVE_SHADOW_BALL, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_PSYCHIC, MOVE_HYPER_VOICE, MOVE_SHADOW_BALL, MOVE_DAZZLING_GLEAM},
     .abilityNums = 1
     }
 };
@@ -2209,7 +2209,7 @@ static const struct TrainerMonItemCustomMoves sParty_Mary[] = {
     .lvl = 43,
     .species = SPECIES_RAICHU,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_FAINT_ATTACK, MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_DISARM_VOICE},
+    .moves = {MOVE_FAINT_ATTACK, MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_DISARMING_VOICE},
     .abilityNums = 1
     },
     {
@@ -2217,7 +2217,7 @@ static const struct TrainerMonItemCustomMoves sParty_Mary[] = {
     .lvl = 43,
     .species = SPECIES_GARDEVOIR,
     .heldItem = ITEM_WISE_GLASSES,
-    .moves = {MOVE_SHOCK_WAVE, MOVE_MAGICAL_LEAF, MOVE_PSYCHIC, MOVE_DISARM_VOICE},
+    .moves = {MOVE_SHOCK_WAVE, MOVE_MAGICAL_LEAF, MOVE_PSYCHIC, MOVE_DISARMING_VOICE},
     .abilityNums = 0
     }
 };
@@ -2287,7 +2287,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Wendy[] = {
     .iv = 255,
     .lvl = 57,
     .species = SPECIES_ROSERADE,
-    .moves = {MOVE_ENERGY_BALL, MOVE_SLUDGE_WAVE, MOVE_SHINING_GLEAM, MOVE_SHADOW_BALL}
+    .moves = {MOVE_ENERGY_BALL, MOVE_SLUDGE_WAVE, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL}
     },
     {
     .iv = 255,
@@ -2397,7 +2397,7 @@ static const struct TrainerMonItemCustomMoves sParty_MiniBossGreta[] = {
     .lvl = 54,
     .species = SPECIES_GENGAR,
     .heldItem = ITEM_WISE_GLASSES,
-    .moves = {MOVE_SLUDGE_WAVE, MOVE_SHADOW_BALL, MOVE_SHINING_GLEAM, MOVE_ENERGY_BALL},
+    .moves = {MOVE_SLUDGE_WAVE, MOVE_SHADOW_BALL, MOVE_DAZZLING_GLEAM, MOVE_ENERGY_BALL},
     .abilityNums = 0
     },
     {
@@ -2775,7 +2775,7 @@ static const struct TrainerMonItemCustomMoves sParty_Patricia[] = {
     .lvl = 70,
     .species = SPECIES_ESPEON,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_SHINING_GLEAM, MOVE_POWER_GEM},
+    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_DAZZLING_GLEAM, MOVE_POWER_GEM},
     .abilityNums = 1
     },
     {
@@ -4777,7 +4777,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Edward[] = {
     .iv = 80,
     .lvl = 22,
     .species = SPECIES_MR_MIME,
-    .moves = {MOVE_PSYBEAM, MOVE_DISARM_VOICE, MOVE_LIGHT_SCREEN, MOVE_REFLECT}
+    .moves = {MOVE_PSYBEAM, MOVE_DISARMING_VOICE, MOVE_LIGHT_SCREEN, MOVE_REFLECT}
     }
 };
 
@@ -4859,7 +4859,7 @@ static const struct TrainerMonItemCustomMoves sParty_Joshua[] = {
     .lvl = 70,
     .species = SPECIES_ALAKAZAM,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_DAZZLING_GLEAM},
     .abilityNums = 1
     },
     {
@@ -5037,7 +5037,7 @@ static const struct TrainerMonItemCustomMoves sParty_Alexis[] = {
     .lvl = 70,
     .species = SPECIES_GIRAFARIG,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_PSYCHIC, MOVE_HYPER_VOICE, MOVE_SHINING_GLEAM, MOVE_THUNDERBOLT},
+    .moves = {MOVE_PSYCHIC, MOVE_HYPER_VOICE, MOVE_DAZZLING_GLEAM, MOVE_THUNDERBOLT},
     .abilityNums = 0
     },
     {
@@ -6032,7 +6032,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_AnnaAndMeg1[] = {
     .iv = 80,
     .lvl = 23,
     .species = SPECIES_GLOOM,
-    .moves = {MOVE_MEGA_DRAIN, MOVE_PETAL_STORM, MOVE_SLUDGE, MOVE_SLEEP_POWDER}
+    .moves = {MOVE_MEGA_DRAIN, MOVE_PETAL_BLIZZARD, MOVE_SLUDGE, MOVE_SLEEP_POWDER}
     },
     {
     .iv = 80,
@@ -9695,7 +9695,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
     .lvl = 87,
     .species = SPECIES_ROSERADE,
     .heldItem = ITEM_WISE_GLASSES,
-    .moves = {MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SLUDGE_BOMB, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SLUDGE_BOMB, MOVE_DAZZLING_GLEAM},
     .abilityNums = 1
     },
     {
@@ -10092,7 +10092,7 @@ static const struct TrainerMonItemCustomMoves sParty_MayRoute110Mudkip[] = {
     .lvl = 23,
     .species = SPECIES_MISDREAVUS,
     .heldItem = ITEM_SPELL_TAG,
-    .moves = {MOVE_HEX, MOVE_DISARM_VOICE, MOVE_CONFUSION, MOVE_FAIRY_WIND},
+    .moves = {MOVE_HEX, MOVE_DISARMING_VOICE, MOVE_CONFUSION, MOVE_FAIRY_WIND},
     .abilityNums = 1,
     },
     {
@@ -10169,7 +10169,7 @@ static const struct TrainerMonItemCustomMoves sParty_MayRoute110Treecko[] = {
     .lvl = 23,
     .species = SPECIES_MISDREAVUS,
     .heldItem = ITEM_SPELL_TAG,
-    .moves = {MOVE_HEX, MOVE_DISARM_VOICE, MOVE_CONFUSION, MOVE_FAIRY_WIND},
+    .moves = {MOVE_HEX, MOVE_DISARMING_VOICE, MOVE_CONFUSION, MOVE_FAIRY_WIND},
     .abilityNums = 1,
     },
     {
@@ -10246,7 +10246,7 @@ static const struct TrainerMonItemCustomMoves sParty_MayRoute110Torchic[] = {
     .lvl = 23,
     .species = SPECIES_MISDREAVUS,
     .heldItem = ITEM_SPELL_TAG,
-    .moves = {MOVE_HEX, MOVE_DISARM_VOICE, MOVE_CONFUSION, MOVE_FAIRY_WIND},
+    .moves = {MOVE_HEX, MOVE_DISARMING_VOICE, MOVE_CONFUSION, MOVE_FAIRY_WIND},
     .abilityNums = 1,
     },
     {
@@ -10593,7 +10593,7 @@ static const struct TrainerMonItemCustomMoves sParty_Halle[] = {
     .lvl = 84,
     .species = SPECIES_AMPHAROS,
     .heldItem = ITEM_MAGNET,
-    .moves = {MOVE_THUNDERBOLT, MOVE_DRAGON_PULSE, MOVE_POWER_GEM, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_THUNDERBOLT, MOVE_DRAGON_PULSE, MOVE_POWER_GEM, MOVE_DAZZLING_GLEAM},
     .abilityNums = 1,
     },
     {
@@ -12708,7 +12708,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyMauville[] = {
     .lvl = 24,
     .species = SPECIES_ROSELIA,
     .heldItem = ITEM_SALAC_BERRY,
-    .moves = {MOVE_SLUDGE, MOVE_MEGA_DRAIN, MOVE_EXTRASENSORY, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_SLUDGE, MOVE_MEGA_DRAIN, MOVE_EXTRASENSORY, MOVE_DAZZLING_GLEAM},
     .abilityNums = 1
     },
     {
@@ -12751,7 +12751,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR2[] = {
     .lvl = 87,
     .species = SPECIES_ROSERADE,
     .heldItem = ITEM_WISE_GLASSES,
-    .moves = {MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SLUDGE_WAVE, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SLUDGE_WAVE, MOVE_DAZZLING_GLEAM},
     .abilityNums = 1
     },
     {
@@ -12802,7 +12802,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR3[] = {
     .lvl = 90,
     .species = SPECIES_ROSERADE,
     .heldItem = ITEM_WISE_GLASSES,
-    .moves = {MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SLUDGE_WAVE, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SLUDGE_WAVE, MOVE_DAZZLING_GLEAM},
     .abilityNums = 1
     },
     {
@@ -12853,7 +12853,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR4[] = {
     .lvl = 92,
     .species = SPECIES_ROSERADE,
     .heldItem = ITEM_WISE_GLASSES,
-    .moves = {MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SLUDGE_WAVE, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SLUDGE_WAVE, MOVE_DAZZLING_GLEAM},
     .abilityNums = 1
     },
     {
@@ -12904,7 +12904,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR5[] = {
     .lvl = 95,
     .species = SPECIES_ROSERADE,
     .heldItem = ITEM_WISE_GLASSES,
-    .moves = {MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SLUDGE_WAVE, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SLUDGE_WAVE, MOVE_DAZZLING_GLEAM},
     .abilityNums = 1
     },
     {
@@ -14714,7 +14714,7 @@ static const struct TrainerMonItemCustomMoves sParty_MiniBossAnabel[] = {
     .lvl = 15,
     .species = SPECIES_MISDREAVUS,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_DISARM_VOICE, MOVE_HEX, MOVE_PSYBEAM, MOVE_WILL_O_WISP},
+    .moves = {MOVE_DISARMING_VOICE, MOVE_HEX, MOVE_PSYBEAM, MOVE_WILL_O_WISP},
     .abilityNums = 1
     },
     {
@@ -15473,7 +15473,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson2[] = {
     .lvl = 100,
     .species = SPECIES_ELECTIVIRE,
     .heldItem = ITEM_MUSCLE_BAND,
-    .moves = {MOVE_SUPER_SLAM, MOVE_BRICK_BREAK, MOVE_ICE_PUNCH, MOVE_THUNDER_WAVE},
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_BRICK_BREAK, MOVE_ICE_PUNCH, MOVE_THUNDER_WAVE},
     .abilityNums = 1
     },
     {
@@ -15489,7 +15489,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson2[] = {
     .lvl = 100,
     .species = SPECIES_LUXRAY,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_SUPER_SLAM, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_THUNDER_WAVE},
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_THUNDER_WAVE},
     .abilityNums = 0
     }
 };
@@ -15524,7 +15524,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson3[] = {
     .lvl = 100,
     .species = SPECIES_ELECTIVIRE,
     .heldItem = ITEM_MUSCLE_BAND,
-    .moves = {MOVE_SUPER_SLAM, MOVE_BRICK_BREAK, MOVE_ICE_PUNCH, MOVE_THUNDER_WAVE},
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_BRICK_BREAK, MOVE_ICE_PUNCH, MOVE_THUNDER_WAVE},
     .abilityNums = 1
     },
     {
@@ -15540,7 +15540,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson3[] = {
     .lvl = 100,
     .species = SPECIES_LUXRAY,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_SUPER_SLAM, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_THUNDER_WAVE},
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_THUNDER_WAVE},
     .abilityNums = 0
     }
 };
@@ -15575,7 +15575,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson4[] = {
     .lvl = 100,
     .species = SPECIES_ELECTIVIRE,
     .heldItem = ITEM_MUSCLE_BAND,
-    .moves = {MOVE_SUPER_SLAM, MOVE_BRICK_BREAK, MOVE_ICE_PUNCH, MOVE_THUNDER_WAVE},
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_BRICK_BREAK, MOVE_ICE_PUNCH, MOVE_THUNDER_WAVE},
     .abilityNums = 1
     },
     {
@@ -15591,7 +15591,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson4[] = {
     .lvl = 100,
     .species = SPECIES_LUXRAY,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_SUPER_SLAM, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_THUNDER_WAVE},
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_THUNDER_WAVE},
     .abilityNums = 0
     }
 };
@@ -15626,7 +15626,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson5[] = {
     .lvl = 100,
     .species = SPECIES_ELECTIVIRE,
     .heldItem = ITEM_MUSCLE_BAND,
-    .moves = {MOVE_SUPER_SLAM, MOVE_BRICK_BREAK, MOVE_ICE_PUNCH, MOVE_THUNDER_WAVE},
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_BRICK_BREAK, MOVE_ICE_PUNCH, MOVE_THUNDER_WAVE},
     .abilityNums = 1
     },
     {
@@ -15642,7 +15642,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson5[] = {
     .lvl = 100,
     .species = SPECIES_LUXRAY,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_SUPER_SLAM, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_THUNDER_WAVE},
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_THUNDER_WAVE},
     .abilityNums = 0
     }
 };
@@ -17321,7 +17321,7 @@ static const struct TrainerMonItemCustomMoves sParty_Mariela[] = {
     .lvl = 70,
     .species = SPECIES_CHIMECHO,
     .heldItem = ITEM_FOCUS_BAND,
-    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_SHINING_GLEAM, MOVE_ENERGY_BALL},
+    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_DAZZLING_GLEAM, MOVE_ENERGY_BALL},
     .abilityNums = 0
     },
     {
@@ -17329,7 +17329,7 @@ static const struct TrainerMonItemCustomMoves sParty_Mariela[] = {
     .lvl = 70,
     .species = SPECIES_XATU,
     .heldItem = ITEM_BRIGHT_POWDER,
-    .moves = {MOVE_PSYCHIC, MOVE_AIR_SLASH, MOVE_SHADOW_BALL, MOVE_SHINING_GLEAM},
+    .moves = {MOVE_PSYCHIC, MOVE_AIR_SLASH, MOVE_SHADOW_BALL, MOVE_DAZZLING_GLEAM},
     .abilityNums = 0
     },
     {
@@ -17348,7 +17348,7 @@ static const struct TrainerMonItemCustomMoves sParty_Alvaro[] = {
     .lvl = 70,
     .species = SPECIES_MR_MIME,
     .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_PSYCHIC, MOVE_SHINING_GLEAM, MOVE_LIGHT_SCREEN, MOVE_REFLECT},
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_LIGHT_SCREEN, MOVE_REFLECT},
     .abilityNums = 1
     },
     {

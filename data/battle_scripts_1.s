@@ -239,6 +239,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectUseDefToAtk            @ EFFECT_USE_DEFENSE_TO_ATTACK
 	.4byte BattleScript_EffectDoubleIfPoison         @ EFFECT_DOUBLE_POWER_IF_POISON
 	.4byte BattleScript_EffectDoubleIfBelow50        @ EFFECT_DOUBLE_POWER_IF_BELOW_50
+	.4byte BattleScript_EffectLowerSpeed1        	 @ EFFECT_DOUBLE_POWER_IF_BELOW_50
 
 BattleScript_EffectHit::
 	jumpifnotmove MOVE_SURF, BattleScript_HitFromAtkCanceler
@@ -3715,14 +3716,32 @@ BattleScript_SAtkDown2End::
 
 BattleScript_DefSpDefDown1::
 	setbyte sSTAT_ANIM_PLAYED, FALSE
-	playstatchangeanimation BS_ATTACKER, BIT_DEF, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE | STAT_CHANGE_BY_TWO
+	playstatchangeanimation BS_ATTACKER, BIT_DEF | BIT_SPDEF, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE | STAT_CHANGE_MULTIPLE_STATS
+	playstatchangeanimation BS_ATTACKER, BIT_DEF, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE
 	setstatchanger STAT_DEF, 1, TRUE
-	setstatchanger STAT_SPDEF, 1, TRUE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_DefSpDefDown1End
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_DefSpDefDown1End
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_DefSpDefDown1_TrySpDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_DefSpDefDown1_TrySpDef
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
-BattleScript_DefSpDefDown1End::
+BattleScript_DefSpDefDown1_TrySpDef::
+	playstatchangeanimation BS_ATTACKER, BIT_SPDEF, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE
+	setstatchanger STAT_SPDEF, 1, TRUE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_DefSpDefDown1_End
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_DefSpDefDown1_End
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_DefSpDefDown1_End::
+	return
+
+BattleScript_SpeedDown1::
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_ATTACKER, BIT_SPEED, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE
+	setstatchanger STAT_SPEED, 1, TRUE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_SpeedDown1End
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_SpeedDown1End
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_SpeedDown1End::
 	return
 
 BattleScript_FocusPunchSetUp::
@@ -4627,4 +4646,8 @@ BattleScript_EffectDoubleIfPoison::
 	goto BattleScript_EffectHit
 
 BattleScript_EffectDoubleIfBelow50::
+	goto BattleScript_EffectHit
+
+BattleScript_EffectLowerSpeed1:
+	setmoveeffect MOVE_EFFECT_SPEED_ONE_DOWN | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
 	goto BattleScript_EffectHit

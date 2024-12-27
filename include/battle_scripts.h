@@ -226,5 +226,6 @@ extern const u8 BattleScript_ActionGetNear[];
 extern const u8 BattleScript_ActionThrowPokeblock[];
 extern const u8 BattleScript_SnowWarningActivates[];
 extern const u8 BattleScript_SolarPowerHPLost[];
+extern const u8 BattleScript_SpeedDown1[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

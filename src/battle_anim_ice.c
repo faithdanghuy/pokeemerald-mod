@@ -1078,7 +1078,7 @@ static void AnimTask_HazeScrollingFog_Step(u8 taskId)
 // Throws the ball in Mist Ball.
 // arg 0: initial x pixel offset
 // arg 1: initial y pixel offset
-// arg 2: targey x offset
+// arg 2: target x offset
 // arg 3: target y offset
 // arg 4: duration
 // arg 5: ??? unknown (seems to vibrate target mon somehow)

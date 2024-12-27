@@ -108,7 +108,7 @@ AI_CheckBadMove_CheckSoundproof:
 	if_move MOVE_BUG_BUZZ, Score_Minus10
 	if_move MOVE_HYPER_VOICE, Score_Minus10
 	if_move MOVE_BOOMBURST, Score_Minus10
-	if_move MOVE_DISARM_VOICE, Score_Minus10
+	if_move MOVE_DISARMING_VOICE, Score_Minus10
 AI_CheckBadMove_CheckEffect:
 	if_effect EFFECT_SLEEP, AI_CBM_Sleep
 	if_effect EFFECT_EXPLOSION, AI_CBM_Explosion

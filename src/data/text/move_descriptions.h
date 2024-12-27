@@ -1417,6 +1417,14 @@ static const u8 sPsychoBoostDescription[] = _(
     "Allows a full-power attack,\n"
     "but sharply lowers SP. ATK.");
 
+static const u8 sHammerArmDescription[] = _(
+    "Swing a heavy fist at target.\n"
+    "Lowers the user's Speed stat.");
+
+static const u8 sBrineDescription[] = _(
+    "Double power if the foe's HP\n"
+    "is at half or less.");
+
 static const u8 sNightSlashDescription[] = _(
     "Slashes the foe in an instant\n"
     "High critical-hit ratio.");
@@ -1557,7 +1565,7 @@ static const u8 sNuzzleDescription[] = _(
     "Nuzzling electrified cheeks\n"
     "at foe. Paralyse foe.");
 
-static const u8 sSuperSlamDescription[] = _(
+static const u8 sSupercellSlamDescription[] = _(
     "Electrify body and slam\n"
     "at foe. Also hurt user.");
 
@@ -1573,7 +1581,7 @@ static const u8 sPsychicFangsDescription[] = _(
     "Bite with psychic power.\n"
     "Destroy all screens.");
 
-static const u8 sPetalStormDescription[] = _(
+static const u8 sPetalBlizzardDescription[] = _(
     "Stir up a violent petal storm\n"
     "and attack everything.");
 
@@ -1637,6 +1645,10 @@ static const u8 sGigaImpactDescription[] = _(
     "Charge at foe with full\n"
     "force. Recharge next turn.");
 
+static const u8 sNastyPlotDescription[] = _(
+    "Plotting bad thoughts that\n"
+    "sharply raises SP. ATK.");
+
 static const u8 sBoomburstDescription[] = _(
     "Attack everything with the\n"
     "power of an explosive sound.");
@@ -1645,7 +1657,7 @@ static const u8 sFairyWindDescription[] = _(
     "Stir up a fairy wind and\n"
     "strikes the target with it.");
 
-static const u8 sDisarmVoiceDescription[] = _(
+static const u8 sDisarmingVoiceDescription[] = _(
     "Let out a charming cry.\n"
     "This attack never miss.");
 
@@ -1661,13 +1673,9 @@ static const u8 sDrainingKissDescription[] = _(
     "Steals foe's energy with a\n"
     "kiss. Heal half of damage.");
 
-static const u8 sShiningGleamDescription[] = _(
+static const u8 sDazzlingGleamDescription[] = _(
     "Damage opposing Pokémon by\n"
     "emitting a powerful flash.");
-
-static const u8 sBrineDescription[] = _(
-    "Double power if the foe's HP\n"
-    "is at half or less.");
 
 static const u8 sForcePalmDescription[] = _(
     "Attack foe with a shock wave.\n"
@@ -2038,6 +2046,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
+    [MOVE_HAMMER_ARM - 1] = sHammerArmDescription,
     [MOVE_NIGHT_SLASH - 1] = sNightSlashDescription,
     [MOVE_DARK_PULSE - 1] = sDarkPulseDescription,
     [MOVE_FOUL_PLAY - 1] = sFoulPlayDescription,
@@ -2073,11 +2082,11 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WILD_CHARGE - 1] = sWildChargeDescription,
     [MOVE_THUNDER_FANG - 1] = sThunderFangDescription,
     [MOVE_NUZZLE - 1] = sNuzzleDescription,
-    [MOVE_SUPER_SLAM - 1] = sSuperSlamDescription,
+    [MOVE_SUPERCELL_SLAM - 1] = sSupercellSlamDescription,
     [MOVE_ZEN_HEADBUTT - 1] = sZenHeadbuttDescription,
     [MOVE_PSYCHO_CUT - 1] = sPsychoCutDescription,
     [MOVE_PSYCHIC_FANGS - 1] = sPsychicFangsDescription,
-    [MOVE_PETAL_STORM - 1] = sPetalStormDescription,
+    [MOVE_PETAL_BLIZZARD - 1] = sPetalBlizzardDescription,
     [MOVE_SEED_BOMB - 1] = sSeedBombDescription,
     [MOVE_ENERGY_BALL - 1] = sEnergyBallDescription,
     [MOVE_CLOSE_COMBAT - 1] = sCloseCombatDescription,
@@ -2093,13 +2102,14 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_GUNK_SHOT - 1] = sGunkShotDescription,
     [MOVE_VENOSHOCK - 1] = sVenoshockDescription,
     [MOVE_GIGA_IMPACT - 1] = sGigaImpactDescription,
+    [MOVE_NASTY_PLOT - 1] = sNastyPlotDescription,
     [MOVE_BOOMBURST - 1] = sBoomburstDescription,
     [MOVE_FAIRY_WIND - 1] = sFairyWindDescription,
-    [MOVE_DISARM_VOICE - 1] = sDisarmVoiceDescription,
+    [MOVE_DISARMING_VOICE - 1] = sDisarmingVoiceDescription,
     [MOVE_MOONBLAST - 1] = sMoonblastDescription,
     [MOVE_PLAY_ROUGH - 1] = sPlayRoughDescription,
     [MOVE_DRAINING_KISS - 1] = sDrainingKissDescription,
-    [MOVE_SHINING_GLEAM - 1] = sShiningGleamDescription,
+    [MOVE_DAZZLING_GLEAM - 1] = sDazzlingGleamDescription,
     [MOVE_BRINE - 1] = sBrineDescription,
     [MOVE_AURA_SPHERE - 1] = sAuraSphereDescription,
     [MOVE_FORCE_PALM - 1] = sForcePalmDescription,

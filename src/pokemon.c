@@ -3552,7 +3552,7 @@ static const u16 sSlicingMovesTable[] =
 static const u16 sAttackingSoundMovesTable[] =
 {
     MOVE_SNORE, MOVE_UPROAR,MOVE_HYPER_VOICE, MOVE_BUG_BUZZ, MOVE_BOOMBURST,
-    MOVE_DISARM_VOICE, SOUND_MOVES_END
+    MOVE_DISARMING_VOICE, SOUND_MOVES_END
 };
 
 s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *defender, u32 move, u16 sideStatus, u16 powerOverride, u8 typeOverride, u8 battlerIdAtk, u8 battlerIdDef)

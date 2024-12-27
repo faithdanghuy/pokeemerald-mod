@@ -3026,6 +3026,10 @@ void SetMoveEffect(bool8 primary, u8 certain)
                 BattleScriptPush(gBattlescriptCurrInstr + 1);
                 gBattlescriptCurrInstr = BattleScript_DefSpDefDown1;
                 break;
+            case MOVE_EFFECT_SPEED_ONE_DOWN:
+                BattleScriptPush(gBattlescriptCurrInstr + 1);
+                gBattlescriptCurrInstr = BattleScript_SpeedDown1;
+                break;
             }
         }
     }
