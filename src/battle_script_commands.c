@@ -603,7 +603,7 @@ static const struct StatFractions sAccuracyStageRatios[] =
 };
 
 // The chance is 1/N for each stage.
-static const u16 sCriticalHitChance[] = {16, 8, 4, 3, 2};
+static const u16 sCriticalHitChance[] = {24, 8, 2, 1};
 
 static const u32 sStatusFlagsForMoveEffects[NUM_MOVE_EFFECTS] =
 {
@@ -1291,12 +1291,18 @@ static void Cmd_critcalc(void)
         && !(Random() % sCriticalHitChance[critChance]))
     {
         if (gBattleMons[gBattlerAttacker].ability == ABILITY_SNIPER)
+        {
             gCritMultiplier = 3;
+        }
         else
+        {
             gCritMultiplier = 2;
+        }
     }
     else
+    {
         gCritMultiplier = 1;
+    }
 
     if (gBattleMons[gBattlerAttacker].ability == ABILITY_MERCILESS && gBattleMons[gBattlerTarget].status1 & STATUS1_PSN_ANY)
     {
@@ -7276,20 +7282,15 @@ static void Cmd_setmultihitcounter(void)
     {
         gMultiHitCounter = gBattlescriptCurrInstr[1];
     }
+    else if (gBattleMons[gBattlerAttacker].ability == ABILITY_SKILL_LINK)
+    {
+        gMultiHitCounter = 5;
+    }
     else
     {
-        if (gBattleMons[gBattlerAttacker].ability == ABILITY_SKILL_LINK)
-        {
-            gMultiHitCounter = 5;
-        }
-        else
-        {
-            gMultiHitCounter = Random() & 3;
-            if (gMultiHitCounter > 1)
-                gMultiHitCounter = (Random() & 3) + 2;
-            else
-                gMultiHitCounter += 2;
-        }
+        gMultiHitCounter = (Random() & 3) + 2;
+        if (gMultiHitCounter > 3)
+            gMultiHitCounter = (Random() & 3) + 2;
     }
 
     gBattlescriptCurrInstr += 2;
